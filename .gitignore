@@ -8,3 +8,5 @@ dist/
 .idea/*
 gopup.egg-info/*
 .idea/workspace.xml
+gopup/__pycache__
+gopup/__pycache__/*
