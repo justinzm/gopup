@@ -3,3 +3,8 @@
 Pipfile
 Pipfile.lock
 
+build/
+dist/
+.idea/*
+gopup.egg-info/*
+.idea/workspace.xml
