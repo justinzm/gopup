@@ -1,0 +1,12 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.doubanio.com/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+twine = "*"
+
+[requires]
+python_version = "3.7"
