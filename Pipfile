@@ -7,6 +7,13 @@ verify_ssl = true
 
 [packages]
 twine = "*"
+pandas = "*"
+matplotlib = "*"
+demjson = "*"
+jsonpath = "*"
+bs4 = "*"
+pil = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.7"

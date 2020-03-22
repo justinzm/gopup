@@ -10,3 +10,8 @@ gopup.egg-info/*
 .idea/workspace.xml
 gopup/__pycache__
 gopup/__pycache__/*
+gopup/index/__pycache__/
+gopup/index/__pycache__/*
+
+.idea/inspectionProfiles/Project_Default.xml
+.idea/workspace.xml

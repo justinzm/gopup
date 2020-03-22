@@ -4,7 +4,7 @@
     <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ignoredPackages">
         <value>
-          <list size="44">
+          <list size="48">
             <item index="0" class="java.lang.String" itemvalue="wheel" />
             <item index="1" class="java.lang.String" itemvalue="pycrypto" />
             <item index="2" class="java.lang.String" itemvalue="flask-migrate" />
@@ -49,6 +49,10 @@
             <item index="41" class="java.lang.String" itemvalue="webencodings" />
             <item index="42" class="java.lang.String" itemvalue="pygments" />
             <item index="43" class="java.lang.String" itemvalue="requests-toolbelt" />
+            <item index="44" class="java.lang.String" itemvalue="matplotlib" />
+            <item index="45" class="java.lang.String" itemvalue="kiwisolver" />
+            <item index="46" class="java.lang.String" itemvalue="cycler" />
+            <item index="47" class="java.lang.String" itemvalue="pyparsing" />
           </list>
         </value>
       </option>
