@@ -41,4 +41,9 @@ from gopup.event.covid import (
     covid_hist_province,
 )
 
+"""
+中国宏观数据
+"""
+from gopup.economic.marco_cn import marco_cmlrd
+
 # from gopup.my_fun import (gopup_test, add_sum)

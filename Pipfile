@@ -14,6 +14,7 @@ jsonpath = "*"
 bs4 = "*"
 pil = "*"
 pillow = "*"
+xlrd = "*"
 
 [requires]
 python_version = "3.7"
