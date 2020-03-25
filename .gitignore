@@ -5,7 +5,9 @@ Pipfile.lock
 
 build/
 dist/
-.idea/*
+/.idea/
+venv/
+idea/
 gopup.egg-info/*
 .idea/workspace.xml
 gopup/__pycache__

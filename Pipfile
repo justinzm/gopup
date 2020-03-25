@@ -12,7 +12,6 @@ matplotlib = "*"
 demjson = "*"
 jsonpath = "*"
 bs4 = "*"
-pil = "*"
 pillow = "*"
 xlrd = "*"
 
