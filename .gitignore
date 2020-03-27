@@ -15,3 +15,5 @@ gopup/index/__pycache__/*
 
 .idea/inspectionProfiles/Project_Default.xml
 .idea/workspace.xml
+gopup/economic/__pycache__/*
+gopup/event/__pycache__/*

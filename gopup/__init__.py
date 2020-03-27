@@ -44,6 +44,19 @@ from gopup.event.covid import (
 """
 中国宏观数据
 """
-from gopup.economic.marco_cn import marco_cmlrd
+from gopup.economic.marco_cn import (
+    marco_cmlrd, get_gdp_year, get_gdp_quarter, get_gdp_for,
+    get_gdp_pull, get_gdp_contrib, get_cpi, get_ppi, get_deposit_rate,
+    get_loan_rate, get_rrr, get_money_supply, get_money_supply_bal,
+    get_gold_and_foreign_reserves
+)
+
+
+"""
+利率数据
+"""
+# from gopup.economic.shibor import (shibor_data, shibor_quote_data,
+#                                   shibor_ma_data, lpr_data,
+#                                   lpr_ma_data)
 
 # from gopup.my_fun import (gopup_test, add_sum)
