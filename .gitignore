@@ -17,3 +17,4 @@ gopup/index/__pycache__/*
 .idea/workspace.xml
 gopup/economic/__pycache__/*
 gopup/event/__pycache__/*
+venv/*
