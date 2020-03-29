@@ -9,9 +9,29 @@ import pandas as pd
 
 
 def get_industry_classified(standard='sina'):
-    df = pd.read_csv(ct.TSDATA_CLASS % (ct.P_TYPE['http'], ct.DOMAINS['oss'], 'industry_sw'),
-                     dtype={'code': object})
+    """
+        获取行业分类数据
+    Parameters
+    ----------
+    standard
+    sina:新浪行业 sw：申万 行业
+
+    Returns
+    -------
+    DataFrame
+        code :股票代码
+        name :股票名称
+        c_name :行业名称
+    """
+    if standard == 'sw':
+        df = pd.read_csv('https://github.com/justinzm/gopup/blob/master/data/industry_sw.csv',
+                        dtype={'code': object})
+    else:
+        df = pd.read_csv('https://github.com/justinzm/gopup/blob/master/data/industry.csv',
+                         dtype={'code': object})
+    return df
 
 
 if __name__ == "__main__":
-    get_industry_classified()
+    tmp = get_industry_classified('sw')
+    print(tmp)
