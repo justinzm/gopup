@@ -24,14 +24,29 @@ def get_industry_classified(standard='sina'):
         c_name :行业名称
     """
     if standard == 'sw':
-        df = pd.read_csv('https://github.com/justinzm/gopup/blob/master/data/industry_sw.csv',
-                        dtype={'code': object})
+        df = pd.read_csv('http://img.kekepu.com/industry_sw.csv',
+                         dtype={'code': object})
     else:
-        df = pd.read_csv('https://github.com/justinzm/gopup/blob/master/data/industry.csv',
+        df = pd.read_csv('http://img.kekepu.com/industry.csv',
                          dtype={'code': object})
     return df
 
 
+def get_concept_classified():
+    """
+        获取概念分类数据
+    Return
+    --------
+    DataFrame
+        code :股票代码
+        name :股票名称
+        c_name :概念名称
+    """
+    df = pd.read_csv('http://img.kekepu.com/concept.csv',
+                    dtype={'code': object})
+    return df
+
+
 if __name__ == "__main__":
-    tmp = get_industry_classified('sw')
+    tmp = get_concept_classified()
     print(tmp)

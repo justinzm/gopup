@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="93b7bb07-655b-4d5a-8244-85210ae64a22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/concept.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/industry.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/industry_sw.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gopup/stock/classifying.py" beforeDir="false" afterPath="$PROJECT_DIR$/gopup/stock/classifying.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,17 +31,6 @@
         <option value="Python Script" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>indicator</find>
-      <find>covid_hist_city</find>
-      <find>_ref</find>
-      <find>shibor_quote</find>
-      <find>MACRO_TYPE</find>
-      <find>MACRO_URL</find>
-      <find>GDP_QUARTER_COLS</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,7 +59,7 @@
       <recent name="D:\pythonFile\gopup\gopup\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.classifying">
+  <component name="RunManager" selected="Python.xx">
     <configuration name="classifying" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gopup" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,28 +73,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gopup/stock/classifying.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="date_tools" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="gopup" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gopup/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\pythonFile\gopup\gopup\utils\date_utils.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,7 +125,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="shibor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="star" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gopup" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -163,12 +133,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gopup/economic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gopup/mcn" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gopup/economic/shibor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gopup/mcn/star.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="xx" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gopup" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/xx.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -179,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.xx" />
+        <item itemvalue="Python.star" />
         <item itemvalue="Python.classifying" />
         <item itemvalue="Python.marco_cn" />
         <item itemvalue="Python.netbase" />
-        <item itemvalue="Python.shibor" />
-        <item itemvalue="Python.date_tools" />
       </list>
     </recent_temporary>
   </component>
@@ -224,38 +214,46 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1659" height="241" key="GridCell.Tab.0.bottom" timestamp="1585484234918">
+    <state x="100" y="123" width="1480" height="760" key="DiffContextDialog" timestamp="1586166748453">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="241" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1585484234918" />
-    <state width="1659" height="241" key="GridCell.Tab.0.center" timestamp="1585484234917">
+    <state x="100" y="123" width="1480" height="760" key="DiffContextDialog/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1586166748453" />
+    <state width="1659" height="320" key="GridCell.Tab.0.bottom" timestamp="1586173850354">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="241" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1585484234917" />
-    <state width="1659" height="241" key="GridCell.Tab.0.left" timestamp="1585484234917">
+    <state width="1659" height="320" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1586173850354" />
+    <state width="1659" height="320" key="GridCell.Tab.0.center" timestamp="1586173850354">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="241" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1585484234916" />
-    <state width="1659" height="241" key="GridCell.Tab.0.right" timestamp="1585484234918">
+    <state width="1659" height="320" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1586173850354" />
+    <state width="1659" height="320" key="GridCell.Tab.0.left" timestamp="1586173850353">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="241" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1585484234918" />
-    <state width="1659" height="320" key="GridCell.Tab.1.bottom" timestamp="1585484047903">
+    <state width="1659" height="320" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1586173850353" />
+    <state width="1659" height="320" key="GridCell.Tab.0.right" timestamp="1586173850354">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="320" key="GridCell.Tab.1.bottom/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1585484047903" />
-    <state width="1659" height="320" key="GridCell.Tab.1.center" timestamp="1585484047902">
+    <state width="1659" height="320" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1586173850354" />
+    <state width="1659" height="320" key="GridCell.Tab.1.bottom" timestamp="1586173850355">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="320" key="GridCell.Tab.1.center/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1585484047902" />
-    <state width="1659" height="320" key="GridCell.Tab.1.left" timestamp="1585484047902">
+    <state width="1659" height="320" key="GridCell.Tab.1.bottom/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1586173850355" />
+    <state width="1659" height="320" key="GridCell.Tab.1.center" timestamp="1586173850354">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="320" key="GridCell.Tab.1.left/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1585484047902" />
-    <state width="1659" height="320" key="GridCell.Tab.1.right" timestamp="1585484047902">
+    <state width="1659" height="320" key="GridCell.Tab.1.center/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1586173850354" />
+    <state width="1659" height="320" key="GridCell.Tab.1.left" timestamp="1586173850354">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="320" key="GridCell.Tab.1.right/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1585484047902" />
+    <state width="1659" height="320" key="GridCell.Tab.1.left/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1586173850354" />
+    <state width="1659" height="320" key="GridCell.Tab.1.right" timestamp="1586173850354">
+      <screen x="0" y="23" width="1680" height="960" />
+    </state>
+    <state width="1659" height="320" key="GridCell.Tab.1.right/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1586173850354" />
+    <state width="840" height="480" key="XDebugger.FullValuePopup" timestamp="1585718610271">
+      <screen x="0" y="23" width="1680" height="960" />
+    </state>
+    <state width="840" height="480" key="XDebugger.FullValuePopup/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1585718610271" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -274,6 +272,41 @@
           <url>file://$PROJECT_DIR$/gopup/economic/shibor.py</url>
           <line>115</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gopup/stock/classifying.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gopup/stock/classifying.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gopup/mcn/star.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gopup/mcn/star.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gopup/mcn/star.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/xx.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/xx.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
