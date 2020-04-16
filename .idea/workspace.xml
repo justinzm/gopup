@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="93b7bb07-655b-4d5a-8244-85210ae64a22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/concept.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/industry.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/industry_sw.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gopup/stock/classifying.py" beforeDir="false" afterPath="$PROJECT_DIR$/gopup/stock/classifying.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopup/mcn/cons.py" beforeDir="false" afterPath="$PROJECT_DIR$/gopup/mcn/cons.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopup/mcn/star.py" beforeDir="false" afterPath="$PROJECT_DIR$/gopup/mcn/star.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +39,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -59,7 +56,7 @@
       <recent name="D:\pythonFile\gopup\gopup\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.xx">
+  <component name="RunManager" selected="Python.star">
     <configuration name="classifying" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gopup" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -169,8 +166,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.xx" />
         <item itemvalue="Python.star" />
+        <item itemvalue="Python.xx" />
         <item itemvalue="Python.classifying" />
         <item itemvalue="Python.marco_cn" />
         <item itemvalue="Python.netbase" />
@@ -218,42 +215,42 @@
       <screen x="0" y="23" width="1680" height="960" />
     </state>
     <state x="100" y="123" width="1480" height="760" key="DiffContextDialog/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1586166748453" />
-    <state width="1659" height="320" key="GridCell.Tab.0.bottom" timestamp="1586173850354">
+    <state width="1659" height="224" key="GridCell.Tab.0.bottom" timestamp="1587016221656">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="320" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1586173850354" />
-    <state width="1659" height="320" key="GridCell.Tab.0.center" timestamp="1586173850354">
+    <state width="1659" height="224" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1587016221656" />
+    <state width="1659" height="224" key="GridCell.Tab.0.center" timestamp="1587016221656">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="320" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1586173850354" />
-    <state width="1659" height="320" key="GridCell.Tab.0.left" timestamp="1586173850353">
+    <state width="1659" height="224" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1587016221656" />
+    <state width="1659" height="224" key="GridCell.Tab.0.left" timestamp="1587016221656">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="320" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1586173850353" />
-    <state width="1659" height="320" key="GridCell.Tab.0.right" timestamp="1586173850354">
+    <state width="1659" height="224" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1587016221656" />
+    <state width="1659" height="224" key="GridCell.Tab.0.right" timestamp="1587016221656">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="320" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1586173850354" />
-    <state width="1659" height="320" key="GridCell.Tab.1.bottom" timestamp="1586173850355">
+    <state width="1659" height="224" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1587016221656" />
+    <state width="1659" height="254" key="GridCell.Tab.1.bottom" timestamp="1587016221653">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="320" key="GridCell.Tab.1.bottom/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1586173850355" />
-    <state width="1659" height="320" key="GridCell.Tab.1.center" timestamp="1586173850354">
+    <state width="1659" height="254" key="GridCell.Tab.1.bottom/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1587016221653" />
+    <state width="1659" height="254" key="GridCell.Tab.1.center" timestamp="1587016221653">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="320" key="GridCell.Tab.1.center/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1586173850354" />
-    <state width="1659" height="320" key="GridCell.Tab.1.left" timestamp="1586173850354">
+    <state width="1659" height="254" key="GridCell.Tab.1.center/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1587016221653" />
+    <state width="1659" height="254" key="GridCell.Tab.1.left" timestamp="1587016221653">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="320" key="GridCell.Tab.1.left/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1586173850354" />
-    <state width="1659" height="320" key="GridCell.Tab.1.right" timestamp="1586173850354">
+    <state width="1659" height="254" key="GridCell.Tab.1.left/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1587016221653" />
+    <state width="1659" height="254" key="GridCell.Tab.1.right" timestamp="1587016221653">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="320" key="GridCell.Tab.1.right/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1586173850354" />
-    <state width="840" height="480" key="XDebugger.FullValuePopup" timestamp="1585718610271">
+    <state width="1659" height="254" key="GridCell.Tab.1.right/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1587016221653" />
+    <state width="840" height="480" key="XDebugger.FullValuePopup" timestamp="1587008553179">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="840" height="480" key="XDebugger.FullValuePopup/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1585718610271" />
+    <state width="840" height="480" key="XDebugger.FullValuePopup/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1587008553179" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -284,21 +281,6 @@
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gopup/mcn/star.py</url>
-          <line>23</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gopup/mcn/star.py</url>
-          <line>21</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gopup/mcn/star.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/xx.py</url>
           <line>12</line>
           <option name="timeStamp" value="20" />
@@ -308,7 +290,24 @@
           <line>13</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gopup/mcn/star.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gopup/mcn/star.py</url>
+          <line>92</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>

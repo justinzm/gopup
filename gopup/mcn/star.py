@@ -5,24 +5,132 @@
 # @File    : star.py
 # @Desc    : 星图
 # https://star.toutiao.com/
-
+import math
+import time
 import requests
-import urllib
+import pandas as pd
 from gopup.mcn import cons
+from gopup.utils.utils import get_fields
 
-def star_hot_list(cookie=None):
+
+def star_hot_list(section, hot_list, category, cookie=None):
+    """
+    星图热榜 抖音达人热榜
+    :param section:
+    :param hot_list:
+    :param category:
+    :param cookie:
+    :return:
+    """
     cookie = cons.STAR_COOKIE
     headers = {
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
         "referer": "https://star.toutiao.com/ad",
         "cookie": cookie
     }
-    tag = urllib.parse.quote_plus('颜值达人')
-    url = "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6720184315054915588&tag=%s&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=1a839930d2dc2aa1f7f6faf703a63bf1" % tag
+
+    params = "%s-%s-%s" % (section, hot_list, category)
+    try:
+        url = cons.STAR_HOT_URL[params]
+    except:
+        return {"code": 401, "msg": "没有找到对应类型"}
+
     r = requests.get(url, headers=headers)
-    data_json = r.json()
+
+    publish_date = r.json()['data']['file_name'][-20:-1]
+    data_all = r.json()['data']['stars']
+    res_list = []
+    for data in data_all:
+        res_dict = {
+            "id": data['id'],
+            "new_rank": data['new_rank'],
+            "nick_name": data['nick_name'],
+            "avatar_uri": data['avatar_uri'],
+            "province": data.setdefault('province'),
+            "city": data['city'],
+            "avg_play": data['avg_play'],
+            "score": get_fields(data['fields'], "score"),
+            "follower": get_fields(data['fields'], "follower"),
+            "positive_vv": get_fields(data['fields'], "positive_vv"),
+            "personal_interate_rate": get_fields(data['fields'], "personal_interate_rate"),
+            "expected_cpm": get_fields(data['fields'], "expected_cpm"),
+            "file_name": params,
+            "publish_date": publish_date,
+            "crawler_date": time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+        }
+        res_list.append(res_dict)
+    df = pd.DataFrame(res_list)
+    return df
+
+
+def star_market_list(section="抖音达人", market_list="抖音传播任务", category="全部", cookie=None):
+    """
+    达人广场 抖音达人
+    :param section:
+    :param market_list:
+    :param category:
+    :return:
+    """
+    cookie = cons.STAR_COOKIE
+
+    res_url, total_count = get_star_market_url(category, cookie)
+
+    headers = {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
+        "referer": "https://star.toutiao.com/ad",
+        "cookie": cookie
+    }
+    limit = 30
+    authors = []
+    pages = math.ceil(total_count/30)
+    for page in range(pages):
+        page = page + 1
+        print(page)
+        url = res_url % (limit, page)
+        r = requests.get(url, headers=headers)
+        authors += r.json()['data']['authors']
+        print(len(r.json()['data']['authors']))
     pass
 
 
+def get_star_market_url(category, cookie):
+    limit = 10
+    if category == "全部":
+        url = "https://star.toutiao.com/v/api/demand/author_list/?limit=%s&need_detail=true&page=1&platform_source=1&task_category=1&order_by=score&use_recommend=1" % limit
+        res_url = "https://star.toutiao.com/v/api/demand/author_list/?limit=%s&need_detail=true&page=%s&platform_source=1&task_category=1&order_by=score&use_recommend=1"
+    else:
+        category_list = cons.STAR_MARKET_DOUYIN_CATEGORY
+        for cate in category_list:
+            first_dict = cate['first']
+            first_val = list(first_dict.values())[0]
+            if category == first_val:
+                tag = list(first_dict.keys())[0]
+                url = "https://star.toutiao.com/v/api/demand/author_list/?limit=%s&need_detail=true&page=1&platform_source=1&task_category=1&tag=%s&order_by=score" % (
+                limit, tag)
+                res_url = "https://star.toutiao.com/v/api/demand/author_list/?limit=%s&need_detail=true&page=%s&platform_source=1&task_category=1&tag="+str(tag)+"&order_by=score"
+            else:
+                second_list = cate['second']
+                for second_dict in second_list:
+                    second_val = list(second_dict.values())[0]
+                    if category == second_val:
+                        tag = list(first_dict.keys())[0]
+                        tag_level_two = list(second_dict.keys())[0]
+                        url = "https://star.toutiao.com/v/api/demand/author_list/?limit=%s&need_detail=true&page=1&platform_source=1&task_category=1&tag=%s&tag_level_two=%s&order_by=score" % (limit, tag, tag_level_two)
+                        res_url = "https://star.toutiao.com/v/api/demand/author_list/?limit=%s&need_detail=true&page=%s&platform_source=1&task_category=1&tag="+str(tag)+"&tag_level_two="+str(tag_level_two)+"&order_by=score"
+
+    headers = {
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
+        "referer": "https://star.toutiao.com/ad",
+        "cookie": cookie
+    }
+
+    r = requests.get(url, headers=headers)
+    total_count = r.json()['data']['pagination']['total_count']
+
+    return res_url, total_count
+
+
 if __name__ == "__main__":
-    star_hot_list()
+    # tmp = star_hot_list("抖音达人热榜", "种草指数榜", "全部")
+    tmp = star_market_list(category="搞笑")
+    print(tmp)

@@ -18,3 +18,5 @@ gopup/index/__pycache__/*
 gopup/economic/__pycache__/*
 gopup/event/__pycache__/*
 venv/*
+*.pyc
+*.pyc

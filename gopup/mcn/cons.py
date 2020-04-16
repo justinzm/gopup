@@ -6,3 +6,392 @@
 # @Desc    : 网红经济行业
 
 STAR_COOKIE = "gr_user_id=d73ea970-adf9-44f1-ba2f-2b1e49b6d1e7; grwng_uid=ba191569-5bb2-4fe2-b810-bc9e601d05d4; tt_webid=6807980764321318408; csrftoken=oX0pXOTFAOWZzT9F6YiTXl9IaUQRqFzk; s_v_web_id=k86y8fui_WsdTtwmT_wKel_4i5U_89PP_6tRpwVXf6mZy; login_flag=ad4c11b85dea3b4a82ec40912c7d1dbb; passport_csrf_token=88499d3a26b842a3eacac2e951d6b09c; odin_tt=8da95c0df1c8b0895664d60f7a0364faae5f7976d37a3ecd8b9c0c0ccaae9fdaa482facc4cc18141b88637b65f1cb5606993458b12f9ebc871e7ca4075c2757c; sid_guard=fc6684106be289e3779f9f42642b6d1d%7C1585704363%7C5184000%7CSun%2C+31-May-2020+01%3A26%3A03+GMT; uid_tt=3c813e052e5e95791768bd4231001b83; uid_tt_ss=3c813e052e5e95791768bd4231001b83; sid_tt=fc6684106be289e3779f9f42642b6d1d; sessionid=fc6684106be289e3779f9f42642b6d1d; sessionid_ss=fc6684106be289e3779f9f42642b6d1d; gftoken=ZmM2Njg0MTA2YnwxNTg1NzA0MzYzNTd8fDAGBgYGBgY; star_sessionid=fc6684106be289e3779f9f42642b6d1d; 8632e941eb705978_gr_session_id=34a034b0-a993-4f06-b36b-09cde7ef29f5; 8632e941eb705978_gr_session_id_34a034b0-a993-4f06-b36b-09cde7ef29f5=true; SLARDAR_WEB_ID=9531ed51-d793-417d-9f13-6e259b40f110"
+
+
+STAR_HOT_URL = {
+    "抖音达人热榜-星图指数榜-全部": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=2fed15d4bd4ced9f29081b6636529be3",
+    "抖音达人热榜-星图指数榜-颜值达人": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E9%A2%9C%E5%80%BC%E8%BE%BE%E4%BA%BA&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=dd13e4123f98b324a180bab753bc628c",
+    "抖音达人热榜-星图指数榜-剧情搞笑": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E5%89%A7%E6%83%85%E6%90%9E%E7%AC%91&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=ad12718bce3776998bb250bc4cd3a6a9",
+    "抖音达人热榜-星图指数榜-美妆": "",
+    "抖音达人热榜-种草指数榜-全部": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6758055829141717005&tag=&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=e4476e7c0d875d205f6b36b8d3bc2da0",
+
+}
+
+
+STAR_MARKET_DOUYIN_CATEGORY = [
+    {
+		"second": [{
+				73: "美女"
+			},
+			{
+				74: "帅哥"
+			}
+		],
+		"first": {
+			72: "颜值达人"
+		}
+	},
+	{
+		"second": [{
+				98: "剧情"
+			},
+			{
+				99: "搞笑"
+			}
+		],
+		"first": {
+			97: "剧情搞笑"
+		}
+	},
+	{
+		"second": [{
+				2: "美妆教程"
+			},
+			{
+				3: "妆容展示"
+			},
+			{
+				4: "护肤保养"
+			},
+			{
+				5: "美妆测评种草"
+			}
+		],
+		"first": {
+			1: "美妆"
+		}
+	},
+	{
+		"second": [{
+				7: "穿搭"
+			},
+			{
+				8: "街拍"
+			},
+			{
+				10: "造型"
+			}
+		],
+		"first": {
+			6: "时尚"
+		}
+	},
+	{
+		"second": [{
+				12: "日常宠物"
+			},
+			{
+				13: "特别宠物"
+			},
+			{
+				14: "宠物周边"
+			}
+		],
+		"first": {
+			11: "萌宠"
+		}
+	},
+	{
+		"second": [{
+				42: "歌曲演唱"
+			},
+			{
+				43: "乐器演奏"
+			},
+			{
+				44: "音乐教学"
+			},
+			{
+				45: "音乐其他"
+			}
+		],
+		"first": {
+			41: "音乐"
+		}
+	},
+	{
+		"second": [],
+		"first": {
+			46: "舞蹈"
+		}
+	},
+	{
+		"second": [{
+				49: "美食教程"
+			},
+			{
+				50: "美食探店"
+			},
+			{
+				51: "吃播大胃王"
+			},
+			{
+				52: "美食产品测评"
+			},
+			{
+				53: "乡村野食"
+			},
+			{
+				54: "美食其他"
+			}
+		],
+		"first": {
+			48: "美食"
+		}
+	},
+	{
+		"second": [{
+				119: "真人出镜"
+			},
+			{
+				120: "游戏实况"
+			},
+			{
+				121: "游戏剧情"
+			},
+			{
+				122: "游戏解说"
+			},
+			{
+				123: "游戏资讯"
+			}
+		],
+		"first": {
+			23: "游戏"
+		}
+	},
+	{
+		"second": [{
+				28: "旅行记录"
+			},
+			{
+				29: "旅行攻略"
+			},
+			{
+				30: "旅行推荐"
+			}
+		],
+		"first": {
+			27: "旅行"
+		}
+	},
+	{
+		"second": [{
+				32: "汽车测评"
+			},
+			{
+				33: "汽车知识"
+			},
+			{
+				34: "汽车周边"
+			}
+		],
+		"first": {
+			31: "汽车"
+		}
+	},
+	{
+		"second": [{
+				39: "生活小窍门"
+			},
+			{
+				40: "好物推荐"
+			},
+			{
+				118: "健康养生"
+			}
+		],
+		"first": {
+			36: "生活"
+		}
+	},
+	{
+		"second": [{
+				16: "美妆测评"
+			},
+			{
+				17: "3C数码测评"
+			},
+			{
+				18: "汽车测评"
+			},
+			{
+				19: "美食产品测评"
+			},
+			{
+				20: "母婴产品测评"
+			},
+			{
+				21: "综合测评"
+			}
+		],
+		"first": {
+			15: "测评"
+		}
+	},
+	{
+		"second": [{
+				125: "二次元真人"
+			},
+			{
+				126: "动画漫画"
+			},
+			{
+				127: "配音声优"
+			},
+			{
+				128: "宅物手办"
+			}
+		],
+		"first": {
+			25: "二次元"
+		}
+	},
+	{
+		"second": [{
+				56: "育儿科普"
+			},
+			{
+				57: "萌娃日常"
+			},
+			{
+				58: "亲子互动"
+			},
+			{
+				59: "测评种草"
+			}
+		],
+		"first": {
+			55: "母婴亲子"
+		}
+	},
+	{
+		"second": [{
+				65: "3C数码"
+			},
+			{
+				66: "家居电器"
+			}
+		],
+		"first": {
+			64: "科技数码"
+		}
+	},
+	{
+		"second": [{
+				69: "考学培训"
+			},
+			{
+				70: "语言教学"
+			},
+			{
+				71: "个人管理"
+			}
+		],
+		"first": {
+			68: "教育培训"
+		}
+	},
+	{
+		"second": [{
+				61: "健身"
+			},
+			{
+				62: "竞技体育"
+			},
+			{
+				63: "极限运动"
+			}
+		],
+		"first": {
+			60: "运动健身"
+		}
+	},
+	{
+		"second": [{
+				76: "家装设计"
+			},
+			{
+				77: "装修知识"
+			}
+		],
+		"first": {
+			75: "家居家装"
+		}
+	},
+	{
+		"second": [{
+				80: "创意才能"
+			},
+			{
+				81: "手工"
+			},
+			{
+				82: "摄影"
+			},
+			{
+				83: "绘画"
+			},
+			{
+				84: "其他才艺"
+			}
+		],
+		"first": {
+			79: "才艺技能"
+		}
+	},
+	{
+		"second": [],
+		"first": {
+			85: "影视娱乐"
+		}
+	},
+	{
+		"second": [{
+				88: "传统文化"
+			},
+			{
+				89: "人文科普"
+			},
+			{
+				90: "自然科学"
+			}
+		],
+		"first": {
+			87: "艺术文化"
+		}
+	},
+	{
+		"second": [{
+				92: "传统金融"
+			},
+			{
+				93: "互联网金融"
+			},
+			{
+				94: "财经知识"
+			}
+		],
+		"first": {
+			91: "财经投资"
+		}
+	},
+	{
+		"second": [],
+		"first": {
+			100: "情感"
+		}
+	},
+	{
+		"second": [],
+		"first": {
+			95: "三农"
+		}
+	},
+	{
+		"second": [],
+		"first": {
+			102: "园艺"
+		}
+	}
+]
