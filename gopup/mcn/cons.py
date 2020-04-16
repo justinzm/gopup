@@ -12,11 +12,34 @@ STAR_HOT_URL = {
     "抖音达人热榜-星图指数榜-全部": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=2fed15d4bd4ced9f29081b6636529be3",
     "抖音达人热榜-星图指数榜-颜值达人": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E9%A2%9C%E5%80%BC%E8%BE%BE%E4%BA%BA&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=dd13e4123f98b324a180bab753bc628c",
     "抖音达人热榜-星图指数榜-剧情搞笑": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E5%89%A7%E6%83%85%E6%90%9E%E7%AC%91&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=ad12718bce3776998bb250bc4cd3a6a9",
-    "抖音达人热榜-星图指数榜-美妆": "",
+    "抖音达人热榜-星图指数榜-美妆": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E7%BE%8E%E5%A6%86&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=ff2e737d9008f495347908924878aaaf",
+    "抖音达人热榜-星图指数榜-时尚": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E6%97%B6%E5%B0%9A&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=6f4ba341c3744daabf0456d482d11dc9",
+    "抖音达人热榜-星图指数榜-萌宠": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E8%90%8C%E5%AE%A0&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=e42e33dbff38f86e086a92d4a7c701ad",
+    "抖音达人热榜-星图指数榜-音乐": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E9%9F%B3%E4%B9%90&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=458e07ea4f387008dc21a4a4321ece76",
+    "抖音达人热榜-星图指数榜-舞蹈": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E8%88%9E%E8%B9%88&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=58df0a68bbc790f1f7a72cb366ef774f",
+    "抖音达人热榜-星图指数榜-美食": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E7%BE%8E%E9%A3%9F&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=109060a3de7154dfeeb7bbb3d71c815a",
+    "抖音达人热榜-星图指数榜-游戏": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E6%B8%B8%E6%88%8F&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=3c0bbcb5a77af35e89d5a3f4c1f27d6e",
+    "抖音达人热榜-星图指数榜-旅行": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E6%97%85%E8%A1%8C&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=8ad4e0f8d311331679df0ee4ee0e2222",
+    "抖音达人热榜-星图指数榜-汽车": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E6%B1%BD%E8%BD%A6&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=576874d80792429288226e1eeb3d8fe3",
+    "抖音达人热榜-星图指数榜-生活": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E7%94%9F%E6%B4%BB&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=f4afdc41eff79a011c15240aafe699ad",
+    "抖音达人热榜-星图指数榜-测评": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E6%B5%8B%E8%AF%84&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=13d3b98b4ed53cd4bd94b484f05f6fb8",
+    "抖音达人热榜-星图指数榜-二次元": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E4%BA%8C%E6%AC%A1%E5%85%83&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=94f85ba5e09faa8f44e73281add376dd",
+    "抖音达人热榜-星图指数榜-母婴亲子": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E6%AF%8D%E5%A9%B4%E4%BA%B2%E5%AD%90&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=bbfe3df3e4723905aa1ce85f8d517d92",
+    "抖音达人热榜-星图指数榜-科技数码": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E7%A7%91%E6%8A%80%E6%95%B0%E7%A0%81&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=2c5f2fd675f1a2c6b4489753fc19f417",
+    "抖音达人热榜-星图指数榜-教育培训": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E6%95%99%E8%82%B2%E5%9F%B9%E8%AE%AD&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=209545266b0ab86277602f6bf366bffa",
+    "抖音达人热榜-星图指数榜-运动健身": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E8%BF%90%E5%8A%A8%E5%81%A5%E8%BA%AB&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=83aed6604a6bd57b8b24b0315e02669a",
+    "抖音达人热榜-星图指数榜-家居家装": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E5%AE%B6%E5%B1%85%E5%AE%B6%E8%A3%85&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=253a39d7354fdfeda434b71f521db36c",
+    "抖音达人热榜-星图指数榜-才艺技能": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E6%89%8D%E8%89%BA%E6%8A%80%E8%83%BD&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=2b2635b3697700078a79c716cb019d61",
+    "抖音达人热榜-星图指数榜-影视娱乐": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E5%BD%B1%E8%A7%86%E5%A8%B1%E4%B9%90&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=d2b2e189aec4c6349ad2980d0279da6e",
+    "抖音达人热榜-星图指数榜-艺术文化": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E8%89%BA%E6%9C%AF%E6%96%87%E5%8C%96&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=4b1191492b150415e331da02c69c0b10",
+    "抖音达人热榜-星图指数榜-财经投资": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E8%B4%A2%E7%BB%8F%E6%8A%95%E8%B5%84&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=313239b33b29720e752698033d72e0ce",
+    "抖音达人热榜-星图指数榜-情感": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E6%83%85%E6%84%9F&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=be47713df317e09574b0a7e880e3cec2",
+    "抖音达人热榜-星图指数榜-三农": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E4%B8%89%E5%86%9C&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=23c34c6b6a480c5a292e76eced7b5252",
+    "抖音达人热榜-星图指数榜-园艺": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6766936376500813837&tag=%E5%9B%AD%E8%89%BA&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=929bfc99bbfd53c671e7538a5d0e3951",
+
     "抖音达人热榜-种草指数榜-全部": "https://star.toutiao.com/h/api/gateway/handler_get/?hot_list_id=6758055829141717005&tag=&service_name=author.AdStarAuthorService&service_method=GetHotListData&sign=e4476e7c0d875d205f6b36b8d3bc2da0",
 
 }
-
 
 STAR_MARKET_DOUYIN_CATEGORY = [
     {

@@ -40,10 +40,11 @@ def star_hot_list(section, hot_list, category, cookie=None):
     publish_date = r.json()['data']['file_name'][-20:-1]
     data_all = r.json()['data']['stars']
     res_list = []
+    new_rank = 1
     for data in data_all:
         res_dict = {
             "id": data['id'],
-            "new_rank": data['new_rank'],
+            "new_rank": new_rank,
             "nick_name": data['nick_name'],
             "avatar_uri": data['avatar_uri'],
             "province": data.setdefault('province'),
@@ -59,6 +60,7 @@ def star_hot_list(section, hot_list, category, cookie=None):
             "crawler_date": time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
         }
         res_list.append(res_dict)
+        new_rank += 1
     df = pd.DataFrame(res_list)
     return df
 
@@ -131,6 +133,6 @@ def get_star_market_url(category, cookie):
 
 
 if __name__ == "__main__":
-    # tmp = star_hot_list("抖音达人热榜", "种草指数榜", "全部")
-    tmp = star_market_list(category="搞笑")
+    tmp = star_hot_list("抖音达人热榜", "星图指数榜", "财经投资")
+    # tmp = star_market_list(category="搞笑")
     print(tmp)
