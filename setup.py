@@ -12,7 +12,7 @@ import os
 
 URL = 'https://github.com/justinzm/gopup'
 NAME = 'gopup'
-VERSION = '0.1.1'
+VERSION = '0.1.2'
 DESCRIPTION = 'GoPUP database'
 if os.path.exists('README.md'):
     with open('README.md', encoding='utf-8') as f:
@@ -31,7 +31,8 @@ REQUIRES = [
     'demjson',
     'jsonpath',
     'bs4',
-    'Pillow'
+    'Pillow',
+    'matplotlib'
 ]
 # CONSOLE_SCRIPT = 'my-cmd=my_pkg.my_cmd:main'
 # # 如果想在 pip install 之后自动生成一个可执行命令，就靠它了:

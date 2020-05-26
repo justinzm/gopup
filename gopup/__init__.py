@@ -60,3 +60,9 @@ from gopup.economic.marco_cn import (
 #                                   lpr_ma_data)
 
 # from gopup.my_fun import (gopup_test, add_sum)
+
+
+"""
+达人数据
+"""
+# from gopup.mcn.star import (star_hot_list, star_market_list)

@@ -13,7 +13,7 @@ from gopup.mcn import cons
 from gopup.utils.utils import get_fields
 
 
-def star_hot_list(section, hot_list, category, cookie=None):
+def star_hot_list(section, hot_list, category, cookie):
     """
     星图热榜 抖音达人热榜
     :param section:
@@ -22,7 +22,7 @@ def star_hot_list(section, hot_list, category, cookie=None):
     :param cookie:
     :return:
     """
-    cookie = cons.STAR_COOKIE
+    # cookie = cons.STAR_COOKIE
     headers = {
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
         "referer": "https://star.toutiao.com/ad",
@@ -65,7 +65,7 @@ def star_hot_list(section, hot_list, category, cookie=None):
     return df
 
 
-def star_market_list(section="抖音达人", market_list="抖音传播任务", category="全部", cookie=None):
+def star_market_list(section="抖音达人", market_list="抖音传播任务", category="全部", limit=30, page=1, cookie=None):
     """
     达人广场 抖音达人
     :param section:
@@ -74,25 +74,20 @@ def star_market_list(section="抖音达人", market_list="抖音传播任务", c
     :return:
     """
     cookie = cons.STAR_COOKIE
-
-    res_url, total_count = get_star_market_url(category, cookie)
+    res_url = get_star_market_url(category, cookie)
 
     headers = {
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
         "referer": "https://star.toutiao.com/ad",
         "cookie": cookie
     }
-    limit = 30
-    authors = []
-    pages = math.ceil(total_count/30)
-    for page in range(pages):
-        page = page + 1
-        print(page)
-        url = res_url % (limit, page)
-        r = requests.get(url, headers=headers)
-        authors += r.json()['data']['authors']
-        print(len(r.json()['data']['authors']))
-    pass
+    url = res_url % (limit, page)
+    r = requests.get(url, headers=headers)
+    try:
+        res = r.json()['data']['authors']
+    except:
+        return {"msg": "cookie已经过期", "code": 401}
+    return res
 
 
 def get_star_market_url(category, cookie):
@@ -120,19 +115,20 @@ def get_star_market_url(category, cookie):
                         url = "https://star.toutiao.com/v/api/demand/author_list/?limit=%s&need_detail=true&page=1&platform_source=1&task_category=1&tag=%s&tag_level_two=%s&order_by=score" % (limit, tag, tag_level_two)
                         res_url = "https://star.toutiao.com/v/api/demand/author_list/?limit=%s&need_detail=true&page=%s&platform_source=1&task_category=1&tag="+str(tag)+"&tag_level_two="+str(tag_level_two)+"&order_by=score"
 
-    headers = {
-        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
-        "referer": "https://star.toutiao.com/ad",
-        "cookie": cookie
-    }
+    # headers = {
+    #     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
+    #     "referer": "https://star.toutiao.com/ad",
+    #     "cookie": cookie
+    # }
+    #
+    # r = requests.get(url, headers=headers)
+    # total_count = r.json()['data']['pagination']['total_count']
 
-    r = requests.get(url, headers=headers)
-    total_count = r.json()['data']['pagination']['total_count']
-
-    return res_url, total_count
+    # return res_url, total_count
+    return res_url
 
 
 if __name__ == "__main__":
-    tmp = star_hot_list("抖音达人热榜", "星图指数榜", "财经投资")
-    # tmp = star_market_list(category="搞笑")
+    # tmp = star_hot_list("抖音达人热榜", "星图指数榜", "财经投资")
+    tmp = star_market_list(category="搞笑", limit=30, page=1)
     print(tmp)
