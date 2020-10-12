@@ -6,7 +6,7 @@
 #### 升级方法
     pip install gopup --upgrade
 
-GoPUP 支持Python 3.6+，旨在使获取数据尽可能方便。
+GoPUP 支持Python 3.7+，旨在使获取数据尽可能方便。
 
 文档：[中文文档](https://gopup-cookbook.readthedocs.io) 
 
@@ -19,6 +19,11 @@ GoPUP 支持Python 3.6+，旨在使获取数据尽可能方便。
     - 百度媒体指数
 - 宏观数据
     - 中国宏观数据
+- 利率数据
+    - Shibor数据
+    - 报价数据
+    - Shibor均值数据
+    - LPR数据
 - 疫情数据
     - 网易疫情数据
     - 丁香园疫情数据

@@ -53,7 +53,7 @@ MONEY_SUPPLY_COLS = ['month','m2','m2_yoy','m1','m1_yoy','m0','m0_yoy','cd','cd_
 MONEY_SUPPLY_BLA_COLS = ['year','m2','m1','m0','cd','qm','ftd','sd','rests']
 GOLD_AND_FOREIGN_CURRENCY_RESERVES = ['month','gold','foreign_reserves']
 
-SHIBOR_DATA_URL = '%s%s/shibor/web/html/%s?nameNew=Historical_%s_Data_%s.xls&downLoadPath=data&nameOld=%s%s.xls&shiborSrc=http://www.shibor.org/shibor/'
+SHIBOR_DATA_URL = 'http://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis'
 
 SHIBOR_COLS = ['date', 'ON', '1W', '2W', '1M', '3M', '6M', '9M', '1Y']
 SHIBOR_Q_COLS = ['date', 'bank', 'ON', '1W', '2W', '1M', '3M', '6M', '9M', '1Y']
@@ -67,3 +67,4 @@ def random(n=13):
     start = 10**(n-1)
     end = (10**n)-1
     return str(randint(start, end))
+

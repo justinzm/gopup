@@ -55,9 +55,8 @@ from gopup.economic.marco_cn import (
 """
 利率数据
 """
-# from gopup.economic.shibor import (shibor_data, shibor_quote_data,
-#                                   shibor_ma_data, lpr_data,
-#                                   lpr_ma_data)
+from gopup.economic.shibor import (shibor_data, shibor_quote_data,
+                                  shibor_ma_data, lpr_data)
 
 # from gopup.my_fun import (gopup_test, add_sum)
 

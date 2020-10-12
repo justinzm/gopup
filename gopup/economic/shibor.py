@@ -5,6 +5,7 @@
 # @File    : shibor.py
 # @Desc    : 利率数据
 # 上海银行间同业拆放利率（Shibor）数据接口
+import json
 
 import pandas as pd
 import numpy as np
@@ -118,71 +119,85 @@ def shibor_quote_data(year=None):
         return None
 
 
-# def shibor_ma_data(year=None):
-#     """
-#     获取Shibor均值数据
-#     Parameters
-#     ------
-#       year:年份(int)
-#
-#     Return
-#     ------
-#     date:日期
-#        其它分别为各周期5、10、20均价
-#     """
-#     year = du.get_year() if year is None else year
-#     lab = ct.SHIBOR_TYPE['Tendency']
-#     lab = lab.encode('utf-8') if ct.PY3 else lab
-#     try:
-#         clt = Client(url=ct.SHIBOR_DATA_URL % (ct.P_TYPE['http'], ct.DOMAINS['shibor'],
-#                                                ct.PAGES['dw'], 'Shibor_Tendency',
-#                                                year, lab,
-#                                                year))
-#         content = clt.gvalue()
-#         df = pd.read_excel(StringIO(content), skiprows=[0])
-#         df.columns = ct.SHIBOR_MA_COLS
-#         df['date'] = df['date'].map(lambda x: x.date())
-#         if pd.__version__ < '0.21':
-#             df['date'] = df['date'].astype(np.datetime64)
-#         else:
-#             df['date'] = df['date'].astype('datetime64[D]')
-#         return df
-#     except:
-#         return None
-#
-#
-# def lpr_data(year=None):
-#     """
-#     获取贷款基础利率（LPR）
-#     Parameters
-#     ------
-#       year:年份(int)
-#
-#     Return
-#     ------
-#     date:日期
-#     1Y:1年贷款基础利率
-#     """
-#     year = du.get_year() if year is None else year
-#     lab = ct.SHIBOR_TYPE['LPR']
-#     lab = lab.encode('utf-8') if ct.PY3 else lab
-#     try:
-#         clt = Client(url=ct.SHIBOR_DATA_URL % (ct.P_TYPE['http'], ct.DOMAINS['shibor'],
-#                                                ct.PAGES['dw'], 'LPR',
-#                                                year, lab,
-#                                                year))
-#         content = clt.gvalue()
-#         df = pd.read_excel(StringIO(content), skiprows=[0])
-#         df.columns = ct.LPR_COLS
-#         df['date'] = df['date'].map(lambda x: x.date())
-#         if pd.__version__ < '0.21':
-#             df['date'] = df['date'].astype(np.datetime64)
-#         else:
-#             df['date'] = df['date'].astype('datetime64[D]')
-#         return df
-#     except:
-#         return None
-#
+def shibor_ma_data(year=None):
+    """
+    获取Shibor均值数据
+    Parameters
+    ------
+      year:年份(int)
+
+    Return
+    ------
+    date:日期
+       其它分别为各周期5、10、20均价
+    """
+    year = du.get_year() if year is None else year
+    lab = cons.SHIBOR_TYPE['Tendency']
+    try:
+        url = cons.SHIBOR_DATA_URL % (cons.P_TYPE['http'], cons.DOMAINS['shibor'],
+                                               cons.PAGES['dw'], 'Shibor_Tendency',
+                                               year, lab,
+                                               year)
+        herder = {
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3",
+            "Accept-Encoding": "gzip, deflate",
+            "Connection": "keep-alive"
+        }
+
+        r = requests.get(url, headers=herder)
+        df = pd.read_excel(r.content)
+        df.columns = cons.SHIBOR_MA_COLS
+
+        df['date'] = df['date'].map(lambda x: x.date())
+        if pd.__version__ < '0.21':
+            df['date'] = df['date'].astype(np.datetime64)
+        else:
+            df['date'] = df['date'].astype('datetime64[D]')
+        return df
+    except:
+        return None
+
+
+def lpr_data(startDate, endDate):
+    """
+    获取贷款市场报价利率（LPR）
+    Parameters
+    ------
+      startDate:起止日期(str)
+      endDate:截止日期(str)
+
+    Return
+    ------
+    showDateCN:日期
+    1Y:1年贷款基础利率
+    5Y:5年贷款基础利率
+    """
+
+    try:
+        url = cons.SHIBOR_DATA_URL
+
+        herder = {
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3",
+            "Accept-Encoding": "gzip, deflate",
+            "Connection": "keep-alive"
+        }
+
+        data = {
+            "lang": "CN",
+            "strStartDate": startDate,
+            "strEndDate": endDate
+        }
+
+        r = requests.post(url, data=data, headers=herder)
+        data_dict = json.loads(r.text)['records']
+        df = pd.DataFrame(data_dict)
+
+        return df
+    except:
+        return None
+
 #
 # def lpr_ma_data(year=None):
 #     """
@@ -220,6 +235,6 @@ def shibor_quote_data(year=None):
 
 
 if __name__ == "__main__":
-    shibor_quote_data('2019')
+    lpr_data(startDate="2018-01-01", endDate="2018-06-30")
  
 
