@@ -175,7 +175,7 @@ def lpr_data(startDate, endDate):
     """
 
     try:
-        url = cons.SHIBOR_DATA_URL
+        url = cons.LPR_DATA_URL
 
         herder = {
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -235,6 +235,6 @@ def lpr_data(startDate, endDate):
 
 
 if __name__ == "__main__":
-    lpr_data(startDate="2018-01-01", endDate="2018-06-30")
+    lpr_data(startDate="2020-09-01", endDate="2020-09-30")
  
 
