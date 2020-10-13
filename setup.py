@@ -10,14 +10,14 @@ import os
 
 URL = 'https://github.com/justinzm/gopup'
 NAME = 'gopup'
-VERSION = '0.1.4'
+VERSION = '0.1.6'
 DESCRIPTION = 'GoPUP database'
 if os.path.exists('README.md'):
     with open('README.md', encoding='utf-8') as f:
         LONG_DESCRIPTION = f.read()
 else:
     LONG_DESCRIPTION = DESCRIPTION
-AUTHOR = 'Justin Zm'
+AUTHOR = 'Justin ZM'
 AUTHOR_EMAIL = '3907721@qq.com'
 LICENSE = 'MIT'
 PLATFORMS = [

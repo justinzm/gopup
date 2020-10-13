@@ -3,12 +3,6 @@ GoPup 是基于 Python 的开源金融数据接口库, 目的是实现对金融�
 它的特点是利用 GoPup 获取的是基于可信任数据源发布的原始数据, 广大数据科学家可以利用原始数据进行再加工, 从而得出科学的结论.
 """
 
-
-"""
-谷歌指数
-"""
-# from gopup.index.index_google import google_index
-
 """
 百度指数
 """
@@ -55,8 +49,27 @@ from gopup.economic.marco_cn import (
 """
 利率数据
 """
-from gopup.economic.shibor import (shibor_data, shibor_quote_data,
-                                  shibor_ma_data, lpr_data)
+from gopup.economic.shibor import (
+    shibor_data,
+    shibor_quote_data,
+    shibor_ma_data,
+    lpr_data
+)
+
+"""
+新经济公司
+"""
+from gopup.fortune.itjuzi import (
+    death_company,
+    nicorn_company,
+    maxima_company
+)
+
+"""
+商业特许经营信息
+"""
+from gopup.fortune.franchise import franchise_china
+
 
 # from gopup.my_fun import (gopup_test, add_sum)
 

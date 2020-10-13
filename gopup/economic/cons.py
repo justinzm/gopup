@@ -54,6 +54,7 @@ MONEY_SUPPLY_BLA_COLS = ['year','m2','m1','m0','cd','qm','ftd','sd','rests']
 GOLD_AND_FOREIGN_CURRENCY_RESERVES = ['month','gold','foreign_reserves']
 
 SHIBOR_DATA_URL = '%s%s/shibor/web/html/%s?nameNew=Historical_%s_Data_%s.xls&downLoadPath=data&nameOld=%s%s.xls&shiborSrc=http://www.shibor.org/shibor/'
+
 LPR_DATA_URL = 'http://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/LprHis'
 
 SHIBOR_COLS = ['date', 'ON', '1W', '2W', '1M', '3M', '6M', '9M', '1Y']

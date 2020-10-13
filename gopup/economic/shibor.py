@@ -59,8 +59,8 @@ def shibor_data(year=None):
         # else:
         #     df['date'] = df['date'].astype('datetime64[D]')
         return df
-    except:
-        return None
+    except Exception as e:
+        return str(e)
 
 
 def shibor_quote_data(year=None):
@@ -148,7 +148,6 @@ def shibor_ma_data(year=None):
         r = requests.get(url, headers=herder)
         df = pd.read_excel(r.content)
         df.columns = cons.SHIBOR_MA_COLS
-
         df['date'] = df['date'].map(lambda x: x.date())
         if pd.__version__ < '0.21':
             df['date'] = df['date'].astype(np.datetime64)
@@ -235,6 +234,6 @@ def lpr_data(startDate, endDate):
 
 
 if __name__ == "__main__":
-    lpr_data(startDate="2020-09-01", endDate="2020-09-30")
+    shibor_data(2019)
  
 
