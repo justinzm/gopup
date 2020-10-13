@@ -29,7 +29,7 @@
                 "sha256:53165a6596e7899c4338d847315fec508110a53bd6fd15c127c2e0d0860264e3",
                 "sha256:f8dfd8a7e26443e986c4e44df31870da8e906ea61096af06ba5d5cc2d519842a"
             ],
-            "version": "==3.1.3"
+            "version": ">=3.1.4"
         },
         "bs4": {
             "hashes": [
