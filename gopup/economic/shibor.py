@@ -60,7 +60,7 @@ def shibor_data(year=None):
         #     df['date'] = df['date'].astype('datetime64[D]')
         return df
     except Exception as e:
-        return str(e)
+        return None
 
 
 def shibor_quote_data(year=None):
