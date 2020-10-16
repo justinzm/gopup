@@ -15,6 +15,9 @@ bs4 = "*"
 pil = "*"
 pillow = "*"
 xlrd = "*"
+pyquery = "*"
+execjs = "*"
+pyexecjs = "*"
 
 [requires]
 python_version = "3.7"

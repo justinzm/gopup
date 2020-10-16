@@ -77,6 +77,16 @@ def day_last_week(days=-7):
     return str(lasty)
 
 
+def day_last_date(date, days=-1):
+    """
+    获得某天的之前一天日期
+    :param date: 日期
+    """
+    dd = datetime.datetime.strptime(date, "%Y-%m-%d")
+    lasty = dd + datetime.timedelta(days)
+    return str(lasty)[0:10]
+
+
 def get_now():
     """
     获得当前时间
@@ -163,6 +173,7 @@ def get_q_date(year=None, quarter=None):
  
 
 if __name__ == "__main__":
-    tmp = tt_dates('2017-03-27', '2021-03-30')
+    tmp = day_last_date('2017-03-27')
+    # tmp = tt_dates('2017-03-27', '2021-03-30')
     print(tmp)
 
