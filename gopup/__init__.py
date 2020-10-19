@@ -19,6 +19,12 @@ from gopup.index.index_weibo import weibo_index
 
 
 """
+谷歌指数
+"""
+from gopup.index.index_google import google_fact_check
+
+
+"""
 百度迁徙地图接口
 """
 from gopup.event.area_baidu import migration_area_baidu
@@ -39,9 +45,19 @@ from gopup.event.covid import (
 中国宏观数据
 """
 from gopup.economic.marco_cn import (
-    marco_cmlrd, get_gdp_year, get_gdp_quarter, get_gdp_for,
-    get_gdp_pull, get_gdp_contrib, get_cpi, get_ppi, get_deposit_rate,
-    get_loan_rate, get_rrr, get_money_supply, get_money_supply_bal,
+    marco_cmlrd,
+    get_gdp_year,
+    get_gdp_quarter,
+    get_gdp_for,
+    get_gdp_pull,
+    get_gdp_contrib,
+    get_cpi,
+    get_ppi,
+    get_deposit_rate,
+    get_loan_rate,
+    get_rrr,
+    get_money_supply,
+    get_money_supply_bal,
     get_gold_and_foreign_reserves
 )
 

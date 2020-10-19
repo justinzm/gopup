@@ -12,3 +12,4 @@ def get_fields(fields, label):
         if res_dict['label'] == label:
             return res_dict['value']
     return ""
+

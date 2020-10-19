@@ -18,6 +18,7 @@ xlrd = "*"
 pyquery = "*"
 execjs = "*"
 pyexecjs = "*"
+xlwt = "*"
 
 [requires]
 python_version = "3.7"
