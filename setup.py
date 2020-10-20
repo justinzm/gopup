@@ -10,7 +10,7 @@ import os
 
 URL = 'https://github.com/justinzm/gopup'
 NAME = 'gopup'
-VERSION = '0.2.0'
+VERSION = '0.2.1'
 DESCRIPTION = 'GoPUP database'
 if os.path.exists('README.md'):
     with open('README.md', encoding='utf-8') as f:
@@ -32,7 +32,7 @@ REQUIRES = [
     'Pillow',
     'matplotlib',
     'xlrd',
-    'execjs',
+    'pyexecjs',
     'pyquery'
 ]
 # CONSOLE_SCRIPT = 'my-cmd=my_pkg.my_cmd:main'

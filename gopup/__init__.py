@@ -87,6 +87,20 @@ from gopup.fortune.itjuzi import (
 from gopup.fortune.franchise import franchise_china
 
 
+"""
+影视数据
+"""
+from gopup.movie.movie import (
+    realtime_boxoffice,
+    day_boxoffice,
+    day_cinema,
+    realtime_tv,
+    realtime_show,
+    realtime_artist,
+    realtime_artist_flow
+)
+
+
 # from gopup.my_fun import (gopup_test, add_sum)
 
 

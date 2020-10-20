@@ -16,9 +16,9 @@ pil = "*"
 pillow = "*"
 xlrd = "*"
 pyquery = "*"
-execjs = "*"
 pyexecjs = "*"
 xlwt = "*"
+pyexejs = "*"
 
 [requires]
 python_version = "3.7"

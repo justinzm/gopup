@@ -20,7 +20,7 @@ class DataApi:
         """
         self._token = token
         self._timeout = timeout
-        self._http_url = 'http://api.gopup.cn'
+        self._http_url = 'http://www.gopup.cn/api/v1'
 
     def query(self, api_name, fields='', **kwargs):
         req_params = {

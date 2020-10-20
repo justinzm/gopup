@@ -7,6 +7,8 @@
 # EBOT艺恩票房智库 https://www.endata.com.cn
 
 import json
+import os
+
 import pandas as pd
 import requests
 import execjs
@@ -46,8 +48,8 @@ def realtime_boxoffice():
             res_pd = pd.DataFrame(tmp)
             res_pd = res_pd.drop(columns=['moblie_url', 'larger_url', 'mId', 'MovieImg'])
         return res_pd
-    except:
-        return "Python运行execjs中出现编码问题: https://www.jianshu.com/p/df0000013254"
+    except Exception as e:
+        return str(e)
 
 
 def day_boxoffice(date=None):
@@ -93,8 +95,8 @@ def day_boxoffice(date=None):
             res_pd = pd.DataFrame(tmp)
             res_pd = res_pd.drop(columns=['MovieImg', 'moblie_url', 'larger_url', 'MovieID', 'Director', 'BoxOffice1', 'IRank_pro', 'RapIndex'])
         return res_pd
-    except:
-        return "Python运行execjs中出现编码问题: https://www.jianshu.com/p/df0000013254"
+    except Exception as e:
+        return str(e)
 
 
 def day_cinema(date=None):
@@ -132,8 +134,8 @@ def day_cinema(date=None):
             res_pd = res_pd.drop(
                 columns=['CinemaID', 'TodayAudienceCount', 'TodayOfferSeat'])
         return res_pd
-    except:
-        return "Python运行execjs中出现编码问题: https://www.jianshu.com/p/df0000013254"
+    except Exception as e:
+        return str(e)
 
 
 def realtime_tv():
@@ -170,8 +172,8 @@ def realtime_tv():
             res_pd = pd.DataFrame(tmp)
             res_pd['date'] = res_dict['Data']['Table1'][0]['MaxDate']
         return res_pd
-    except:
-        return "Python运行execjs中出现编码问题: https://www.jianshu.com/p/df0000013254"
+    except Exception as e:
+        return str(e)
 
 
 def realtime_show():
@@ -208,8 +210,10 @@ def realtime_show():
             res_pd = pd.DataFrame(tmp)
             res_pd['date'] = res_dict['Data']['Table1'][0]['MaxDate']
         return res_pd
-    except:
-        return "Python运行execjs中出现编码问题: https://www.jianshu.com/p/df0000013254"
+    except Exception as e:
+        return str(e)
+
+        # return "Python运行execjs中出现编码问题: https://www.jianshu.com/p/df0000013254"
 
 
 def realtime_artist():
@@ -248,8 +252,8 @@ def realtime_artist():
             res_pd = res_pd.drop(
                 columns=['StarBaseID'])
         return res_pd
-    except:
-        return "Python运行execjs中出现编码问题: https://www.jianshu.com/p/df0000013254"
+    except Exception as e:
+        return str(e)
 
 
 def realtime_artist_flow():
@@ -288,11 +292,12 @@ def realtime_artist_flow():
             res_pd = res_pd.drop(
                 columns=['StarBaseID', 'ReputationIndex_L3', 'BusinessValueIndex_L1'])
         return res_pd
-    except:
-        return "Python运行execjs中出现编码问题: https://www.jianshu.com/p/df0000013254"
+    except Exception as e:
+        return str(e)
 
 
 def get_js(js_url):
+    js_url = _get_js_path(js_url, __file__)
     f = open(js_url, 'r', encoding='UTF-8')
     line = f.readline()
     htmlstr = ''
@@ -302,7 +307,20 @@ def get_js(js_url):
     return htmlstr
 
 
+def _get_js_path(name, module_file):
+    """
+    获取 JS 文件的路径(从模块所在目录查找)
+    :param name: 文件名
+    :param module_file: filename
+    :return: str json_file_path
+    """
+    module_folder = os.path.abspath(os.path.dirname(os.path.dirname(module_file)))
+    module_json_path = os.path.join(module_folder, "movie", name)
+    return module_json_path
+
+
 if __name__ == "__main__":
     # day_cinema("2020-10-17")
-    realtime_artist_flow()
+    tmp = realtime_boxoffice()
+    print(tmp)
 

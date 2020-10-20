@@ -4,7 +4,7 @@
 # @Author  : justin.郑 3907721@qq.com
 # @File    : index_google.py
 # @Desc    : 谷歌相关数据接口
-import json
+
 import ast
 import pandas as pd
 import requests
