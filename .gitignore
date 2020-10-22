@@ -20,3 +20,4 @@ gopup/event/__pycache__/*
 venv/*
 *.pyc
 *.pyc
+.idea/gopup.iml

@@ -100,9 +100,15 @@ from gopup.movie.movie import (
     realtime_artist_flow
 )
 
+"""
+专业版接口
+"""
+from gopup.pro.pro_data import (pro_api)
 
-# from gopup.my_fun import (gopup_test, add_sum)
-
+from gopup.utils.utils_pass import (
+    set_token,
+    get_token
+)
 
 """
 达人数据

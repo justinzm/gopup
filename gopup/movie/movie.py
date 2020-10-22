@@ -37,7 +37,7 @@ def realtime_boxoffice():
             "MethodName": "BoxOffice_GetHourBoxOffice"
         }
         r = requests.post(url=url, data=data, headers=headers)
-        js = get_js('webDES.min.js')
+        js = get_js('webDES.js')
 
         docjs = execjs.compile(js)
         res = docjs.call("webInstace.shell", r.text)
@@ -84,7 +84,7 @@ def day_boxoffice(date=None):
             "MethodName": "BoxOffice_GetDayBoxOffice"
         }
         r = requests.post(url=url, data=data, headers=headers)
-        js = get_js('webDES.min.js')
+        js = get_js('webDES.js')
 
         docjs = execjs.compile(js)
         res = docjs.call("webInstace.shell", r.text)
@@ -122,7 +122,7 @@ def day_cinema(date=None):
             "MethodName": "BoxOffice_GetCinemaDayBoxOffice"
         }
         r = requests.post(url=url, data=data, headers=headers)
-        js = get_js('webDES.min.js')
+        js = get_js('webDES.js')
 
         docjs = execjs.compile(js)
         res = docjs.call("webInstace.shell", r.text)
@@ -161,7 +161,7 @@ def realtime_tv():
             "MethodName": "BoxOffice_GetTvData_PlayIndexRank"
         }
         r = requests.post(url=url, data=data, headers=headers)
-        js = get_js('webDES.min.js')
+        js = get_js('webDES.js')
 
         docjs = execjs.compile(js)
         res = docjs.call("webInstace.shell", r.text)
@@ -199,7 +199,7 @@ def realtime_show():
             "MethodName": "BoxOffice_GetTvData_PlayIndexRank"
         }
         r = requests.post(url=url, data=data, headers=headers)
-        js = get_js('webDES.min.js')
+        js = get_js('webDES.js')
 
         docjs = execjs.compile(js)
         res = docjs.call("webInstace.shell", r.text)
@@ -212,8 +212,6 @@ def realtime_show():
         return res_pd
     except Exception as e:
         return str(e)
-
-        # return "Python运行execjs中出现编码问题: https://www.jianshu.com/p/df0000013254"
 
 
 def realtime_artist():
@@ -240,7 +238,7 @@ def realtime_artist():
             "MethodName": "Data_GetList_Star"
         }
         r = requests.post(url=url, data=data, headers=headers)
-        js = get_js('webDES.min.js')
+        js = get_js('webDES.js')
 
         docjs = execjs.compile(js)
         res = docjs.call("webInstace.shell", r.text)
@@ -280,7 +278,7 @@ def realtime_artist_flow():
             "MethodName": "Data_GetList_Star"
         }
         r = requests.post(url=url, data=data, headers=headers)
-        js = get_js('webDES.min.js')
+        js = get_js('webDES.js')
 
         docjs = execjs.compile(js)
         res = docjs.call("webInstace.shell", r.text)
@@ -320,7 +318,7 @@ def _get_js_path(name, module_file):
 
 
 if __name__ == "__main__":
-    # day_cinema("2020-10-17")
+    # "Python运行execjs中出现编码问题: https://www.jianshu.com/p/df0000013254"
     tmp = realtime_boxoffice()
     print(tmp)
 
