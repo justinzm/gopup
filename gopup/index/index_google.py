@@ -27,12 +27,10 @@ def google_index(keyword="python", start_date="2019-12-01", end_date="2019-12-04
         kw_list, cat=0, timeframe=start_date + " " + end_date, geo="", gprop=""
     )
     search_df = pytrends.interest_over_time()
-    # if plot:
-    #     search_df[keyword].plot()
-    #     plt.legend()
-    #     plt.show()
-    #     return search_df[keyword]
-    return search_df[keyword]
+    search_df['value'] = search_df[keyword]
+    search_df['date'] = search_df.index
+    res_df = search_df.drop(['isPartial', keyword], axis=1)
+    return res_df
 
 
 def google_fact_check(keyword, offset=0, limit=100, hl=None):
@@ -100,7 +98,6 @@ def listToStr(lists):
 
 if __name__ == "__main__":
     google_index_df = google_index(
-        keyword="AI", start_date="2019-12-10T10", end_date="2019-12-10T23", plot=True
-    )
+        keyword="AI", start_date="2019-12-10T10", end_date="2019-12-10T23")
     print(google_index_df)
 
