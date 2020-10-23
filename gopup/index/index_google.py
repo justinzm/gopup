@@ -9,7 +9,30 @@ import ast
 import pandas as pd
 import requests
 from gopup.index.cons import headers
+from gopup.index.google_request import TrendReq
 from gopup.utils.date_utils import int2time
+
+
+def google_index(keyword="python", start_date="2019-12-01", end_date="2019-12-04"):
+    """
+    返回指定区间的谷歌指数
+    :param keyword:
+    :param start_date:  2019-12-10T10
+    :param end_date:    2019-12-10T23
+    :return:
+    """
+    pytrends = TrendReq(hl="en-US", tz=360)
+    kw_list = [keyword]
+    pytrends.build_payload(
+        kw_list, cat=0, timeframe=start_date + " " + end_date, geo="", gprop=""
+    )
+    search_df = pytrends.interest_over_time()
+    # if plot:
+    #     search_df[keyword].plot()
+    #     plt.legend()
+    #     plt.show()
+    #     return search_df[keyword]
+    return search_df[keyword]
 
 
 def google_fact_check(keyword, offset=0, limit=100, hl=None):
@@ -76,5 +99,8 @@ def listToStr(lists):
 
 
 if __name__ == "__main__":
-    google_fact_check(keyword="china", hl="zh")
+    google_index_df = google_index(
+        keyword="AI", start_date="2019-12-10T10", end_date="2019-12-10T23", plot=True
+    )
+    print(google_index_df)
 

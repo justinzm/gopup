@@ -19,9 +19,27 @@ from gopup.index.index_weibo import weibo_index
 
 
 """
+头条指数
+"""
+from gopup.index.index_toutiao import (
+    toutiao_index,
+    toutiao_relation,
+    toutiao_sentiment,
+    toutiao_province,
+    toutiao_city,
+    toutiao_age,
+    toutiao_gender,
+    toutiao_interest_category
+)
+
+
+"""
 谷歌指数
 """
-from gopup.index.index_google import google_fact_check
+from gopup.index.index_google import (
+    google_index,
+    google_fact_check
+)
 
 
 """
