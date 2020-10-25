@@ -655,8 +655,10 @@ def covid_hist_province(province="湖北省"):
 
 if __name__ == "__main__":
     # 历史数据
-    epidemic_hist_city_df = covid_hist_city(city="武汉市")
-    print(epidemic_hist_city_df)
-    epidemic_hist_province_df = covid_hist_province(province="湖北省")
-    print(epidemic_hist_province_df)
+    # epidemic_hist_city_df = covid_hist_province()
+    # print(epidemic_hist_city_df)
+    # epidemic_hist_province_df = covid_hist_province(province="湖北省")
+    # print(epidemic_hist_province_df)
 
+    covid_dxy_df = covid_dxy(indicator="湖北省")
+    print(covid_dxy_df)

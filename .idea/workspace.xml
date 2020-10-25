@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93b7bb07-655b-4d5a-8244-85210ae64a22" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/gopup/index/index_google.py" beforeDir="false" afterPath="$PROJECT_DIR$/gopup/index/index_google.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopup/event/covid.py" beforeDir="false" afterPath="$PROJECT_DIR$/gopup/event/covid.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,106 +27,6 @@
     <SUITE FILE_PATH="coverage/gopup$index_toutiao.coverage" NAME="index_toutiao Coverage Results" MODIFIED="1603432468358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gopup/index" />
     <SUITE FILE_PATH="coverage/gopup$index_google.coverage" NAME="index_google Coverage Results" MODIFIED="1603434807255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gopup/index" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gopup/index/index_baidu.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1361">
-              <caret line="196" column="4" lean-forward="true" selection-start-line="196" selection-start-column="4" selection-end-line="197" selection-end-column="14" />
-              <folding>
-                <element signature="e#162#193#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gopup/index/cons.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="21" column="21" selection-start-line="21" selection-end-line="21" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/setup.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gopup/index/index_weibo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="37" column="4" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="38" selection-end-column="13" />
-              <folding>
-                <element signature="e#160#169#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gopup/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="239">
-                <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gopup/index/index_google.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="35" column="59" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="59" />
-              <folding>
-                <element signature="e#164#174#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gopup/index/google_request.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gopup/index/index_toutiao.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="203" column="4" selection-start-line="203" selection-start-column="4" selection-end-line="203" selection-end-column="49" />
-              <folding>
-                <element signature="e#161#172#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -133,86 +34,12 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>encoding</find>
-      <find>11hh1kcl9t</find>
-      <find>台灣事實查核中心 rating</find>
-      <find>python_file_name</find>
-      <find>Retry</find>
-      <find>plt</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/example/test.py" />
-        <option value="$PROJECT_DIR$/gopup/movie/movie.py" />
-        <option value="$PROJECT_DIR$/gopup/stock/classifying.py" />
-        <option value="$PROJECT_DIR$/gopup/pro/client.py" />
-        <option value="$PROJECT_DIR$/gopup/index/google_request.py" />
-        <option value="$PROJECT_DIR$/gopup/index/index_weibo.py" />
-        <option value="$PROJECT_DIR$/gopup/index/cons.py" />
-        <option value="$PROJECT_DIR$/gopup/__init__.py" />
-        <option value="$PROJECT_DIR$/gopup/index/index_toutiao.py" />
-        <option value="$PROJECT_DIR$/setup.py" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/gopup/index/index_google.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1448" />
-    <option name="y" value="-140" />
-    <option name="width" value="1456" />
-    <option name="height" value="886" />
   </component>
   <component name="ProjectId" id="1ZjvmDpwCizkOvGTZahLQ20DQnu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="gopup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gopup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gopup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gopup" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gopup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gopup" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gopup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gopup" type="462c0819:PsiDirectoryNode" />
-              <item name="gopup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gopup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gopup" type="462c0819:PsiDirectoryNode" />
-              <item name="gopup" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -237,20 +64,8 @@
       <recent name="D:\pythonFile\gopup\gopup\utils" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.index_google">
-    <configuration name="date_utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.covid">
+    <configuration name="covid" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gopup" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -258,12 +73,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gopup/utils" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gopup/event" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gopup/utils/date_utils.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gopup/event/covid.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -362,15 +176,15 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.covid" />
         <item itemvalue="Python.index_google" />
         <item itemvalue="Python.index_toutiao" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.movie" />
-        <item itemvalue="Python.date_utils" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -420,99 +234,88 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-1448" y="-140" width="1456" height="886" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19340974" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42952126" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.47340426" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.27260637" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.3295129" />
-      <window_info anchor="right" id="Database" order="4" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1659" height="486" key="GridCell.Tab.0.bottom" timestamp="1603185670685">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state x="417" y="75" key="CommitChangelistDialog2" timestamp="1603593972388">
+      <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="242" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1602596968759" />
+    <state x="417" y="75" key="CommitChangelistDialog2/0.23.1680.960@0.23.1680.960" timestamp="1603593972388" />
+    <state width="1659" height="361" key="GridCell.Tab.0.bottom" timestamp="1603636280047">
+      <screen x="0" y="23" width="1680" height="960" />
+    </state>
+    <state width="1659" height="361" key="GridCell.Tab.0.bottom/0.23.1680.960@0.23.1680.960" timestamp="1603594251676" />
+    <state width="1659" height="361" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1603636280047" />
     <state width="1899" height="432" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1602558371333" />
     <state width="1659" height="486" key="GridCell.Tab.0.bottom/1680.23.1920.990/0.23.1680.1027@0.23.1680.1027" timestamp="1603185670685" />
     <state width="1899" height="237" key="GridCell.Tab.0.bottom/1680.23.1920.990/0.23.1680.1027@1680.23.1920.990" timestamp="1602595956726" />
-    <state width="1659" height="486" key="GridCell.Tab.0.center" timestamp="1603185670684">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1659" height="361" key="GridCell.Tab.0.center" timestamp="1603636280046">
+      <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="242" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1602596968759" />
+    <state width="1659" height="361" key="GridCell.Tab.0.center/0.23.1680.960@0.23.1680.960" timestamp="1603594251675" />
+    <state width="1659" height="361" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1603636280046" />
     <state width="1899" height="432" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1602558371332" />
     <state width="1659" height="486" key="GridCell.Tab.0.center/1680.23.1920.990/0.23.1680.1027@0.23.1680.1027" timestamp="1603185670684" />
     <state width="1899" height="237" key="GridCell.Tab.0.center/1680.23.1920.990/0.23.1680.1027@1680.23.1920.990" timestamp="1602595956725" />
-    <state width="1659" height="486" key="GridCell.Tab.0.left" timestamp="1603185670684">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1659" height="361" key="GridCell.Tab.0.left" timestamp="1603636280046">
+      <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="242" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1602596968758" />
+    <state width="1659" height="361" key="GridCell.Tab.0.left/0.23.1680.960@0.23.1680.960" timestamp="1603594251675" />
+    <state width="1659" height="361" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1603636280046" />
     <state width="1899" height="432" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1602558371331" />
     <state width="1659" height="486" key="GridCell.Tab.0.left/1680.23.1920.990/0.23.1680.1027@0.23.1680.1027" timestamp="1603185670684" />
     <state width="1899" height="237" key="GridCell.Tab.0.left/1680.23.1920.990/0.23.1680.1027@1680.23.1920.990" timestamp="1602595956725" />
-    <state width="1659" height="486" key="GridCell.Tab.0.right" timestamp="1603185670685">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1659" height="361" key="GridCell.Tab.0.right" timestamp="1603636280047">
+      <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="242" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1602596968759" />
+    <state width="1659" height="361" key="GridCell.Tab.0.right/0.23.1680.960@0.23.1680.960" timestamp="1603594251675" />
+    <state width="1659" height="361" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1603636280047" />
     <state width="1899" height="432" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1602558371332" />
     <state width="1659" height="486" key="GridCell.Tab.0.right/1680.23.1920.990/0.23.1680.1027@0.23.1680.1027" timestamp="1603185670685" />
     <state width="1899" height="237" key="GridCell.Tab.0.right/1680.23.1920.990/0.23.1680.1027@1680.23.1920.990" timestamp="1602595956726" />
-    <state width="1659" height="486" key="GridCell.Tab.1.bottom" timestamp="1603185670686">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1659" height="448" key="GridCell.Tab.1.bottom" timestamp="1603636280042">
+      <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="242" key="GridCell.Tab.1.bottom/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1602596968760" />
+    <state width="1659" height="448" key="GridCell.Tab.1.bottom/0.23.1680.960@0.23.1680.960" timestamp="1603594210246" />
+    <state width="1659" height="448" key="GridCell.Tab.1.bottom/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1603636280042" />
     <state width="1899" height="432" key="GridCell.Tab.1.bottom/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1602558371334" />
     <state width="1659" height="486" key="GridCell.Tab.1.bottom/1680.23.1920.990/0.23.1680.1027@0.23.1680.1027" timestamp="1603185670686" />
     <state width="1899" height="432" key="GridCell.Tab.1.bottom/1680.23.1920.990/0.23.1680.1027@1680.23.1920.990" timestamp="1602560866302" />
-    <state width="1659" height="486" key="GridCell.Tab.1.center" timestamp="1603185670686">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1659" height="448" key="GridCell.Tab.1.center" timestamp="1603636280041">
+      <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="242" key="GridCell.Tab.1.center/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1602596968759" />
+    <state width="1659" height="448" key="GridCell.Tab.1.center/0.23.1680.960@0.23.1680.960" timestamp="1603594210246" />
+    <state width="1659" height="448" key="GridCell.Tab.1.center/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1603636280041" />
     <state width="1899" height="432" key="GridCell.Tab.1.center/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1602558371333" />
     <state width="1659" height="486" key="GridCell.Tab.1.center/1680.23.1920.990/0.23.1680.1027@0.23.1680.1027" timestamp="1603185670686" />
     <state width="1899" height="432" key="GridCell.Tab.1.center/1680.23.1920.990/0.23.1680.1027@1680.23.1920.990" timestamp="1602560866301" />
-    <state width="1659" height="486" key="GridCell.Tab.1.left" timestamp="1603185670685">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1659" height="448" key="GridCell.Tab.1.left" timestamp="1603636280041">
+      <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="242" key="GridCell.Tab.1.left/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1602596968759" />
+    <state width="1659" height="448" key="GridCell.Tab.1.left/0.23.1680.960@0.23.1680.960" timestamp="1603594210246" />
+    <state width="1659" height="448" key="GridCell.Tab.1.left/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1603636280041" />
     <state width="1899" height="432" key="GridCell.Tab.1.left/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1602558371333" />
     <state width="1659" height="486" key="GridCell.Tab.1.left/1680.23.1920.990/0.23.1680.1027@0.23.1680.1027" timestamp="1603185670685" />
     <state width="1899" height="432" key="GridCell.Tab.1.left/1680.23.1920.990/0.23.1680.1027@1680.23.1920.990" timestamp="1602560866301" />
-    <state width="1659" height="486" key="GridCell.Tab.1.right" timestamp="1603185670686">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="1659" height="448" key="GridCell.Tab.1.right" timestamp="1603636280042">
+      <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="242" key="GridCell.Tab.1.right/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1602596968760" />
+    <state width="1659" height="448" key="GridCell.Tab.1.right/0.23.1680.960@0.23.1680.960" timestamp="1603594210246" />
+    <state width="1659" height="448" key="GridCell.Tab.1.right/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1603636280042" />
     <state width="1899" height="432" key="GridCell.Tab.1.right/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1602558371333" />
     <state width="1659" height="486" key="GridCell.Tab.1.right/1680.23.1920.990/0.23.1680.1027@0.23.1680.1027" timestamp="1603185670686" />
     <state width="1899" height="432" key="GridCell.Tab.1.right/1680.23.1920.990/0.23.1680.1027@1680.23.1920.990" timestamp="1602560866302" />
-    <state x="191" y="117" key="SettingsEditor" timestamp="1603183039347">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state x="191" y="111" key="SettingsEditor" timestamp="1603619346648">
+      <screen x="0" y="23" width="1680" height="960" />
     </state>
+    <state x="191" y="111" key="SettingsEditor/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1603619346648" />
     <state x="191" y="117" key="SettingsEditor/1680.23.1920.990/0.23.1680.1027@0.23.1680.1027" timestamp="1603183039347" />
-    <state width="960" height="528" key="XDebugger.FullValuePopup" timestamp="1602558039225">
-      <screen x="1680" y="23" width="1920" height="1057" />
+    <state width="840" height="480" key="XDebugger.FullValuePopup" timestamp="1603619504913">
+      <screen x="0" y="23" width="1680" height="960" />
     </state>
+    <state width="840" height="480" key="XDebugger.FullValuePopup/0.23.1680.960@0.23.1680.960" timestamp="1603594060811" />
+    <state width="840" height="480" key="XDebugger.FullValuePopup/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1603619504913" />
     <state width="960" height="528" key="XDebugger.FullValuePopup/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1602558039225" />
   </component>
   <component name="XDebuggerManager">
@@ -640,22 +443,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/movie/movie.py</url>
-          <line>250</line>
+          <line>248</line>
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/movie/movie.py</url>
-          <line>290</line>
+          <line>288</line>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/example/test.py</url>
-          <line>50</line>
+          <line>52</line>
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/movie/movie.py</url>
-          <line>321</line>
+          <line>319</line>
           <option name="timeStamp" value="79" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -675,13 +478,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/index/index_google.py</url>
-          <line>101</line>
-          <option name="timeStamp" value="89" />
+          <line>53</line>
+          <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gopup/index/index_google.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="90" />
+          <url>file://$PROJECT_DIR$/gopup/event/covid.py</url>
+          <line>583</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gopup/event/covid.py</url>
+          <line>534</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gopup/event/covid.py</url>
+          <line>533</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gopup/event/covid.py</url>
+          <line>205</line>
+          <option name="timeStamp" value="96" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -698,140 +516,5 @@
         <watch expression="search_df" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Pipfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/movie/movie.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6657">
-          <caret line="324" selection-start-line="324" selection-end-line="324" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/pro/pro_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/pro/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/utils/utils_pass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/pro/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/stock/classifying.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/index/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/index/cons.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="21" column="21" selection-start-line="21" selection-end-line="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/index/index_weibo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="37" column="4" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="38" selection-end-column="13" />
-          <folding>
-            <element signature="e#160#169#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="239">
-            <caret line="32" column="12" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/index/google_request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/index/index_baidu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1361">
-          <caret line="196" column="4" lean-forward="true" selection-start-line="196" selection-start-column="4" selection-end-line="197" selection-end-column="14" />
-          <folding>
-            <element signature="e#162#193#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/index/index_toutiao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="203" column="4" selection-start-line="203" selection-start-column="4" selection-end-line="203" selection-end-column="49" />
-          <folding>
-            <element signature="e#161#172#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/index/index_google.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="35" column="59" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="59" />
-          <folding>
-            <element signature="e#164#174#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
