@@ -118,6 +118,16 @@ from gopup.movie.movie import (
     realtime_artist_flow
 )
 
+
+"""
+高校数据
+"""
+from gopup.life.university import (
+    university,
+    adult_university
+)
+
+
 """
 专业版接口
 """
