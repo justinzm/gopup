@@ -4,8 +4,7 @@
     <list default="true" id="93b7bb07-655b-4d5a-8244-85210ae64a22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gopup/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/gopup/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopup/pro/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/gopup/pro/client.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,12 +31,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="189">
-                <caret line="70" column="20" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="20" />
+              <first_editor relative-caret-position="231">
+                <caret line="60" selection-start-line="60" selection-end-line="61" selection-end-column="13" />
               </first_editor>
               <second_editor />
             </state>
@@ -48,25 +47,53 @@
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="372">
-              <caret line="65" column="1" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gopup/life/university.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="50" column="20" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="20" />
+              <caret line="35" column="12" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gopup/__init__.py">
+        <entry file="file://$PROJECT_DIR$/gopup/utils/utils.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gopup/utils/utils_pass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="123" column="3" selection-start-line="123" selection-start-column="3" selection-end-line="123" selection-end-column="3" />
+            <state relative-caret-position="-69" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gopup/utils/date_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-63">
+              <caret line="155" column="12" selection-start-line="155" selection-start-column="4" selection-end-line="155" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gopup/pro/pro_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-153" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gopup/pro/client.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="939">
+              <caret line="48" column="33" lean-forward="true" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gopup/life/university.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="756">
+              <caret line="50" column="20" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -74,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gopup/movie/movie.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="51" selection-end-column="21" />
+            <state relative-caret-position="204">
+              <caret line="38" column="59" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="61" />
               <folding>
                 <element signature="e#192#203#0" expanded="true" />
               </folding>
@@ -84,10 +111,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gopup/stock/classifying.py">
+        <entry file="file://$PROJECT_DIR$/gopup/movie/cons.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="26" column="59" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="59" />
+            <state relative-caret-position="147">
+              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="9" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -109,8 +136,9 @@
       <list>
         <option value="$PROJECT_DIR$/gopup/life/university.py" />
         <option value="$PROJECT_DIR$/gopup/__init__.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/gopup/pro/client.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -129,7 +157,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,10 +191,17 @@
               <item name="gopup" type="462c0819:PsiDirectoryNode" />
               <item name="movie" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="gopup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gopup" type="462c0819:PsiDirectoryNode" />
+              <item name="gopup" type="462c0819:PsiDirectoryNode" />
+              <item name="pro" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -368,11 +402,12 @@
       <workItem from="1603791372945" duration="1099000" />
       <workItem from="1603849842212" duration="2012000" />
       <workItem from="1603851971695" duration="2787000" />
+      <workItem from="1603869164932" duration="4941000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121430000" />
+    <option name="totallyTimeSpent" value="126371000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -387,7 +422,7 @@
     <frame x="-1448" y="-140" width="1456" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20272206" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20558739" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -401,7 +436,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2712766" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2712766" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -717,13 +752,10 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gopup/movie/movie.py">
+    <entry file="file://$PROJECT_DIR$/gopup/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="51" selection-end-column="21" />
-          <folding>
-            <element signature="e#192#203#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2583">
+          <caret line="123" column="3" selection-start-line="123" selection-start-column="3" selection-end-line="123" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -734,34 +766,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/__init__.py">
+    <entry file="file://$PROJECT_DIR$/gopup/life/university.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="123" column="3" selection-start-line="123" selection-start-column="3" selection-end-line="123" selection-end-column="3" />
+        <state relative-caret-position="756">
+          <caret line="50" column="20" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gopup/movie/movie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="38" column="59" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="61" />
+          <folding>
+            <element signature="e#192#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gopup/movie/cons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
-          <caret line="65" column="1" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
+          <caret line="35" column="12" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gopup/utils/utils.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gopup/utils/utils_pass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gopup/utils/date_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="155" column="12" selection-start-line="155" selection-start-column="4" selection-end-line="155" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gopup/pro/pro_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gopup/pro/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="939">
+          <caret line="48" column="33" lean-forward="true" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="189">
-            <caret line="70" column="20" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="20" />
+          <first_editor relative-caret-position="231">
+            <caret line="60" selection-start-line="60" selection-end-line="61" selection-end-column="13" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/life/university.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="50" column="20" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="20" />
         </state>
       </provider>
     </entry>

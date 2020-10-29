@@ -42,7 +42,7 @@ class DataApi:
         }
 
         res = requests.post(self._http_url, json=req_params, timeout=self._timeout, headers={'Connection': 'close'})
-        if res:
+        if res is not None:
             result = json.loads(res.text)
             if result['error_code'] != 200:
                 raise Exception(result['msg'])
