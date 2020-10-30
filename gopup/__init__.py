@@ -10,6 +10,10 @@ from gopup.index.index_baidu import (
     baidu_search_index,
     baidu_info_index,
     baidu_media_index,
+    baidu_interest_index,
+    baidu_gender_index,
+    baidu_age_index,
+    baidu_atlas_index
 )
 
 """

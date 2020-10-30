@@ -5,12 +5,11 @@
 # @File    : shibor.py
 # @Desc    : 利率数据
 # 上海银行间同业拆放利率（Shibor）数据接口
-import json
 
+import json
 import pandas as pd
 import numpy as np
 import requests
-
 from gopup.economic import cons
 from gopup.utils import date_utils as du
 
@@ -54,10 +53,6 @@ def shibor_data(year=None):
         df = pd.read_excel(r.content)
         df.columns = cons.SHIBOR_COLS
         df['date'] = df['date'].map(lambda x: x.date())
-        # if pd.__version__ < '0.21':
-        #     df['date'] = df['date'].astype(np.datetime64)
-        # else:
-        #     df['date'] = df['date'].astype('datetime64[D]')
         return df
     except Exception as e:
         return None
@@ -110,10 +105,6 @@ def shibor_quote_data(year=None):
         df = pd.read_excel(r.content)
         df.columns = cons.SHIBOR_Q_COLS
         df['date'] = df['date'].map(lambda x: x.date())
-        # if pd.__version__ < '0.21':
-        #     df['date'] = df['date'].astype(np.datetime64)
-        # else:
-        #     df['date'] = df['date'].astype('datetime64[D]')
         return df
     except:
         return None
@@ -149,10 +140,6 @@ def shibor_ma_data(year=None):
         df = pd.read_excel(r.content)
         df.columns = cons.SHIBOR_MA_COLS
         df['date'] = df['date'].map(lambda x: x.date())
-        if pd.__version__ < '0.21':
-            df['date'] = df['date'].astype(np.datetime64)
-        else:
-            df['date'] = df['date'].astype('datetime64[D]')
         return df
     except:
         return None
@@ -192,48 +179,13 @@ def lpr_data(startDate, endDate):
         r = requests.post(url, data=data, headers=herder)
         data_dict = json.loads(r.text)['records']
         df = pd.DataFrame(data_dict)
-
         return df
     except:
         return None
 
-#
-# def lpr_ma_data(year=None):
-#     """
-#     获取贷款基础利率均值数据
-#     Parameters
-#     ------
-#       year:年份(int)
-#
-#     Return
-#     ------
-#     date:日期
-#     1Y_5:5日均值
-#     1Y_10:10日均值
-#     1Y_20:20日均值
-#     """
-#     year = du.get_year() if year is None else year
-#     lab = ct.SHIBOR_TYPE['LPR_Tendency']
-#     lab = lab.encode('utf-8') if ct.PY3 else lab
-#     try:
-#         clt = Client(url=ct.SHIBOR_DATA_URL % (ct.P_TYPE['http'], ct.DOMAINS['shibor'],
-#                                                ct.PAGES['dw'], 'LPR_Tendency',
-#                                                year, lab,
-#                                                year))
-#         content = clt.gvalue()
-#         df = pd.read_excel(StringIO(content), skiprows=[0])
-#         df.columns = ct.LPR_MA_COLS
-#         df['date'] = df['date'].map(lambda x: x.date())
-#         if pd.__version__ < '0.21':
-#             df['date'] = df['date'].astype(np.datetime64)
-#         else:
-#             df['date'] = df['date'].astype('datetime64[D]')
-#         return df
-#     except:
-#         return None
-
 
 if __name__ == "__main__":
-    shibor_data(2019)
+    tmp = shibor_data(2019)
+    print(tmp)
  
 
