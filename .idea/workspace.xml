@@ -4,6 +4,9 @@
     <list default="true" id="93b7bb07-655b-4d5a-8244-85210ae64a22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopup/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/gopup/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopup/life/university.py" beforeDir="false" afterPath="$PROJECT_DIR$/gopup/life/university.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,29 +76,7 @@
       <recent name="D:\pythonFile\gopup\gopup\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.marco_cn">
-    <configuration name="covid" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="gopup" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gopup/event" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gopup/event/covid.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.oil">
     <configuration name="index_baidu" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="gopup" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -132,6 +113,27 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gopup/economic/marco_cn.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="oil" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gopup" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gopup/life" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gopup/life/oil.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -186,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.oil" />
         <item itemvalue="Python.marco_cn" />
         <item itemvalue="Python.shibor" />
         <item itemvalue="Python.index_baidu" />
         <item itemvalue="Python.university" />
-        <item itemvalue="Python.covid" />
       </list>
     </recent_temporary>
   </component>
@@ -259,66 +261,66 @@
       <screen x="0" y="23" width="1680" height="960" />
     </state>
     <state x="417" y="75" key="CommitChangelistDialog2/0.23.1680.960@0.23.1680.960" timestamp="1603593972388" />
-    <state width="1659" height="361" key="GridCell.Tab.0.bottom" timestamp="1603636280047">
+    <state width="1618" height="361" key="GridCell.Tab.0.bottom" timestamp="1604826937050">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="361" key="GridCell.Tab.0.bottom/0.23.1680.960@0.23.1680.960" timestamp="1603594251676" />
+    <state width="1618" height="361" key="GridCell.Tab.0.bottom/0.23.1680.960@0.23.1680.960" timestamp="1604826937050" />
     <state width="1659" height="361" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1603636280047" />
     <state width="1899" height="432" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1602558371333" />
     <state width="1659" height="486" key="GridCell.Tab.0.bottom/1680.23.1920.990/0.23.1680.1027@0.23.1680.1027" timestamp="1603185670685" />
     <state width="1899" height="237" key="GridCell.Tab.0.bottom/1680.23.1920.990/0.23.1680.1027@1680.23.1920.990" timestamp="1602595956726" />
-    <state width="1659" height="361" key="GridCell.Tab.0.center" timestamp="1603636280046">
+    <state width="1618" height="361" key="GridCell.Tab.0.center" timestamp="1604826937049">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="361" key="GridCell.Tab.0.center/0.23.1680.960@0.23.1680.960" timestamp="1603594251675" />
+    <state width="1618" height="361" key="GridCell.Tab.0.center/0.23.1680.960@0.23.1680.960" timestamp="1604826937049" />
     <state width="1659" height="361" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1603636280046" />
     <state width="1899" height="432" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1602558371332" />
     <state width="1659" height="486" key="GridCell.Tab.0.center/1680.23.1920.990/0.23.1680.1027@0.23.1680.1027" timestamp="1603185670684" />
     <state width="1899" height="237" key="GridCell.Tab.0.center/1680.23.1920.990/0.23.1680.1027@1680.23.1920.990" timestamp="1602595956725" />
-    <state width="1659" height="361" key="GridCell.Tab.0.left" timestamp="1603636280046">
+    <state width="1618" height="361" key="GridCell.Tab.0.left" timestamp="1604826937049">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="361" key="GridCell.Tab.0.left/0.23.1680.960@0.23.1680.960" timestamp="1603594251675" />
+    <state width="1618" height="361" key="GridCell.Tab.0.left/0.23.1680.960@0.23.1680.960" timestamp="1604826937049" />
     <state width="1659" height="361" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1603636280046" />
     <state width="1899" height="432" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1602558371331" />
     <state width="1659" height="486" key="GridCell.Tab.0.left/1680.23.1920.990/0.23.1680.1027@0.23.1680.1027" timestamp="1603185670684" />
     <state width="1899" height="237" key="GridCell.Tab.0.left/1680.23.1920.990/0.23.1680.1027@1680.23.1920.990" timestamp="1602595956725" />
-    <state width="1659" height="361" key="GridCell.Tab.0.right" timestamp="1603636280047">
+    <state width="1618" height="361" key="GridCell.Tab.0.right" timestamp="1604826937050">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="361" key="GridCell.Tab.0.right/0.23.1680.960@0.23.1680.960" timestamp="1603594251675" />
+    <state width="1618" height="361" key="GridCell.Tab.0.right/0.23.1680.960@0.23.1680.960" timestamp="1604826937050" />
     <state width="1659" height="361" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1603636280047" />
     <state width="1899" height="432" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1602558371332" />
     <state width="1659" height="486" key="GridCell.Tab.0.right/1680.23.1920.990/0.23.1680.1027@0.23.1680.1027" timestamp="1603185670685" />
     <state width="1899" height="237" key="GridCell.Tab.0.right/1680.23.1920.990/0.23.1680.1027@1680.23.1920.990" timestamp="1602595956726" />
-    <state width="1659" height="448" key="GridCell.Tab.1.bottom" timestamp="1603636280042">
+    <state width="1618" height="458" key="GridCell.Tab.1.bottom" timestamp="1604826937043">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="448" key="GridCell.Tab.1.bottom/0.23.1680.960@0.23.1680.960" timestamp="1603594210246" />
+    <state width="1618" height="458" key="GridCell.Tab.1.bottom/0.23.1680.960@0.23.1680.960" timestamp="1604826937043" />
     <state width="1659" height="448" key="GridCell.Tab.1.bottom/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1603636280042" />
     <state width="1899" height="432" key="GridCell.Tab.1.bottom/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1602558371334" />
     <state width="1659" height="486" key="GridCell.Tab.1.bottom/1680.23.1920.990/0.23.1680.1027@0.23.1680.1027" timestamp="1603185670686" />
     <state width="1899" height="432" key="GridCell.Tab.1.bottom/1680.23.1920.990/0.23.1680.1027@1680.23.1920.990" timestamp="1602560866302" />
-    <state width="1659" height="448" key="GridCell.Tab.1.center" timestamp="1603636280041">
+    <state width="1618" height="458" key="GridCell.Tab.1.center" timestamp="1604826937043">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="448" key="GridCell.Tab.1.center/0.23.1680.960@0.23.1680.960" timestamp="1603594210246" />
+    <state width="1618" height="458" key="GridCell.Tab.1.center/0.23.1680.960@0.23.1680.960" timestamp="1604826937043" />
     <state width="1659" height="448" key="GridCell.Tab.1.center/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1603636280041" />
     <state width="1899" height="432" key="GridCell.Tab.1.center/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1602558371333" />
     <state width="1659" height="486" key="GridCell.Tab.1.center/1680.23.1920.990/0.23.1680.1027@0.23.1680.1027" timestamp="1603185670686" />
     <state width="1899" height="432" key="GridCell.Tab.1.center/1680.23.1920.990/0.23.1680.1027@1680.23.1920.990" timestamp="1602560866301" />
-    <state width="1659" height="448" key="GridCell.Tab.1.left" timestamp="1603636280041">
+    <state width="1618" height="458" key="GridCell.Tab.1.left" timestamp="1604826937043">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="448" key="GridCell.Tab.1.left/0.23.1680.960@0.23.1680.960" timestamp="1603594210246" />
+    <state width="1618" height="458" key="GridCell.Tab.1.left/0.23.1680.960@0.23.1680.960" timestamp="1604826937043" />
     <state width="1659" height="448" key="GridCell.Tab.1.left/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1603636280041" />
     <state width="1899" height="432" key="GridCell.Tab.1.left/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1602558371333" />
     <state width="1659" height="486" key="GridCell.Tab.1.left/1680.23.1920.990/0.23.1680.1027@0.23.1680.1027" timestamp="1603185670685" />
     <state width="1899" height="432" key="GridCell.Tab.1.left/1680.23.1920.990/0.23.1680.1027@1680.23.1920.990" timestamp="1602560866301" />
-    <state width="1659" height="448" key="GridCell.Tab.1.right" timestamp="1603636280042">
+    <state width="1618" height="458" key="GridCell.Tab.1.right" timestamp="1604826937043">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="1659" height="448" key="GridCell.Tab.1.right/0.23.1680.960@0.23.1680.960" timestamp="1603594210246" />
+    <state width="1618" height="458" key="GridCell.Tab.1.right/0.23.1680.960@0.23.1680.960" timestamp="1604826937043" />
     <state width="1659" height="448" key="GridCell.Tab.1.right/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1603636280042" />
     <state width="1899" height="432" key="GridCell.Tab.1.right/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1602558371333" />
     <state width="1659" height="486" key="GridCell.Tab.1.right/1680.23.1920.990/0.23.1680.1027@0.23.1680.1027" timestamp="1603185670686" />
@@ -328,10 +330,10 @@
     </state>
     <state x="191" y="111" key="SettingsEditor/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1603619346648" />
     <state x="191" y="117" key="SettingsEditor/1680.23.1920.990/0.23.1680.1027@0.23.1680.1027" timestamp="1603183039347" />
-    <state width="840" height="480" key="XDebugger.FullValuePopup" timestamp="1603619504913">
+    <state width="840" height="480" key="XDebugger.FullValuePopup" timestamp="1604826237121">
       <screen x="0" y="23" width="1680" height="960" />
     </state>
-    <state width="840" height="480" key="XDebugger.FullValuePopup/0.23.1680.960@0.23.1680.960" timestamp="1603594060811" />
+    <state width="840" height="480" key="XDebugger.FullValuePopup/0.23.1680.960@0.23.1680.960" timestamp="1604826237121" />
     <state width="840" height="480" key="XDebugger.FullValuePopup/1680.23.1920.1057/0.23.1680.960@0.23.1680.960" timestamp="1603619504913" />
     <state width="960" height="528" key="XDebugger.FullValuePopup/1680.23.1920.1057/0.23.1680.960@1680.23.1920.1057" timestamp="1602558039225" />
   </component>

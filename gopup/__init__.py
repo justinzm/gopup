@@ -95,6 +95,14 @@ from gopup.economic.shibor import (
 )
 
 """
+中国油价数据
+"""
+from gopup.life.oil import (
+    energy_oil_hist,
+    energy_oil_detail
+)
+
+"""
 新经济公司
 """
 from gopup.fortune.itjuzi import (

@@ -68,7 +68,7 @@ def adult_university():
 
 
 if __name__ == "__main__":
-    tmp = adult_education()
+    tmp = adult_university()
     print(tmp)
 
 
