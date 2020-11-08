@@ -22,7 +22,7 @@ class DataApi:
         self._timeout = timeout
         self._http_url = 'http://www.gopup.cn/api/v1'
 
-    def query(self, api_name, fields='', **kwargs):
+    def query(self, api_name, fields=None, **kwargs):
         """
         # api_name，接口名称；
         # token，用于识别唯一用户的标识；
