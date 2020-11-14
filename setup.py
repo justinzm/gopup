@@ -3,7 +3,7 @@
 # @Time    : 2020/3/20 0020
 # @Author  : justin.郑 3907721@qq.com
 # @File    : setup.py
-# @Desc    :
+# @Desc    : setup
 
 from setuptools import find_packages, setup
 import os
