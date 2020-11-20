@@ -41,7 +41,7 @@ def fund_etf_category_sina(symbol="封闭式基金"):
     return res_df
 
 
-def fund_etf_hist_sina(symbol: str = "sz159996") -> pd.DataFrame:
+def fund_etf_hist_sina(symbol="sz159996"):
     """
     ETF 基金的日行情数据
     http://finance.sina.com.cn/fund/quotes/159996/bc.shtml
@@ -61,8 +61,8 @@ def fund_etf_hist_sina(symbol: str = "sz159996") -> pd.DataFrame:
 
 
 if __name__ == '__main__':
-    # fund_etf_category_sina_df = fund_etf_category_sina(symbol="ETF基金")
-    # print(fund_etf_category_sina_df)
+    fund_etf_category_sina_df = fund_etf_category_sina(symbol="ETF基金")
+    print(fund_etf_category_sina_df)
 
-    fund_etf_hist_sina_df = fund_etf_hist_sina(symbol="sz169103")
-    print(fund_etf_hist_sina_df)
+    # fund_etf_hist_sina_df = fund_etf_hist_sina(symbol="sz169103")
+    # print(fund_etf_hist_sina_df)
