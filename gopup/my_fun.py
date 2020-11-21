@@ -4,10 +4,16 @@
 # @Author  : justin.郑 3907721@qq.com
 # @File    : my_fun.py
 # @Desc    : 
- 
+
+import pandas as pd
 
 def gopup_test():
-    return "测试成功"
+    result = [1,23,4,5,66,78,9,0,22,33]
+    res = pd.DataFrame(
+        [pd.date_range(start="2020-11-01", end="2020-11-10"), result],
+        index=["date", "999"],
+    ).T
+    return res
 
 
 def add_sum(a):
@@ -28,6 +34,6 @@ def add_sum(a):
 
 
 if __name__ == "__main__":
-    tmp = add_sum(12)
+    tmp = gopup_test()
     print(tmp)
 
