@@ -21,3 +21,4 @@ venv/*
 *.pyc
 *.pyc
 .idea/gopup.iml
+.idea/workspace.xml

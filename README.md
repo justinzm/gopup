@@ -12,6 +12,13 @@ GoPUP 项目所采集的数据皆来自公开的数据源，不涉及任何个�
 
 文档：[中文文档](http://doc.gopup.cn) 
 
+#### 快速开始
+
+```
+import gopup as gp
+df = gp.weibo_index(word="疫情", time_type="1hour")
+print(df)
+```
 
 ####  数据仓库
 
