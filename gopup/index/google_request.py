@@ -11,7 +11,6 @@ import requests
 from urllib.parse import quote
 import copy
 from typing import Optional
-
 from urllib3 import Retry
 
 
