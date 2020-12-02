@@ -28,27 +28,34 @@ def migration_area_baidu(area="武汉市", indicator="move_in", date="20200201")
     :return: 迁入地详情/迁出地详情的前50个
     :rtype: pandas.DataFrame
     """
-    city_dict.update(province_dict)
-    inner_dict = dict(zip(city_dict.values(), city_dict.keys()))
-    if inner_dict[area] in province_dict.keys():
-        dt_flag = "province"
+    if area == "全国":
+        payload = {
+            "dt": "country",
+            "id": 0,
+            "type": indicator,
+            "date": date,
+        }
     else:
-        dt_flag = "city"
+        city_dict.update(province_dict)
+        inner_dict = dict(zip(city_dict.values(), city_dict.keys()))
+        if inner_dict[area] in province_dict.keys():
+            dt_flag = "province"
+        else:
+            dt_flag = "city"
+        payload = {
+            "dt": dt_flag,
+            "id": inner_dict[area],
+            "type": indicator,
+            "date": date,
+        }
+
     url = "https://huiyan.baidu.com/migration/cityrank.jsonp"
-    payload = {
-        "dt": dt_flag,
-        "id": inner_dict[area],
-        "type": indicator,
-        "date": date,
-    }
     r = requests.get(url, params=payload)
     json_data = json.loads(r.text[r.text.find("({") + 1 : r.text.rfind(");")])
     return pd.DataFrame(json_data["data"]["list"])
 
 
-def migration_scale_baidu(
-    area="武汉市", indicator="move_out", start_date="20190112", end_date="20200201"
-):
+def migration_scale_baidu(area="武汉市", indicator="move_out", start_date="20190112", end_date="20200201"):
     """
     百度地图慧眼-百度迁徙-迁徙规模
     * 迁徙规模指数：反映迁入或迁出人口规模，城市间可横向对比
@@ -65,24 +72,40 @@ def migration_scale_baidu(
     :return: 时间序列的迁徙规模指数
     :rtype: pandas.DataFrame
     """
-    city_dict.update(province_dict)
-    inner_dict = dict(zip(city_dict.values(), city_dict.keys()))
-    if inner_dict[area] in province_dict.keys():
-        dt_flag = "province"
+    if area == "全国":
+        payload = {
+            "dt": "country",
+            "id": 0,
+            "type": indicator,
+            "startDate": start_date,
+            "endDate": end_date,
+        }
     else:
-        dt_flag = "city"
+        city_dict.update(province_dict)
+        inner_dict = dict(zip(city_dict.values(), city_dict.keys()))
+        if inner_dict[area] in province_dict.keys():
+            dt_flag = "province"
+        else:
+            dt_flag = "city"
+
+        payload = {
+            "dt": dt_flag,
+            "id": inner_dict[area],
+            "type": indicator,
+            "startDate": start_date,
+            "endDate": end_date,
+        }
     url = "https://huiyan.baidu.com/migration/historycurve.jsonp"
-    payload = {
-        "dt": dt_flag,
-        "id": inner_dict[area],
-        "type": indicator,
-        "startDate": start_date,
-        "endDate": end_date,
-    }
     r = requests.get(url, params=payload)
     json_data = json.loads(r.text[r.text.find("({") + 1 : r.text.rfind(");")])
     temp_df = pd.DataFrame.from_dict(json_data["data"]["list"], orient="index")
     temp_df.index = pd.to_datetime(temp_df.index)
     temp_df.columns = ["迁徙规模指数"]
     return temp_df
+
+
+if __name__ == "__main__":
+    tmp = migration_scale_baidu(area="全国", indicator="move_in", start_date="20190112", end_date="20200201")
+    print(tmp)
+
 

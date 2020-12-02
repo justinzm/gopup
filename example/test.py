@@ -23,33 +23,6 @@ def test():
     # df = gp.migration_area_baidu()
     # print(df)
 
-    # ----------------------------------------------------------------------
-    # print('\n' + '-' * 80 + '\n获取实时电影票房数据')
-    # df = gp.realtime_boxoffice()
-    # print(df)
-
-    # # ----------------------------------------------------------------------
-    print('\n' + '-' * 80 + '\n获取谷歌事实查证')
-
-    for con in ["китаец", "중국인"]:
-        print(con)
-        res_pd = pd.DataFrame()
-        for i in range(0, 300):
-            print(i)
-            limit = 200
-            offset = i * limit
-            df = gp.google_fact_check(keyword=con, offset=offset, limit=limit, hl="")
-            if df is None:
-                break
-            else:
-                res_pd = res_pd.append(df, ignore_index=True)
-            time.sleep(3)
-
-        fileXls = '%s_谷歌事实查证.xls' % con
-        res_pd.to_excel(fileXls, encoding='utf-8')
-
-    print("完成")
-
 
 if __name__ == '__main__':
     test()

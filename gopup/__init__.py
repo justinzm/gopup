@@ -49,7 +49,10 @@ from gopup.index.index_google import (
 """
 百度迁徙地图接口
 """
-from gopup.event.area_baidu import migration_area_baidu
+from gopup.event.area_baidu import (
+    migration_area_baidu,
+    migration_scale_baidu
+)
 
 
 """

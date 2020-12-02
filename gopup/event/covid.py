@@ -203,10 +203,11 @@ def covid_dxy(indicator="湖北"):
     temp_json = text_data_news[
         text_data_news.find("= [{") + 2 : text_data_news.rfind("}catch")
     ]
-    json_data = pd.DataFrame(json.loads(temp_json))
-    chinese_news = json_data[
-        ["title", "summary", "infoSource", "provinceName", "sourceUrl"]
-    ]
+    if temp_json:
+        json_data = pd.DataFrame(json.loads(temp_json))
+        chinese_news = json_data[
+            ["title", "summary", "infoSource", "provinceName", "sourceUrl"]
+        ]
 
     # news-foreign
     text_data_news = str(soup.find_all("script", attrs={"id": "getTimelineService2"}))
@@ -522,7 +523,7 @@ def covid_baidu(indicator="湖北"):
         "resource_id": "28565",
         "alr": "1",
         "query": "肺炎",
-        "cb": "jsonp_1580470773344_83572",
+        "cb": "jsonp_1606895491198_93137",
     }
     r = requests.get(url, params=payload)
     json_data = json.loads(r.text[r.text.find("({") + 1 : r.text.rfind(");")])
@@ -660,5 +661,5 @@ if __name__ == "__main__":
     # epidemic_hist_province_df = covid_hist_province(province="湖北省")
     # print(epidemic_hist_province_df)
 
-    covid_dxy_df = covid_dxy(indicator="湖北省")
+    covid_dxy_df = covid_baidu(indicator="小说榜")
     print(covid_dxy_df)
