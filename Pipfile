@@ -20,6 +20,7 @@ pyexecjs = "*"
 xlwt = "*"
 pyexejs = "*"
 lxml = "*"
+html5lib = "*"
 
 [requires]
 python_version = "3.7"
