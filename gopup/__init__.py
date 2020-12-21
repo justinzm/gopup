@@ -28,7 +28,6 @@ from gopup.index.index_weibo import weibo_index
 from gopup.index.index_toutiao import (
     toutiao_index,
     toutiao_relation,
-    toutiao_sentiment,
     toutiao_province,
     toutiao_city,
     toutiao_age,
