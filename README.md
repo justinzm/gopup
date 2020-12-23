@@ -24,9 +24,9 @@ print(df)
 
 ####  打赏作者
 
-![支付宝打赏](http://www.gopup.cn/static/home_static/img/zfb.jpg) 
+![支付宝打赏](images/zfb.jpg) 
 
-![微信打赏](http://www.gopup.cn/static/home_static/img/wx.jpg)
+![微信打赏](images/wx.jpg)
 
 ####  数据仓库
 
