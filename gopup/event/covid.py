@@ -661,5 +661,5 @@ if __name__ == "__main__":
     # epidemic_hist_province_df = covid_hist_province(province="湖北省")
     # print(epidemic_hist_province_df)
 
-    covid_dxy_df = covid_baidu(indicator="小说榜")
+    covid_dxy_df = covid_163()
     print(covid_dxy_df)

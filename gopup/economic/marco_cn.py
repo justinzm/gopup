@@ -430,7 +430,7 @@ def get_gold_and_foreign_reserves():
 
 
 if __name__ == '__main__':
-    tmp = get_gdp_year()
+    tmp = marco_cmlrd()
 
     print(tmp)
 

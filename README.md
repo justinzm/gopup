@@ -10,7 +10,9 @@ GoPUP 支持Python 3.7+，旨在使获取数据尽可能方便，主要用于学
 
 GoPUP 项目所采集的数据皆来自公开的数据源，不涉及任何个人隐私数据和非公开数据。 同时本项目提供的数据接口及相关数据仅用于学术研究，任何个人、机构及团体使用本项目的数据接口及相关数据请注意商业风险。
 
-文档：[中文文档](http://doc.gopup.cn) 
+部分接口需要TOKEN，[官网](http://www.gopup.cn)注册获取TOKEN
+
+文档：[中文文档](http://www.gopup.cn) 
 
 #### 快速开始
 
@@ -19,6 +21,12 @@ import gopup as gp
 df = gp.weibo_index(word="疫情", time_type="1hour")
 print(df)
 ```
+
+####  打赏作者
+
+![支付宝打赏](http://www.gopup.cn/static/home_static/img/zfb.jpg) 
+
+![微信打赏](http://www.gopup.cn/static/home_static/img/wx.jpg)
 
 ####  数据仓库
 
