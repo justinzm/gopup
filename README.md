@@ -28,8 +28,6 @@ print(df)
 
 ![微信打赏](https://github.com/justinzm/gopup/blob/master/images/wx.jpg)
 
-![](https://github.com/AngelSXD/sxd_first_repository/blob/master/images/20160615165142.png)
-
 ####  数据仓库
 
 - 指数数据
