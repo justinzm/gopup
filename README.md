@@ -24,9 +24,9 @@ print(df)
 
 ####  打赏作者
 
-![支付宝打赏](images/zfb.jpg) 
+![支付宝打赏](https://github.com/justinzm/gopup/blob/master/images/zfb.jpg) 
 
-![微信打赏](images/wx.jpg)
+![微信打赏](https://github.com/justinzm/gopup/blob/master/images/wx.jpg)
 
 ####  数据仓库
 
