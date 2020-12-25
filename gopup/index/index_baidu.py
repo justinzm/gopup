@@ -4,8 +4,9 @@
 # @Author  : justin.郑 3907721@qq.com
 # @File    : index_baidu.py
 # @Desc    : 获取百度指数
-import json
 
+import json
+import urllib.parse
 import pandas as pd
 import requests
 
@@ -254,14 +255,11 @@ def baidu_search_index(word, start_date, end_date, cookie, type="all"):
         "Referer": "http://index.baidu.com/v2/main/index.html",
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.90 Safari/537.36"
     }
-    params = {
-        "area": 0,
-        "word": '[[{"name":"%s","wordType":1}]]' % word,
-        "startDate": start_date,
-        "endDate": end_date
-    }
-    url = 'http://index.baidu.com/api/SearchApi/index'
-    r = requests.get(url=url, params=params, headers=headers)
+    w = '{"name":"%s","wordType":1}' % word
+
+    url = 'http://index.baidu.com/api/SearchApi/index?area=0&word=[[%s]]&startDate=%s&endDate=%s' % (w, start_date, end_date)
+
+    r = requests.get(url=url, headers=headers)
     data = r.json()["data"]
     all_data = data["userIndexes"][0][type]["data"]
     uniqid = data["uniqid"]
@@ -289,15 +287,12 @@ def baidu_info_index(word, start_date, end_date, cookie):
         "Referer": "http://index.baidu.com/v2/main/index.html",
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.90 Safari/537.36"
     }
-    url = 'http://index.baidu.com/api/FeedSearchApi/getFeedIndex'
-    params = {
-        "area": 0,
-        "word": '[[{"name":"%s","wordType":1}]]' % word,
-        "startDate": start_date,
-        "endDate": end_date
-    }
+    w = '{"name":"%s","wordType":1}' % word
 
-    r = requests.get(url=url, params=params, headers=headers)
+    url = 'http://index.baidu.com/api/FeedSearchApi/getFeedIndex?area=0&word=[[%s]]&startDate=%s&endDate=%s' % (
+    w, start_date, end_date)
+
+    r = requests.get(url=url, headers=headers)
     data = r.json()["data"]
     all_data = data["index"][0]["data"]
     uniqid = data["uniqid"]
@@ -325,15 +320,11 @@ def baidu_media_index(word, start_date, end_date, cookie):
         "Referer": "http://index.baidu.com/v2/main/index.html",
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.90 Safari/537.36"
     }
-    url = 'http://index.baidu.com/api/NewsApi/getNewsIndex'
-    params = {
-        "area": 0,
-        "word": '[[{"name":"%s","wordType":1}]]' % word,
-        "startDate": start_date,
-        "endDate": end_date
-    }
+    w = '{"name":"%s","wordType":1}' % word
 
-    r = requests.get(url=url, params=params, headers=headers)
+    url = 'http://index.baidu.com/api/NewsApi/getNewsIndex?area=0&word=[[%s]]&startDate=%s&endDate=%s' % (w, start_date, end_date)
+
+    r = requests.get(url=url, headers=headers)
 
     data = r.json()["data"]
     all_data = data["index"][0]["data"]
@@ -351,9 +342,9 @@ def baidu_media_index(word, start_date, end_date, cookie):
 
 
 if __name__ == "__main__":
-    cookie = 'BIDUPSID=F7EB2ABF6DC23E3AE0D29AD77AC3A828; PSTM=1550065926; H_WISE_SIDS=135670_136721_137754_138181_138497_114745_128149_139148_120168_138471_138878_137978_137690_131246_132551_118883_118873_118847_118829_118790_138165_138883_136431_138845_138697_136862_138146_138114_139172_139592_136196_137105_139273_139398_139691_133847_137735_138343_137467_138564_134256_131423_139397_139090_139246_137782_138657_136537_110085_137441_127969_139161_138837_139287_139407_127417_137186_136635_138426_139733_138941_139677_139221_138779; bdshare_firstime=1580385892027; BAIDUID=BECC251AF81F5D6642279AA52D2B4069:FG=1; MCITY=-218%3A; BDUSS=NKRHNYcTVELWM4TFd4SGFUYng3ZkRsb3Q2RHRuRVBZRXc4TkVkWk96bUctY0ZmSVFBQUFBJCQAAAAAAAAAAAEAAABU8PMTst24-dauw~cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIZsml-GbJpfOH; BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; H_PS_PSSID=32818_1441_33043_33124_33061_31254_33098_33101_32961_31709; delPer=0; PSINO=7; BA_HECTOR=8h0h2h20200420a1s81frgsc10q; BCLID=7269067772028405350; BDSFRCVID=rP4OJexroG3SQbJrxh7TomSUCcpWxY5TDYLEaTkizKrm7S8VJeC6EG0Pts1-dEu-EHtdogKK0gOTH6KF_2uxOjjg8UtVJeC6EG0Ptf8g0M5; H_BDCLCKID_SF=tR30WJbHMTrDHJTg5DTjhPrMKR0JWMT-MTryKKORLRokq4ndjpOohqtALUbjLbvkJGnRhlRNKxbOjtcoK4Fb0TkZyxomtfQxtNRJQKDE5p5hKq5S5-OobUPUDMJ9LUkqW2cdot5yBbc8eIna5hjkbfJBQttjQn3hfIkj2CKLK-oj-DL4D5Da3e; Hm_lvt_d101ea4d2a5c67dab98251f0b5de24dc=1604039250,1605923360; bdindexid=cd952229an70atuimphot86qs7; Hm_lpvt_d101ea4d2a5c67dab98251f0b5de24dc=1605925273; __yjsv5_shitong=1.0_7_835dba6616d254eab5e9498efc28ecbfaa90_300_1605925103719_27.18.137.244_cf7a6d07; RT="z=1&dm=baidu.com&si=cz6d2xqlt1d&ss=khr1ayg5&sl=i&tt=je0&bcn=https%3A%2F%2Ffclog.baidu.com%2Flog%2Fweirwood%3Ftype%3Dperf&ld=152lb"'
-    data = baidu_media_index(word="口罩", start_date='2020-11-01', end_date='2020-11-05', cookie=cookie)
-    # data = baidu_atlas_index(word="口罩",  cookie=cookie)
+    cookie = 'BIDUPSID=F7EB2ABF6DC23E3AE0D29AD77AC3A828; PSTM=1550065926; bdshare_firstime=1580385892027; BAIDUID=BECC251AF81F5D6642279AA52D2B4069:FG=1; BDUSS=NKRHNYcTVELWM4TFd4SGFUYng3ZkRsb3Q2RHRuRVBZRXc4TkVkWk96bUctY0ZmSVFBQUFBJCQAAAAAAAAAAAEAAABU8PMTst24-dauw~cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIZsml-GbJpfOH; BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; MCITY=-%3A; bdindexid=1ml7ffmmi4e6qttriofivv8ee2; Hm_lvt_d101ea4d2a5c67dab98251f0b5de24dc=1608859085,1608867185; Hm_lpvt_d101ea4d2a5c67dab98251f0b5de24dc=1608867200; RT="sl=4&ss=kj3pzbnz&tt=41w&bcn=https%3A%2F%2Ffclog.baidu.com%2Flog%2Fweirwood%3Ftype%3Dperf&z=1&dm=baidu.com&si=7g4vsvbj94"; __yjsv5_shitong=1.0_7_835dba6616d254eab5e9498efc28ecbfaa90_300_1608866990636_221.232.19.129_73b13905'
+    # data = baidu_search_index(word="口罩", start_date='2020-12-01', end_date='2020-12-24', cookie=cookie)
+    data = baidu_interest_index(word="口罩",  cookie=cookie)
     print(data)
 
 
