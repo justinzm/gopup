@@ -70,18 +70,12 @@ from gopup.event.covid import (
 """
 from gopup.economic.marco_cn import (
     marco_cmlrd,
-    get_gdp_year,
     get_gdp_quarter,
-    get_gdp_for,
-    get_gdp_pull,
-    get_gdp_contrib,
     get_cpi,
     get_ppi,
-    get_deposit_rate,
-    get_loan_rate,
+    get_pmi,
     get_rrr,
     get_money_supply,
-    get_money_supply_bal,
     get_gold_and_foreign_reserves
 )
 

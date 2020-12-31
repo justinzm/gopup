@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93b7bb07-655b-4d5a-8244-85210ae64a22" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gopup/index/index_baidu.py" beforeDir="false" afterPath="$PROJECT_DIR$/gopup/index/index_baidu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopup/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/gopup/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopup/economic/marco_cn.py" beforeDir="false" afterPath="$PROJECT_DIR$/gopup/economic/marco_cn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +20,7 @@
     <SUITE FILE_PATH="coverage/gopup$covid.coverage" NAME="covid Coverage Results" MODIFIED="1608699253927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gopup/event" />
     <SUITE FILE_PATH="coverage/gopup$index_weibo.coverage" NAME="index_weibo Coverage Results" MODIFIED="1584754022578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gopup/index" />
     <SUITE FILE_PATH="coverage/gopup$test.coverage" NAME="test Coverage Results" MODIFIED="1603251064346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/example" />
-    <SUITE FILE_PATH="coverage/gopup$marco_cn.coverage" NAME="marco_cn Coverage Results" MODIFIED="1608559851596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gopup/economic" />
+    <SUITE FILE_PATH="coverage/gopup$marco_cn.coverage" NAME="marco_cn Coverage Results" MODIFIED="1609384139254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gopup/economic" />
     <SUITE FILE_PATH="coverage/gopup$insert_symbols.coverage" NAME="insert_symbols Coverage Results" MODIFIED="1585030978117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/视频课程/199_Python3量化/03_配套源码/第03课代码" />
     <SUITE FILE_PATH="coverage/gopup$netbase.coverage" NAME="netbase Coverage Results" MODIFIED="1585313049837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gopup/utils" />
     <SUITE FILE_PATH="coverage/gopup$my_fun.coverage" NAME="my_fun Coverage Results" MODIFIED="1605926238761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gopup" />
@@ -36,16 +36,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gopup/index/index_baidu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
+            <state relative-caret-position="328">
               <caret line="345" column="6" selection-start-line="345" selection-start-column="6" selection-end-line="345" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gopup/life/oil.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="58" column="32" lean-forward="true" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
               <folding>
-                <element signature="e#159#170#0" expanded="true" />
-                <element signature="e#6399#7922#0" />
-                <element signature="e#10658#11910#0" />
+                <element signature="e#151#162#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gopup/economic/marco_cn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1784">
+              <caret line="224" column="76" lean-forward="true" selection-start-line="224" selection-start-column="76" selection-end-line="224" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gopup/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="78" column="33" lean-forward="true" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gopup/economic/shibor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-556">
+              <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gopup/economic/cons.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -54,19 +97,19 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="84">
-                <caret line="101" column="14" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
+              <first_editor relative-caret-position="966">
+                <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="108" selection-end-column="85" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="126">
+              <caret line="15" column="50" lean-forward="true" selection-start-line="15" selection-start-column="50" selection-end-line="16" selection-end-column="35" />
               <folding>
                 <element signature="e#153#196#0" expanded="true" />
               </folding>
@@ -97,10 +140,12 @@
       <find>index_toutiao_headers</find>
       <find>marco_cmlrd</find>
       <find>covid_163</find>
+      <find>eastmoney.com</find>
+      <find>exchange_rate</find>
     </findStrings>
     <dirStrings>
-      <dir>D:\pythonFile\gopup</dir>
       <dir>D:\pythonFile\gopup\gopup</dir>
+      <dir>D:\pythonFile\gopup</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -120,12 +165,12 @@
         <option value="$PROJECT_DIR$/example/test.py" />
         <option value="$PROJECT_DIR$/gopup/life/charity.py" />
         <option value="$PROJECT_DIR$/gopup/index/cons.py" />
-        <option value="$PROJECT_DIR$/gopup/__init__.py" />
         <option value="$PROJECT_DIR$/gopup/index/index_toutiao.py" />
-        <option value="$PROJECT_DIR$/gopup/economic/marco_cn.py" />
         <option value="$PROJECT_DIR$/gopup/event/covid.py" />
         <option value="$PROJECT_DIR$/gopup/index/index_baidu.py" />
+        <option value="$PROJECT_DIR$/gopup/__init__.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/gopup/economic/marco_cn.py" />
         <option value="$PROJECT_DIR$/setup.py" />
       </list>
     </option>
@@ -145,7 +190,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,12 +216,19 @@
               <item name="gopup" type="b2602c69:ProjectViewProjectNode" />
               <item name="gopup" type="462c0819:PsiDirectoryNode" />
               <item name="gopup" type="462c0819:PsiDirectoryNode" />
+              <item name="economic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gopup" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gopup" type="462c0819:PsiDirectoryNode" />
+              <item name="gopup" type="462c0819:PsiDirectoryNode" />
               <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -218,7 +269,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.index_baidu">
+  <component name="RunManager" selected="Python.marco_cn">
     <configuration name="charity" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="gopup" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -331,9 +382,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.marco_cn" />
         <item itemvalue="Python.index_baidu" />
         <item itemvalue="Python.covid" />
-        <item itemvalue="Python.marco_cn" />
         <item itemvalue="Python.index_toutiao" />
         <item itemvalue="Python.charity" />
       </list>
@@ -395,11 +446,12 @@
       <workItem from="1608773984236" duration="43000" />
       <workItem from="1608774302380" duration="608000" />
       <workItem from="1608858937747" duration="5544000" />
+      <workItem from="1609377004565" duration="8490000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172677000" />
+    <option name="totallyTimeSpent" value="181167000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -413,13 +465,13 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="754" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21504559" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21808511" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4016129" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32096773" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.66290325" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.48387095" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -427,12 +479,12 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32419354" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.4483871" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.32978722" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.575228" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
@@ -690,28 +742,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/economic/marco_cn.py</url>
-          <line>205</line>
+          <line>82</line>
           <option name="timeStamp" value="107" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gopup/economic/marco_cn.py</url>
-          <line>207</line>
-          <option name="timeStamp" value="108" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gopup/economic/marco_cn.py</url>
-          <line>208</line>
-          <option name="timeStamp" value="109" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gopup/economic/marco_cn.py</url>
-          <line>209</line>
-          <option name="timeStamp" value="110" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gopup/economic/marco_cn.py</url>
-          <line>418</line>
-          <option name="timeStamp" value="111" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/event/covid.py</url>
@@ -843,6 +875,36 @@
           <line>296</line>
           <option name="timeStamp" value="179" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gopup/economic/marco_cn.py</url>
+          <line>89</line>
+          <option name="timeStamp" value="181" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gopup/economic/marco_cn.py</url>
+          <line>90</line>
+          <option name="timeStamp" value="182" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gopup/economic/marco_cn.py</url>
+          <line>110</line>
+          <option name="timeStamp" value="187" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gopup/economic/marco_cn.py</url>
+          <line>111</line>
+          <option name="timeStamp" value="188" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gopup/economic/marco_cn.py</url>
+          <line>113</line>
+          <option name="timeStamp" value="189" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gopup/economic/marco_cn.py</url>
+          <line>232</line>
+          <option name="timeStamp" value="190" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -902,16 +964,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/life/oil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="33" selection-end-column="62" />
-          <folding>
-            <element signature="e#151#162#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -990,9 +1042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/economic/shibor.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/gopup/event/area_baidu.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -1028,13 +1077,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gopup/index/index_toutiao.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -1055,41 +1097,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/economic/marco_cn.py">
+    <entry file="file://$PROJECT_DIR$/gopup/index/index_baidu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="432" column="21" selection-start-line="432" selection-start-column="21" selection-end-line="432" selection-end-column="21" />
+        <state relative-caret-position="328">
+          <caret line="345" column="6" selection-start-line="345" selection-start-column="6" selection-end-line="345" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gopup/economic/cons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gopup/economic/shibor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-556">
+          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gopup/life/oil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="58" column="32" lean-forward="true" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+          <folding>
+            <element signature="e#151#162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gopup/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="78" column="33" lean-forward="true" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="84">
-            <caret line="101" column="14" selection-start-line="101" selection-start-column="14" selection-end-line="101" selection-end-column="14" />
+          <first_editor relative-caret-position="966">
+            <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="108" selection-end-column="85" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
+    <entry file="file://$PROJECT_DIR$/gopup/economic/marco_cn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding>
-            <element signature="e#153#196#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1784">
+          <caret line="224" column="76" lean-forward="true" selection-start-line="224" selection-start-column="76" selection-end-line="224" selection-end-column="85" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/index/index_baidu.py">
+    <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="345" column="6" selection-start-line="345" selection-start-column="6" selection-end-line="345" selection-end-column="6" />
+        <state relative-caret-position="126">
+          <caret line="15" column="50" lean-forward="true" selection-start-line="15" selection-start-column="50" selection-end-line="16" selection-end-column="35" />
           <folding>
-            <element signature="e#159#170#0" expanded="true" />
-            <element signature="e#6399#7922#0" />
-            <element signature="e#10658#11910#0" />
+            <element signature="e#153#196#0" expanded="true" />
           </folding>
         </state>
       </provider>
