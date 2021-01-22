@@ -294,14 +294,18 @@ def realtime_artist_flow():
 
 
 def get_js(js_url):
-    js_url = _get_js_path(js_url, __file__)
-    f = open(js_url, 'r', encoding='UTF-8')
-    line = f.readline()
-    htmlstr = ''
-    while line:
-        htmlstr = htmlstr + line
-        line = f.readline()
-    return htmlstr
+    # js_url = _get_js_path(js_url, __file__)
+    # f = open(js_url, 'r', encoding='UTF-8')
+    # line = f.readline()
+    # htmlstr = ''
+    # while line:
+    #     htmlstr = htmlstr + line
+    #     line = f.readline()
+    # return htmlstr
+
+    js_url = "http://www.gopup.cn/static/lib/webDES.js"
+    r = requests.get(url=js_url)
+    return r.text
 
 
 def _get_js_path(name, module_file):
@@ -318,6 +322,7 @@ def _get_js_path(name, module_file):
 
 if __name__ == "__main__":
     # "Python运行execjs中出现编码问题: https://www.jianshu.com/p/df0000013254"
+    # tmp = get_js("webDES.js")
     tmp = realtime_boxoffice()
     print(tmp)
 
