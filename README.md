@@ -22,12 +22,6 @@ df = gp.weibo_index(word="疫情", time_type="1hour")
 print(df)
 ```
 
-####  打赏作者
-
-![支付宝打赏](https://github.com/justinzm/gopup/blob/master/images/zfb.jpg) 
-
-![微信打赏](https://github.com/justinzm/gopup/blob/master/images/wx.jpg)
-
 ####  数据仓库
 
 - 指数数据
@@ -124,7 +118,6 @@ print(df)
     
     0.2.6
     中国油价数据：汽柴油历史调价信息、调价日的地区油价历史数据
-    KOL微博数据：微博账户数据、微博运营数据  
     
     0.2.5.1108
     宏观经济：货币汇率数据
