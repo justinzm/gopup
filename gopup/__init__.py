@@ -135,6 +135,14 @@ from gopup.life.university import (
     adult_university
 )
 
+"""
+微博运营数据
+"""
+from gopup.mcn.weibo import (
+    weibo_user,
+    weibo_list
+)
+
 
 """
 专业版接口
