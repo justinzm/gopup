@@ -8,6 +8,8 @@
 import pandas as pd
 import requests
 from gopup.fortune.cons import it_url, it_headers
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 
 
 def death_company():
