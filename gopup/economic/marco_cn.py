@@ -227,8 +227,150 @@ def get_gold_and_foreign_reserves():
     return data_df
 
 
-if __name__ == '__main__':
-    tmp = get_rrr()
+# 0.3.2
+def get_industrial_growth():
+    """
+    获取工业增加值增长
+    Returns
+    -------
+    DataFrame
+        "月份", "同比增长%", "累计增长%"
+    """
+    url = "http://datainterface.eastmoney.com/EM_DataCenter/JS.aspx"
+    params = {
+        "type": "GJZB",
+        "sty": "ZGZB",
+        "p": "1",
+        "ps": "200",
+        "mkt": "0"
+    }
+    r = requests.get(url=url, params=params)
+    data_text = r.text
+    tmp_list = data_text[data_text.find("[") + 2: -3]
+    tmp_list = tmp_list.split('","')
+    res_list = []
+    for li in tmp_list:
+        res_list.append(li.split(','))
+    columns = ["月份", "同比增长%", "累计增长%"]
+    data_df = pd.DataFrame(res_list, columns=columns)
+    return data_df
 
+
+def get_fiscal_revenue():
+    """
+    获取财政收入
+    Returns
+    -------
+    DataFrame
+        "月份、当月(亿元)、同比增长、环比增长、累计(亿元)、同比增长"
+    """
+    url = "http://datainterface.eastmoney.com/EM_DataCenter/JS.aspx"
+    params = {
+        "type": "GJZB",
+        "sty": "ZGZB",
+        "p": "1",
+        "ps": "200",
+        "mkt": "14"
+    }
+    r = requests.get(url=url, params=params)
+    data_text = r.text
+    tmp_list = data_text[data_text.find("[") + 2: -3]
+    tmp_list = tmp_list.split('","')
+    res_list = []
+    for li in tmp_list:
+        res_list.append(li.split(','))
+    columns = ["月份", "当月(亿元)", "同比增长", "环比增长", "累计(亿元)", "同比增长"]
+    data_df = pd.DataFrame(res_list, columns=columns)
+    return data_df
+
+
+def get_consumer_total():
+    """
+    获取社会消费品零售总额
+    Returns
+    -------
+    DataFrame
+        "月份、当月(亿元)、同比增长、环比增长、累计(亿元)、同比增长"
+    """
+    url = "http://datainterface.eastmoney.com/EM_DataCenter/JS.aspx"
+    params = {
+        "type": "GJZB",
+        "sty": "ZGZB",
+        "p": "1",
+        "ps": "200",
+        "mkt": "5"
+    }
+    r = requests.get(url=url, params=params)
+    data_text = r.text
+    tmp_list = data_text[data_text.find("[") + 2: -3]
+    tmp_list = tmp_list.split('","')
+    res_list = []
+    for li in tmp_list:
+        res_list.append(li.split(','))
+    columns = ["月份", "当月(亿元)", "同比增长", "环比增长", "累计(亿元)", "同比增长"]
+    data_df = pd.DataFrame(res_list, columns=columns)
+    return data_df
+
+
+def get_credit_data():
+    """
+    获取信贷数据
+    Returns
+    -------
+    DataFrame
+        "月份、当月(亿元)、同比增长、环比增长、累计(亿元)、同比增长"
+    """
+    url = "http://datainterface.eastmoney.com/EM_DataCenter/JS.aspx"
+    params = {
+        "type": "GJZB",
+        "sty": "ZGZB",
+        "p": "1",
+        "ps": "200",
+        "mkt": "7"
+    }
+    r = requests.get(url=url, params=params)
+    data_text = r.text
+    tmp_list = data_text[data_text.find("[") + 2: -3]
+    tmp_list = tmp_list.split('","')
+    res_list = []
+    for li in tmp_list:
+        res_list.append(li.split(','))
+    columns = ["月份", "当月(亿元)", "同比增长", "环比增长", "累计(亿元)", "同比增长"]
+    data_df = pd.DataFrame(res_list, columns=columns)
+    return data_df
+
+
+def get_fdi_data():
+    """
+    获取外商直接投资数据(FDI)
+    Returns
+    -------
+    DataFrame
+        "月份、当月(亿元)、同比增长、环比增长、累计(亿元)、同比增长"
+    """
+    url = "http://datainterface.eastmoney.com/EM_DataCenter/JS.aspx"
+    params = {
+        "type": "GJZB",
+        "sty": "ZGZB",
+        "p": "1",
+        "ps": "200",
+        "mkt": "15"
+    }
+    r = requests.get(url=url, params=params)
+    data_text = r.text
+    tmp_list = data_text[data_text.find("[") + 2: -3]
+    tmp_list = tmp_list.split('","')
+    res_list = []
+    for li in tmp_list:
+        res_list.append(li.split(','))
+    columns = ["月份", "当月(亿元)", "同比增长", "环比增长", "累计(亿元)", "同比增长"]
+    data_df = pd.DataFrame(res_list, columns=columns)
+    data_df['当月(亿元)'] = data_df['当月(亿元)'].map(lambda x: int(x)/100000)
+    data_df['累计(亿元)'] = data_df['累计(亿元)'].map(lambda x: int(x)/100000)
+    return data_df
+
+
+if __name__ == '__main__':
+    tmp = get_credit_data()
     print(tmp)
 
