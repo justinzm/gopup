@@ -76,7 +76,12 @@ from gopup.economic.marco_cn import (
     get_pmi,
     get_rrr,
     get_money_supply,
-    get_gold_and_foreign_reserves
+    get_gold_and_foreign_reserves,
+    get_industrial_growth,
+    get_fiscal_revenue,
+    get_consumer_total,
+    get_credit_data,
+    get_fdi_data
 )
 
 

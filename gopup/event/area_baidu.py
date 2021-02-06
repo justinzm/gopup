@@ -55,7 +55,7 @@ def migration_area_baidu(area="武汉市", indicator="move_in", date="20200201")
     return pd.DataFrame(json_data["data"]["list"])
 
 
-def migration_scale_baidu(area="武汉市", indicator="move_out", start_date="20190112", end_date="20200201"):
+def migration_scale_baidu(area="武汉市", indicator="move_out", date="20210112"):
     """
     百度地图慧眼-百度迁徙-迁徙规模
     * 迁徙规模指数：反映迁入或迁出人口规模，城市间可横向对比
@@ -65,9 +65,7 @@ def migration_scale_baidu(area="武汉市", indicator="move_out", start_date="20
     :type area: str
     :param indicator: move_in 迁入 move_out 迁出
     :type indicator: str
-    :param start_date: 开始查询的日期 默认就可以
-    :type start_date: str
-    :param end_date: 结束查询的日期 20200101 以后的时间
+    :param date: 结束查询的日期 20200101 以后的时间
     :type end_date: str
     :return: 时间序列的迁徙规模指数
     :rtype: pandas.DataFrame
@@ -77,24 +75,25 @@ def migration_scale_baidu(area="武汉市", indicator="move_out", start_date="20
             "dt": "country",
             "id": 0,
             "type": indicator,
-            "startDate": start_date,
-            "endDate": end_date,
+            "date": date
         }
     else:
         city_dict.update(province_dict)
         inner_dict = dict(zip(city_dict.values(), city_dict.keys()))
-        if inner_dict[area] in province_dict.keys():
-            dt_flag = "province"
-        else:
-            dt_flag = "city"
+        try:
+            if inner_dict[area] in province_dict.keys():
+                dt_flag = "province"
+            else:
+                dt_flag = "city"
 
-        payload = {
-            "dt": dt_flag,
-            "id": inner_dict[area],
-            "type": indicator,
-            "startDate": start_date,
-            "endDate": end_date,
-        }
+            payload = {
+                "dt": dt_flag,
+                "id": inner_dict[area],
+                "type": indicator,
+                "date": date
+            }
+        except Exception as e:
+            return "省份 或者 具体城市名 错误"
     url = "https://huiyan.baidu.com/migration/historycurve.jsonp"
     r = requests.get(url, params=payload)
     json_data = json.loads(r.text[r.text.find("({") + 1 : r.text.rfind(");")])
@@ -105,7 +104,7 @@ def migration_scale_baidu(area="武汉市", indicator="move_out", start_date="20
 
 
 if __name__ == "__main__":
-    tmp = migration_scale_baidu(area="全国", indicator="move_in", start_date="20190112", end_date="20200201")
+    tmp = migration_scale_baidu(area="武汉", indicator="move_out")
     print(tmp)
 
 
