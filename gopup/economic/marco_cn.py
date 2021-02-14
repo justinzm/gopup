@@ -363,14 +363,14 @@ def get_fdi_data():
     res_list = []
     for li in tmp_list:
         res_list.append(li.split(','))
-    columns = ["月份", "当月(亿元)", "同比增长", "环比增长", "累计(亿元)", "同比增长"]
+    columns = ["月份", "当月(十万元)", "同比增长", "环比增长", "累计(十万元)", "同比增长"]
     data_df = pd.DataFrame(res_list, columns=columns)
-    data_df['当月(亿元)'] = data_df['当月(亿元)'].map(lambda x: int(x)/100000)
-    data_df['累计(亿元)'] = data_df['累计(亿元)'].map(lambda x: int(x)/100000)
+    # data_df['当月(亿元)'] = data_df['当月(亿元)'].map(lambda x: int(x)/100000)
+    # data_df['累计(亿元)'] = data_df['累计(亿元)'].map(lambda x: int(x)/100000)
     return data_df
 
 
 if __name__ == '__main__':
-    tmp = get_credit_data()
+    tmp = get_fdi_data()
     print(tmp)
 
