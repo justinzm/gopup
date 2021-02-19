@@ -21,6 +21,10 @@ from gopup.index.index_baidu import (
 """
 from gopup.index.index_weibo import weibo_index
 
+"""
+搜狗指数
+"""
+from gopup.index.index_sogou import sogou_index
 
 """
 头条指数
