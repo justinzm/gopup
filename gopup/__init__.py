@@ -57,6 +57,29 @@ from gopup.event.area_baidu import (
     migration_scale_baidu
 )
 
+"""
+历史上的今日接口
+"""
+from gopup.event.history_daily import history_daily
+
+
+"""
+榜单接口
+"""
+from gopup.event.hot_list import (
+    douban_movie_list,
+    douban_week_praise_list,
+    zhihu_hot_search_list,
+    zhihu_hot_list,
+    wx_hot_word_list,
+    wx_hot_list,
+    weibo_hot_search_list,
+    weibo_new_era_list,
+    baidu_hot_list,
+    baidu_today_hot_list,
+    baidu_hot_word_list
+)
+
 
 """
 新型冠状病毒接口
