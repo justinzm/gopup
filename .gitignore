@@ -22,3 +22,7 @@ venv/*
 *.pyc
 .idea/gopup.iml
 .idea/workspace.xml
+gopup/event/__pycache__/cons.cpython-37.pyc
+gopup/event/__pycache__/area_baidu.cpython-37.pyc
+gopup/event/__pycache__/__init__.cpython-37.pyc
+.idea/workspace.xml

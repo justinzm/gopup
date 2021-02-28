@@ -253,11 +253,13 @@ def baidu_search_index(word, start_date, end_date, cookie, type="all"):
         "Cookie": cookie,
         "Host": "index.baidu.com",
         "Referer": "http://index.baidu.com/v2/main/index.html",
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.90 Safari/537.36"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
     }
     w = '{"name":"%s","wordType":1}' % word
 
     url = 'http://index.baidu.com/api/SearchApi/index?area=0&word=[[%s]]&startDate=%s&endDate=%s' % (w, start_date, end_date)
+
+    # url = 'http://index.baidu.com/api/SearchApi/index?area=0&word=[[%7B%22name%22:%22%E5%8F%A3%E7%BD%A9%22,%22wordType%22:1%7D]]&days=30'
 
     r = requests.get(url=url, headers=headers)
     data = r.json()["data"]
@@ -342,9 +344,10 @@ def baidu_media_index(word, start_date, end_date, cookie):
 
 
 if __name__ == "__main__":
-    cookie = 'BIDUPSID=F7EB2ABF6DC23E3AE0D29AD77AC3A828; PSTM=1550065926; bdshare_firstime=1580385892027; BAIDUID=BECC251AF81F5D6642279AA52D2B4069:FG=1; BDUSS=NKRHNYcTVELWM4TFd4SGFUYng3ZkRsb3Q2RHRuRVBZRXc4TkVkWk96bUctY0ZmSVFBQUFBJCQAAAAAAAAAAAEAAABU8PMTst24-dauw~cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIZsml-GbJpfOH; BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; MCITY=-%3A; bdindexid=1ml7ffmmi4e6qttriofivv8ee2; Hm_lvt_d101ea4d2a5c67dab98251f0b5de24dc=1608859085,1608867185; Hm_lpvt_d101ea4d2a5c67dab98251f0b5de24dc=1608867200; RT="sl=4&ss=kj3pzbnz&tt=41w&bcn=https%3A%2F%2Ffclog.baidu.com%2Flog%2Fweirwood%3Ftype%3Dperf&z=1&dm=baidu.com&si=7g4vsvbj94"; __yjsv5_shitong=1.0_7_835dba6616d254eab5e9498efc28ecbfaa90_300_1608866990636_221.232.19.129_73b13905'
-    # data = baidu_search_index(word="口罩", start_date='2020-12-01', end_date='2020-12-24', cookie=cookie)
-    data = baidu_interest_index(word="口罩",  cookie=cookie)
+    cookie = 'BIDUPSID=F7EB2ABF6DC23E3AE0D29AD77AC3A828; PSTM=1550065926; bdshare_firstime=1580385892027; BAIDUID=BECC251AF81F5D6642279AA52D2B4069:FG=1; MCITY=-218%3A; BDUSS=13M1FIOVNDcWZKVDA4cWV-WHBsT1A3bGxZbEc0QW5kRFp4czF2RkZoTGZoVHhnRVFBQUFBJCQAAAAAAAAAAAEAAABU8PMTst24-dauw~cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN~4FGDf-BRgdG; BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; Hm_lvt_d101ea4d2a5c67dab98251f0b5de24dc=1612402200,1614130213; delPer=0; PSINO=6; H_PS_PSSID=33517_33273_31254_33570_33459; BA_HECTOR=202h0h2lah84842kuf1g3e92n0q; __yjsv5_shitong=1.0_7_a4501580b993ab09134a92f49aeb3b73647f_300_1614226239372_221.232.19.71_9dc1cdfc; bdindexid=1a0k106dsbqo6ca1if3aq0j721; RT="z=1&dm=baidu.com&si=e1365j5tgw8&ss=klkcsmj1&sl=3&tt=4lm&bcn=https%3A%2F%2Ffclog.baidu.com%2Flog%2Fweirwood%3Ftype%3Dperf"; Hm_lpvt_d101ea4d2a5c67dab98251f0b5de24dc=1614226557'
+    data = baidu_search_index(word="口罩", start_date='2020-12-01', end_date='2020-12-24', cookie=cookie)
+    # data = baidu_interest_index(word="口罩",  cookie=cookie)
+    # data = get_ptbk(uniqid='fb39b581dfc73bb3689e21c4875d8d6d', cookie=cookie)
     print(data)
 
 

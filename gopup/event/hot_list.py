@@ -219,5 +219,6 @@ def baidu_hot_word_list():
 
 
 if __name__ == "__main__":
-    weibo_new_era_list()
+    tmp = weibo_new_era_list()
+    print(tmp)
 

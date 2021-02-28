@@ -22,10 +22,11 @@ def history_daily():
     r = requests.get(url=url)
     res_list = json.loads(r.text)['info']
     df = pd.DataFrame(res_list)
-    df = df.drop(['cover', 'festival', 'recommend', 'pv'], axis=1)
+    df = df.drop(['cover', 'festival', 'recommend'], axis=1)
     return df
  
 
 if __name__ == "__main__":
-    history_daily()
+    tmp = history_daily()
+    print(tmp)
 
