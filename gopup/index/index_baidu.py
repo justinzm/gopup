@@ -263,18 +263,21 @@ def baidu_search_index(word, start_date, end_date, cookie, type="all"):
 
     r = requests.get(url=url, headers=headers)
     data = r.json()["data"]
-    all_data = data["userIndexes"][0][type]["data"]
-    uniqid = data["uniqid"]
-    ptbk = get_ptbk(uniqid, cookie)
-    result = decrypt(ptbk, all_data).split(",")
-    result = [int(item) if item != "" else 0 for item in result]
-    temp_df_7 = pd.DataFrame(
-            [pd.date_range(start=start_date, end=end_date), result],
-            index=["date", word],
-        ).T
-    temp_df_7.index = pd.to_datetime(temp_df_7["date"])
-    del temp_df_7["date"]
-    return temp_df_7
+    try:
+        all_data = data["userIndexes"][0][type]["data"]
+        uniqid = data["uniqid"]
+        ptbk = get_ptbk(uniqid, cookie)
+        result = decrypt(ptbk, all_data).split(",")
+        result = [int(item) if item != "" else 0 for item in result]
+        temp_df_7 = pd.DataFrame(
+                [pd.date_range(start=start_date, end=end_date), result],
+                index=["date", word],
+            ).T
+        temp_df_7.index = pd.to_datetime(temp_df_7["date"])
+        del temp_df_7["date"]
+        return temp_df_7
+    except Exception as e:
+        return "暂无数据"
 
 
 def baidu_info_index(word, start_date, end_date, cookie):
@@ -344,7 +347,7 @@ def baidu_media_index(word, start_date, end_date, cookie):
 
 
 if __name__ == "__main__":
-    cookie = 'BIDUPSID=F7EB2ABF6DC23E3AE0D29AD77AC3A828; PSTM=1550065926; bdshare_firstime=1580385892027; BAIDUID=BECC251AF81F5D6642279AA52D2B4069:FG=1; MCITY=-218%3A; BDUSS=13M1FIOVNDcWZKVDA4cWV-WHBsT1A3bGxZbEc0QW5kRFp4czF2RkZoTGZoVHhnRVFBQUFBJCQAAAAAAAAAAAEAAABU8PMTst24-dauw~cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN~4FGDf-BRgdG; BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; Hm_lvt_d101ea4d2a5c67dab98251f0b5de24dc=1612402200,1614130213; delPer=0; PSINO=6; H_PS_PSSID=33517_33273_31254_33570_33459; BA_HECTOR=202h0h2lah84842kuf1g3e92n0q; __yjsv5_shitong=1.0_7_a4501580b993ab09134a92f49aeb3b73647f_300_1614226239372_221.232.19.71_9dc1cdfc; bdindexid=1a0k106dsbqo6ca1if3aq0j721; RT="z=1&dm=baidu.com&si=e1365j5tgw8&ss=klkcsmj1&sl=3&tt=4lm&bcn=https%3A%2F%2Ffclog.baidu.com%2Flog%2Fweirwood%3Ftype%3Dperf"; Hm_lpvt_d101ea4d2a5c67dab98251f0b5de24dc=1614226557'
+    cookie = 'BIDUPSID=F7EB2ABF6DC23E3AE0D29AD77AC3A828; PSTM=1550065926; bdshare_firstime=1580385892027; BAIDUID=BECC251AF81F5D6642279AA52D2B4069:FG=1; MCITY=-218%3A; BDUSS=13M1FIOVNDcWZKVDA4cWV-WHBsT1A3bGxZbEc0QW5kRFp4czF2RkZoTGZoVHhnRVFBQUFBJCQAAAAAAAAAAAEAAABU8PMTst24-dauw~cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN~4FGDf-BRgdG; BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; delPer=0; PSINO=6; H_PS_PSSID=33517_33273_31254_33595_33570_33459; BA_HECTOR=212k810h8g808401eg1g4b5510r; Hm_lvt_d101ea4d2a5c67dab98251f0b5de24dc=1614130213,1615173510; bdindexid=0v24k8l0bviipgtbju20vc5036; __yjsv5_shitong=1.0_7_a4501580b993ab09134a92f49aeb3b73647f_300_1615173215022_111.175.93.98_4db3c74d; RT="z=1&dm=baidu.com&si=f56q8dtip97&ss=km00lrkh&sl=6&tt=4u1&bcn=https%3A%2F%2Ffclog.baidu.com%2Flog%2Fweirwood%3Ftype%3Dperf"; Hm_lpvt_d101ea4d2a5c67dab98251f0b5de24dc=1615173549'
     data = baidu_search_index(word="口罩", start_date='2020-12-01', end_date='2020-12-24', cookie=cookie)
     # data = baidu_interest_index(word="口罩",  cookie=cookie)
     # data = get_ptbk(uniqid='fb39b581dfc73bb3689e21c4875d8d6d', cookie=cookie)
