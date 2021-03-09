@@ -23,13 +23,16 @@ def get_industry_classified(standard='sina'):
         name :股票名称
         c_name :行业名称
     """
-    if standard == 'sw':
-        df = pd.read_csv('http://img.kekepu.com/industry_sw.csv',
-                         dtype={'code': object})
-    else:
-        df = pd.read_csv('http://img.kekepu.com/industry.csv',
-                         dtype={'code': object})
-    return df
+    try:
+        if standard == 'sw':
+            df = pd.read_csv('http://img.kekepu.com/industry_sw.csv',
+                             dtype={'code': object})
+        else:
+            df = pd.read_csv('http://img.kekepu.com/industry.csv',
+                             dtype={'code': object})
+        return df
+    except:
+        return None
 
 
 def get_concept_classified():
@@ -42,10 +45,12 @@ def get_concept_classified():
         name :股票名称
         c_name :概念名称
     """
-    df = pd.read_csv('http://img.kekepu.com/concept.csv',
-                    dtype={'code': object})
-    return df
-
+    try:
+        df = pd.read_csv('http://img.kekepu.com/concept.csv',
+                        dtype={'code': object})
+        return df
+    except:
+        return None
 
 if __name__ == "__main__":
     tmp = get_concept_classified()

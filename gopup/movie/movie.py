@@ -48,7 +48,7 @@ def realtime_boxoffice():
             res_pd = res_pd.drop(columns=['moblie_url', 'larger_url', 'mId', 'MovieImg'])
         return res_pd
     except Exception as e:
-        return str(e)
+        return None
 
 
 def day_boxoffice(date=None):
@@ -95,7 +95,7 @@ def day_boxoffice(date=None):
             res_pd = res_pd.drop(columns=['MovieImg', 'moblie_url', 'larger_url', 'MovieID', 'Director', 'BoxOffice1', 'IRank_pro', 'RapIndex'])
         return res_pd
     except Exception as e:
-        return str(e)
+        return None
 
 
 def day_cinema(date=None):
@@ -134,7 +134,7 @@ def day_cinema(date=None):
                 columns=['CinemaID', 'TodayAudienceCount', 'TodayOfferSeat'])
         return res_pd
     except Exception as e:
-        return str(e)
+        return None
 
 
 def realtime_tv():
@@ -172,7 +172,7 @@ def realtime_tv():
             res_pd['date'] = res_dict['Data']['Table1'][0]['MaxDate']
         return res_pd
     except Exception as e:
-        return str(e)
+        return None
 
 
 def realtime_show():
@@ -210,7 +210,7 @@ def realtime_show():
             res_pd['date'] = res_dict['Data']['Table1'][0]['MaxDate']
         return res_pd
     except Exception as e:
-        return str(e)
+        return None
 
 
 def realtime_artist():
@@ -250,7 +250,7 @@ def realtime_artist():
                 columns=['StarBaseID'])
         return res_pd
     except Exception as e:
-        return str(e)
+        return None
 
 
 def realtime_artist_flow():
@@ -290,19 +290,10 @@ def realtime_artist_flow():
                 columns=['StarBaseID', 'ReputationIndex_L3', 'BusinessValueIndex_L1'])
         return res_pd
     except Exception as e:
-        return str(e)
+        return None
 
 
 def get_js(js_url):
-    # js_url = _get_js_path(js_url, __file__)
-    # f = open(js_url, 'r', encoding='UTF-8')
-    # line = f.readline()
-    # htmlstr = ''
-    # while line:
-    #     htmlstr = htmlstr + line
-    #     line = f.readline()
-    # return htmlstr
-
     js_url = "http://www.gopup.cn/static/lib/webDES.js"
     r = requests.get(url=js_url)
     return r.text

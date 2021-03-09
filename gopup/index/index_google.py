@@ -21,16 +21,19 @@ def google_index(keyword="python", start_date="2019-12-01", end_date="2019-12-04
     :param end_date:    2019-12-10T23
     :return:
     """
-    pytrends = TrendReq(hl="en-US", tz=360)
-    kw_list = [keyword]
-    pytrends.build_payload(
-        kw_list, cat=0, timeframe=start_date + " " + end_date, geo="", gprop=""
-    )
-    search_df = pytrends.interest_over_time()
-    search_df['value'] = search_df[keyword]
-    search_df['date'] = search_df.index
-    res_df = search_df.drop(['isPartial', keyword], axis=1)
-    return res_df
+    try:
+        pytrends = TrendReq(hl="en-US", tz=360)
+        kw_list = [keyword]
+        pytrends.build_payload(
+            kw_list, cat=0, timeframe=start_date + " " + end_date, geo="", gprop=""
+        )
+        search_df = pytrends.interest_over_time()
+        search_df['value'] = search_df[keyword]
+        search_df['date'] = search_df.index
+        res_df = search_df.drop(['isPartial', keyword], axis=1)
+        return res_df
+    except:
+        return None
 
 
 def google_fact_check(keyword, offset=0, limit=100, hl=None):

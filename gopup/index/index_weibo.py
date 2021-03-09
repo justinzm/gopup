@@ -58,22 +58,25 @@ def weibo_index(word="python", time_type="3month"):
     :param time_type: str 1hour, 1day, 1month, 3month
     :return:
     """
-    dict_keyword = _get_items(word)
-    df_list = []
-    for keyword, wid in dict_keyword.items():
-        df = _get_index_data(wid, time_type)
-        if df is not None:
-            df.columns = ["index", keyword]
-            df["index"] = df["index"].apply(lambda x: _process_index(x))
-            df.set_index("index", inplace=True)
-            df_list.append(df)
-    if len(df_list) > 0:
-        df = pd.concat(df_list, axis=1)
-        if time_type == "1hour" or "1day":
-            df.index = pd.to_datetime(df.index)
-        else:
-            df.index = pd.to_datetime(df.index, format="%Y%m%d")
-        return df
+    try:
+        dict_keyword = _get_items(word)
+        df_list = []
+        for keyword, wid in dict_keyword.items():
+            df = _get_index_data(wid, time_type)
+            if df is not None:
+                df.columns = ["index", keyword]
+                df["index"] = df["index"].apply(lambda x: _process_index(x))
+                df.set_index("index", inplace=True)
+                df_list.append(df)
+        if len(df_list) > 0:
+            df = pd.concat(df_list, axis=1)
+            if time_type == "1hour" or "1day":
+                df.index = pd.to_datetime(df.index)
+            else:
+                df.index = pd.to_datetime(df.index, format="%Y%m%d")
+            return df
+    except:
+        return None
 
 
 if __name__ == "__main__":

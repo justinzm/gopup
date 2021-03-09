@@ -18,15 +18,18 @@ def douban_movie_list():
     DataFrame
         "titleCn, title，rate, link, img, description, ranking"
     """
-    url = "https://www.bjsoubang.com/api/getChannelData"
-    params = {
-        "channel_id": 16
-    }
-    r = requests.get(url=url, params=params)
-    res_list = json.loads(r.text)['info']['data']
-    df = pd.DataFrame(res_list)
-    df['ranking'] = df.index + 1
-    return df
+    try:
+        url = "https://www.bjsoubang.com/api/getChannelData"
+        params = {
+            "channel_id": 16
+        }
+        r = requests.get(url=url, params=params)
+        res_list = json.loads(r.text)['info']['data']
+        df = pd.DataFrame(res_list)
+        df['ranking'] = df.index + 1
+        return df
+    except:
+        return None
 
 
 def douban_week_praise_list():
@@ -37,14 +40,17 @@ def douban_week_praise_list():
     DataFrame
         "title，trend, link, ranking"
     """
-    url = "https://www.bjsoubang.com/api/getChannelData"
-    params = {
-        "channel_id": 19
-    }
-    r = requests.get(url=url, params=params)
-    res_list = json.loads(r.text)['info']['data']
-    df = pd.DataFrame(res_list)
-    return df
+    try:
+        url = "https://www.bjsoubang.com/api/getChannelData"
+        params = {
+            "channel_id": 19
+        }
+        r = requests.get(url=url, params=params)
+        res_list = json.loads(r.text)['info']['data']
+        df = pd.DataFrame(res_list)
+        return df
+    except:
+        return None
 
 
 def zhihu_hot_search_list():
@@ -55,15 +61,18 @@ def zhihu_hot_search_list():
     DataFrame
         "display_query，query, link, ranking"
     """
-    url = "https://www.bjsoubang.com/api/getChannelData"
-    params = {
-        "channel_id": 10
-    }
-    r = requests.get(url=url, params=params)
-    res_list = json.loads(r.text)['info']['data']
-    df = pd.DataFrame(res_list)
-    df['ranking'] = df.index + 1
-    return df
+    try:
+        url = "https://www.bjsoubang.com/api/getChannelData"
+        params = {
+            "channel_id": 10
+        }
+        r = requests.get(url=url, params=params)
+        res_list = json.loads(r.text)['info']['data']
+        df = pd.DataFrame(res_list)
+        df['ranking'] = df.index + 1
+        return df
+    except:
+        return None
 
 
 def zhihu_hot_list():
@@ -74,15 +83,18 @@ def zhihu_hot_list():
     DataFrame
         "title, img，description, link, ranking, hot"
     """
-    url = "https://www.bjsoubang.com/api/getChannelData"
-    params = {
-        "channel_id": 2
-    }
-    r = requests.get(url=url, params=params)
-    res_list = json.loads(r.text)['info']['data']
-    df = pd.DataFrame(res_list)
-    df['ranking'] = df.index + 1
-    return df
+    try:
+        url = "https://www.bjsoubang.com/api/getChannelData"
+        params = {
+            "channel_id": 2
+        }
+        r = requests.get(url=url, params=params)
+        res_list = json.loads(r.text)['info']['data']
+        df = pd.DataFrame(res_list)
+        df['ranking'] = df.index + 1
+        return df
+    except:
+        return None
 
 
 def wx_hot_word_list():
@@ -93,15 +105,18 @@ def wx_hot_word_list():
     DataFrame
         "title, link, hot_rank, ranking"
     """
-    url = "https://www.bjsoubang.com/api/getChannelData"
-    params = {
-        "channel_id": 6
-    }
-    r = requests.get(url=url, params=params)
-    res_list = json.loads(r.text)['info']['data']
-    df = pd.DataFrame(res_list)
-    df['ranking'] = df.index + 1
-    return df
+    try:
+        url = "https://www.bjsoubang.com/api/getChannelData"
+        params = {
+            "channel_id": 6
+        }
+        r = requests.get(url=url, params=params)
+        res_list = json.loads(r.text)['info']['data']
+        df = pd.DataFrame(res_list)
+        df['ranking'] = df.index + 1
+        return df
+    except:
+        return None
 
 
 def wx_hot_list():
@@ -112,15 +127,18 @@ def wx_hot_list():
     DataFrame
         "title, img，description, link, ranking"
     """
-    url = "https://www.bjsoubang.com/api/getChannelData"
-    params = {
-        "channel_id": 1
-    }
-    r = requests.get(url=url, params=params)
-    res_list = json.loads(r.text)['info']['data']
-    df = pd.DataFrame(res_list)
-    df['ranking'] = df.index + 1
-    return df
+    try:
+        url = "https://www.bjsoubang.com/api/getChannelData"
+        params = {
+            "channel_id": 1
+        }
+        r = requests.get(url=url, params=params)
+        res_list = json.loads(r.text)['info']['data']
+        df = pd.DataFrame(res_list)
+        df['ranking'] = df.index + 1
+        return df
+    except:
+        return None
 
 
 def weibo_hot_search_list():
@@ -131,15 +149,18 @@ def weibo_hot_search_list():
     DataFrame
         "title, tag, link, hot, ranking"
     """
-    url = "https://www.bjsoubang.com/api/getChannelData"
-    params = {
-        "channel_id": 4
-    }
-    r = requests.get(url=url, params=params)
-    res_list = json.loads(r.text)['info']['data']
-    df = pd.DataFrame(res_list)
-    df['ranking'] = df.index + 1
-    return df
+    try:
+        url = "https://www.bjsoubang.com/api/getChannelData"
+        params = {
+            "channel_id": 4
+        }
+        r = requests.get(url=url, params=params)
+        res_list = json.loads(r.text)['info']['data']
+        df = pd.DataFrame(res_list)
+        df['ranking'] = df.index + 1
+        return df
+    except:
+        return None
 
 
 def weibo_new_era_list():
@@ -150,15 +171,18 @@ def weibo_new_era_list():
     DataFrame
         "title, link, ranking"
     """
-    url = "https://www.bjsoubang.com/api/getChannelData"
-    params = {
-        "channel_id": 5
-    }
-    r = requests.get(url=url, params=params)
-    res_list = json.loads(r.text)['info']['data']
-    df = pd.DataFrame(res_list)
-    df['ranking'] = df.index + 1
-    return df
+    try:
+        url = "https://www.bjsoubang.com/api/getChannelData"
+        params = {
+            "channel_id": 5
+        }
+        r = requests.get(url=url, params=params)
+        res_list = json.loads(r.text)['info']['data']
+        df = pd.DataFrame(res_list)
+        df['ranking'] = df.index + 1
+        return df
+    except:
+        return None
 
 
 def baidu_hot_list():
@@ -169,15 +193,18 @@ def baidu_hot_list():
     DataFrame
         "title, id, status, link_video, link_search, link_news, link_img, hot, ranking"
     """
-    url = "https://www.bjsoubang.com/api/getChannelData"
-    params = {
-        "channel_id": 3
-    }
-    r = requests.get(url=url, params=params)
-    res_list = json.loads(r.text)['info']['data']
-    df = pd.DataFrame(res_list)
-    df['ranking'] = df.index + 1
-    return df
+    try:
+        url = "https://www.bjsoubang.com/api/getChannelData"
+        params = {
+            "channel_id": 3
+        }
+        r = requests.get(url=url, params=params)
+        res_list = json.loads(r.text)['info']['data']
+        df = pd.DataFrame(res_list)
+        df['ranking'] = df.index + 1
+        return df
+    except:
+        return None
 
 
 def baidu_today_hot_list():
@@ -188,15 +215,18 @@ def baidu_today_hot_list():
     DataFrame
         "title, id, status, link_video, link_search, link_news, link_img, hot, ranking"
     """
-    url = "https://www.bjsoubang.com/api/getChannelData"
-    params = {
-        "channel_id": 12
-    }
-    r = requests.get(url=url, params=params)
-    res_list = json.loads(r.text)['info']['data']
-    df = pd.DataFrame(res_list)
-    df['ranking'] = df.index + 1
-    return df
+    try:
+        url = "https://www.bjsoubang.com/api/getChannelData"
+        params = {
+            "channel_id": 12
+        }
+        r = requests.get(url=url, params=params)
+        res_list = json.loads(r.text)['info']['data']
+        df = pd.DataFrame(res_list)
+        df['ranking'] = df.index + 1
+        return df
+    except:
+        return None
 
 
 def baidu_hot_word_list():
@@ -207,15 +237,18 @@ def baidu_hot_word_list():
     DataFrame
         "title, link, status, description, ranking"
     """
-    url = "https://www.bjsoubang.com/api/getChannelData"
-    params = {
-        "channel_id": 9
-    }
-    r = requests.get(url=url, params=params)
-    res_list = json.loads(r.text)['info']['data']
-    df = pd.DataFrame(res_list)
-    df['ranking'] = df.index + 1
-    return df
+    try:
+        url = "https://www.bjsoubang.com/api/getChannelData"
+        params = {
+            "channel_id": 9
+        }
+        r = requests.get(url=url, params=params)
+        res_list = json.loads(r.text)['info']['data']
+        df = pd.DataFrame(res_list)
+        df['ranking'] = df.index + 1
+        return df
+    except:
+        return None
 
 
 if __name__ == "__main__":

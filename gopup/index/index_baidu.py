@@ -245,25 +245,24 @@ def baidu_atlas_index(word, cookie, date=None):
 
 def baidu_search_index(word, start_date, end_date, cookie, type="all"):
     # 百度搜索数据
-    headers = {
-        "Accept": "application/json, text/plain, */*",
-        "Accept-Encoding": "gzip, deflate",
-        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-        "Connection": "keep-alive",
-        "Cookie": cookie,
-        "Host": "index.baidu.com",
-        "Referer": "http://index.baidu.com/v2/main/index.html",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
-    }
-    w = '{"name":"%s","wordType":1}' % word
-
-    url = 'http://index.baidu.com/api/SearchApi/index?area=0&word=[[%s]]&startDate=%s&endDate=%s' % (w, start_date, end_date)
-
-    # url = 'http://index.baidu.com/api/SearchApi/index?area=0&word=[[%7B%22name%22:%22%E5%8F%A3%E7%BD%A9%22,%22wordType%22:1%7D]]&days=30'
-
-    r = requests.get(url=url, headers=headers)
-    data = r.json()["data"]
     try:
+        headers = {
+            "Accept": "application/json, text/plain, */*",
+            "Accept-Encoding": "gzip, deflate",
+            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+            "Connection": "keep-alive",
+            "Cookie": cookie,
+            "Host": "index.baidu.com",
+            "Referer": "http://index.baidu.com/v2/main/index.html",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
+        }
+        w = '{"name":"%s","wordType":1}' % word
+
+        url = 'http://index.baidu.com/api/SearchApi/index?area=0&word=[[%s]]&startDate=%s&endDate=%s' % (w, start_date, end_date)
+
+        r = requests.get(url=url, headers=headers)
+        data = r.json()["data"]
+
         all_data = data["userIndexes"][0][type]["data"]
         uniqid = data["uniqid"]
         ptbk = get_ptbk(uniqid, cookie)
@@ -277,80 +276,84 @@ def baidu_search_index(word, start_date, end_date, cookie, type="all"):
         del temp_df_7["date"]
         return temp_df_7
     except Exception as e:
-        return "暂无数据"
+        return None
 
 
 def baidu_info_index(word, start_date, end_date, cookie):
     # 百度资讯指数
-    headers = {
-        "Accept": "application/json, text/plain, */*",
-        "Accept-Encoding": "gzip, deflate",
-        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-        "Connection": "keep-alive",
-        "Cookie": cookie,
-        "Host": "index.baidu.com",
-        "Referer": "http://index.baidu.com/v2/main/index.html",
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.90 Safari/537.36"
-    }
-    w = '{"name":"%s","wordType":1}' % word
+    try:
+        headers = {
+            "Accept": "application/json, text/plain, */*",
+            "Accept-Encoding": "gzip, deflate",
+            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+            "Connection": "keep-alive",
+            "Cookie": cookie,
+            "Host": "index.baidu.com",
+            "Referer": "http://index.baidu.com/v2/main/index.html",
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.90 Safari/537.36"
+        }
+        w = '{"name":"%s","wordType":1}' % word
 
-    url = 'http://index.baidu.com/api/FeedSearchApi/getFeedIndex?area=0&word=[[%s]]&startDate=%s&endDate=%s' % (
-    w, start_date, end_date)
+        url = 'http://index.baidu.com/api/FeedSearchApi/getFeedIndex?area=0&word=[[%s]]&startDate=%s&endDate=%s' % (
+        w, start_date, end_date)
 
-    r = requests.get(url=url, headers=headers)
-    data = r.json()["data"]
-    all_data = data["index"][0]["data"]
-    uniqid = data["uniqid"]
-    ptbk = get_ptbk(uniqid, cookie)
-    result = decrypt(ptbk, all_data).split(",")
-    result = [int(item) if item != "" else 0 for item in result]
-    temp_df_7 = pd.DataFrame(
-        [pd.date_range(start=start_date, end=end_date), result],
-        index=["date", word],
-    ).T
-    temp_df_7.index = pd.to_datetime(temp_df_7["date"])
-    del temp_df_7["date"]
-    return temp_df_7
+        r = requests.get(url=url, headers=headers)
+        data = r.json()["data"]
+        all_data = data["index"][0]["data"]
+        uniqid = data["uniqid"]
+        ptbk = get_ptbk(uniqid, cookie)
+        result = decrypt(ptbk, all_data).split(",")
+        result = [int(item) if item != "" else 0 for item in result]
+        temp_df_7 = pd.DataFrame(
+            [pd.date_range(start=start_date, end=end_date), result],
+            index=["date", word],
+        ).T
+        temp_df_7.index = pd.to_datetime(temp_df_7["date"])
+        del temp_df_7["date"]
+        return temp_df_7
+    except:
+        return None
 
 
 def baidu_media_index(word, start_date, end_date, cookie):
     # 百度媒体指数
-    headers = {
-        "Accept": "application/json, text/plain, */*",
-        "Accept-Encoding": "gzip, deflate",
-        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-        "Connection": "keep-alive",
-        "Cookie": cookie,
-        "Host": "index.baidu.com",
-        "Referer": "http://index.baidu.com/v2/main/index.html",
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.90 Safari/537.36"
-    }
-    w = '{"name":"%s","wordType":1}' % word
+    try:
+        headers = {
+            "Accept": "application/json, text/plain, */*",
+            "Accept-Encoding": "gzip, deflate",
+            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+            "Connection": "keep-alive",
+            "Cookie": cookie,
+            "Host": "index.baidu.com",
+            "Referer": "http://index.baidu.com/v2/main/index.html",
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.90 Safari/537.36"
+        }
+        w = '{"name":"%s","wordType":1}' % word
 
-    url = 'http://index.baidu.com/api/NewsApi/getNewsIndex?area=0&word=[[%s]]&startDate=%s&endDate=%s' % (w, start_date, end_date)
+        url = 'http://index.baidu.com/api/NewsApi/getNewsIndex?area=0&word=[[%s]]&startDate=%s&endDate=%s' % (w, start_date, end_date)
 
-    r = requests.get(url=url, headers=headers)
+        r = requests.get(url=url, headers=headers)
 
-    data = r.json()["data"]
-    all_data = data["index"][0]["data"]
-    uniqid = data["uniqid"]
-    ptbk = get_ptbk(uniqid, cookie)
-    result = decrypt(ptbk, all_data).split(",")
-    result = [int(item) if item != "" else 0 for item in result]
-    temp_df_7 = pd.DataFrame(
-        [pd.date_range(start=start_date, end=end_date), result],
-        index=["date", word],
-    ).T
-    temp_df_7.index = pd.to_datetime(temp_df_7["date"])
-    del temp_df_7["date"]
-    return temp_df_7
+        data = r.json()["data"]
+        all_data = data["index"][0]["data"]
+        uniqid = data["uniqid"]
+        ptbk = get_ptbk(uniqid, cookie)
+        result = decrypt(ptbk, all_data).split(",")
+        result = [int(item) if item != "" else 0 for item in result]
+        temp_df_7 = pd.DataFrame(
+            [pd.date_range(start=start_date, end=end_date), result],
+            index=["date", word],
+        ).T
+        temp_df_7.index = pd.to_datetime(temp_df_7["date"])
+        del temp_df_7["date"]
+        return temp_df_7
+    except:
+        return None
 
 
 if __name__ == "__main__":
-    cookie = 'BIDUPSID=F7EB2ABF6DC23E3AE0D29AD77AC3A828; PSTM=1550065926; bdshare_firstime=1580385892027; BAIDUID=BECC251AF81F5D6642279AA52D2B4069:FG=1; MCITY=-218%3A; BDUSS=13M1FIOVNDcWZKVDA4cWV-WHBsT1A3bGxZbEc0QW5kRFp4czF2RkZoTGZoVHhnRVFBQUFBJCQAAAAAAAAAAAEAAABU8PMTst24-dauw~cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN~4FGDf-BRgdG; BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; delPer=0; PSINO=6; H_PS_PSSID=33517_33273_31254_33595_33570_33459; BA_HECTOR=212k810h8g808401eg1g4b5510r; Hm_lvt_d101ea4d2a5c67dab98251f0b5de24dc=1614130213,1615173510; bdindexid=0v24k8l0bviipgtbju20vc5036; __yjsv5_shitong=1.0_7_a4501580b993ab09134a92f49aeb3b73647f_300_1615173215022_111.175.93.98_4db3c74d; RT="z=1&dm=baidu.com&si=f56q8dtip97&ss=km00lrkh&sl=6&tt=4u1&bcn=https%3A%2F%2Ffclog.baidu.com%2Flog%2Fweirwood%3Ftype%3Dperf"; Hm_lpvt_d101ea4d2a5c67dab98251f0b5de24dc=1615173549'
+    cookie = '*'
     data = baidu_search_index(word="口罩", start_date='2020-12-01', end_date='2020-12-24', cookie=cookie)
-    # data = baidu_interest_index(word="口罩",  cookie=cookie)
-    # data = get_ptbk(uniqid='fb39b581dfc73bb3689e21c4875d8d6d', cookie=cookie)
     print(data)
 
 

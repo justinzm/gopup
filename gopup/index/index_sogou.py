@@ -24,15 +24,17 @@ def sogou_index(keyword, start_date, end_date, data_type="SEARCH_ALL"):
     """
 
     # SEARCH_ALL 整体趋势  SEARCH_PC PC趋势  SEARCH_WAP 移动趋势
+    try:
+        url = "http://zhishu.sogou.com/getDateData?kwdNamesStr=%s&startDate=%s&endDate=%s&dataType=%s&queryType=INPUT" % (keyword, start_date, end_date, data_type)
 
-    url = "http://zhishu.sogou.com/getDateData?kwdNamesStr=%s&startDate=%s&endDate=%s&dataType=%s&queryType=INPUT" % (keyword, start_date, end_date, data_type)
-
-    res = requests.get(url, headers=index_toutiao_headers)
-    pv_list = json.loads(res.text)['data']['pvList'][0]
-    df = pd.DataFrame(pv_list)
-    df['index'] = df['pv']
-    df = df.drop(['kwdId', 'isPeak', 'id', 'pv'], axis=1)
-    return df
+        res = requests.get(url, headers=index_toutiao_headers)
+        pv_list = json.loads(res.text)['data']['pvList'][0]
+        df = pd.DataFrame(pv_list)
+        df['index'] = df['pv']
+        df = df.drop(['kwdId', 'isPeak', 'id', 'pv'], axis=1)
+        return df
+    except:
+        return None
 
 
 if __name__ == "__main__":

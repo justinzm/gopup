@@ -6,6 +6,7 @@ Pipfile.lock
 build/
 dist/
 .idea/*
+.idea/
 gopup.egg-info/*
 .idea/workspace.xml
 gopup/__pycache__
@@ -15,14 +16,10 @@ gopup/index/__pycache__/*
 
 .idea/inspectionProfiles/Project_Default.xml
 .idea/workspace.xml
-gopup/economic/__pycache__/*
-gopup/event/__pycache__/*
+gopup/economic/*
+gopup/economic/
 venv/*
 *.pyc
 *.pyc
 .idea/gopup.iml
-.idea/workspace.xml
-gopup/event/__pycache__/cons.cpython-37.pyc
-gopup/event/__pycache__/area_baidu.cpython-37.pyc
-gopup/event/__pycache__/__init__.cpython-37.pyc
 .idea/workspace.xml

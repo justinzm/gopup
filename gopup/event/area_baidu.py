@@ -28,31 +28,34 @@ def migration_area_baidu(area="武汉市", indicator="move_in", date="20200201")
     :return: 迁入地详情/迁出地详情的前50个
     :rtype: pandas.DataFrame
     """
-    if area == "全国":
-        payload = {
-            "dt": "country",
-            "id": 0,
-            "type": indicator,
-            "date": date,
-        }
-    else:
-        city_dict.update(province_dict)
-        inner_dict = dict(zip(city_dict.values(), city_dict.keys()))
-        if inner_dict[area] in province_dict.keys():
-            dt_flag = "province"
+    try:
+        if area == "全国":
+            payload = {
+                "dt": "country",
+                "id": 0,
+                "type": indicator,
+                "date": date,
+            }
         else:
-            dt_flag = "city"
-        payload = {
-            "dt": dt_flag,
-            "id": inner_dict[area],
-            "type": indicator,
-            "date": date,
-        }
+            city_dict.update(province_dict)
+            inner_dict = dict(zip(city_dict.values(), city_dict.keys()))
+            if inner_dict[area] in province_dict.keys():
+                dt_flag = "province"
+            else:
+                dt_flag = "city"
+            payload = {
+                "dt": dt_flag,
+                "id": inner_dict[area],
+                "type": indicator,
+                "date": date,
+            }
 
-    url = "https://huiyan.baidu.com/migration/cityrank.jsonp"
-    r = requests.get(url, params=payload)
-    json_data = json.loads(r.text[r.text.find("({") + 1 : r.text.rfind(");")])
-    return pd.DataFrame(json_data["data"]["list"])
+        url = "https://huiyan.baidu.com/migration/cityrank.jsonp"
+        r = requests.get(url, params=payload)
+        json_data = json.loads(r.text[r.text.find("({") + 1 : r.text.rfind(");")])
+        return pd.DataFrame(json_data["data"]["list"])
+    except:
+        return None
 
 
 def migration_scale_baidu(area="武汉市", indicator="move_out", date="20210112"):
@@ -70,37 +73,40 @@ def migration_scale_baidu(area="武汉市", indicator="move_out", date="20210112
     :return: 时间序列的迁徙规模指数
     :rtype: pandas.DataFrame
     """
-    if area == "全国":
-        payload = {
-            "dt": "country",
-            "id": 0,
-            "type": indicator,
-            "date": date
-        }
-    else:
-        city_dict.update(province_dict)
-        inner_dict = dict(zip(city_dict.values(), city_dict.keys()))
-        try:
-            if inner_dict[area] in province_dict.keys():
-                dt_flag = "province"
-            else:
-                dt_flag = "city"
-
+    try:
+        if area == "全国":
             payload = {
-                "dt": dt_flag,
-                "id": inner_dict[area],
+                "dt": "country",
+                "id": 0,
                 "type": indicator,
                 "date": date
             }
-        except Exception as e:
-            return "省份 或者 具体城市名 错误"
-    url = "https://huiyan.baidu.com/migration/historycurve.jsonp"
-    r = requests.get(url, params=payload)
-    json_data = json.loads(r.text[r.text.find("({") + 1 : r.text.rfind(");")])
-    temp_df = pd.DataFrame.from_dict(json_data["data"]["list"], orient="index")
-    temp_df.index = pd.to_datetime(temp_df.index)
-    temp_df.columns = ["迁徙规模指数"]
-    return temp_df
+        else:
+            city_dict.update(province_dict)
+            inner_dict = dict(zip(city_dict.values(), city_dict.keys()))
+            try:
+                if inner_dict[area] in province_dict.keys():
+                    dt_flag = "province"
+                else:
+                    dt_flag = "city"
+
+                payload = {
+                    "dt": dt_flag,
+                    "id": inner_dict[area],
+                    "type": indicator,
+                    "date": date
+                }
+            except Exception as e:
+                return "省份 或者 具体城市名 错误"
+        url = "https://huiyan.baidu.com/migration/historycurve.jsonp"
+        r = requests.get(url, params=payload)
+        json_data = json.loads(r.text[r.text.find("({") + 1 : r.text.rfind(");")])
+        temp_df = pd.DataFrame.from_dict(json_data["data"]["list"], orient="index")
+        temp_df.index = pd.to_datetime(temp_df.index)
+        temp_df.columns = ["迁徙规模指数"]
+        return temp_df
+    except:
+        return None
 
 
 if __name__ == "__main__":

@@ -18,12 +18,15 @@ def history_daily():
     DataFrame
         "year，title, type, link, desc""
     """
-    url = "https://www.bjsoubang.com/api/getHistoryDaily"
-    r = requests.get(url=url)
-    res_list = json.loads(r.text)['info']
-    df = pd.DataFrame(res_list)
-    df = df.drop(['cover', 'festival', 'recommend'], axis=1)
-    return df
+    try:
+        url = "https://www.bjsoubang.com/api/getHistoryDaily"
+        r = requests.get(url=url)
+        res_list = json.loads(r.text)['info']
+        df = pd.DataFrame(res_list)
+        df = df.drop(['cover', 'festival', 'recommend'], axis=1)
+        return df
+    except:
+        return None
  
 
 if __name__ == "__main__":

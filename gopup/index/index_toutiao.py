@@ -23,18 +23,20 @@ def toutiao_index(keyword="python", start_date="20201016", end_date="20201022", 
         index       指数
     """
     # list_keyword = '["%s"]' % keyword
-
-    url = "https://trendinsight.oceanengine.com/api/open/index/get_multi_keyword_hot_trend"
-    data = {
-        "keyword_list": [keyword],
-        "start_date": start_date,
-        "end_date": end_date,
-        "app_name": app_name
-    }
-    res = requests.post(url, json=data, headers=index_toutiao_headers)
-    hot_list = json.loads(res.text)['data']['hot_list'][0]['hot_list']
-    df = pd.DataFrame(hot_list)
-    return df
+    try:
+        url = "https://trendinsight.oceanengine.com/api/open/index/get_multi_keyword_hot_trend"
+        data = {
+            "keyword_list": [keyword],
+            "start_date": start_date,
+            "end_date": end_date,
+            "app_name": app_name
+        }
+        res = requests.post(url, json=data, headers=index_toutiao_headers)
+        hot_list = json.loads(res.text)['data']['hot_list'][0]['hot_list']
+        df = pd.DataFrame(hot_list)
+        return df
+    except:
+        return None
 
 
 def toutiao_relation(keyword="python", start_date="20201012", end_date="20201018", app_name="toutiao"):
@@ -50,16 +52,19 @@ def toutiao_relation(keyword="python", start_date="20201012", end_date="20201018
         search_hot       搜索热点值
         search_ratio     搜索比率
     """
-    url = "https://trendinsight.oceanengine.com/api/open/index/get_relation_word"
-    data = {"param": {"keyword": keyword,
-                      "start_date": start_date,
-                      "end_date": end_date,
-                      "app_name": app_name}
-            }
-    res = requests.post(url, json=data, headers=index_toutiao_headers)
-    relation_word_list = json.loads(res.text)['data']['relation_word_list']
-    df = pd.DataFrame(relation_word_list)
-    return df
+    try:
+        url = "https://trendinsight.oceanengine.com/api/open/index/get_relation_word"
+        data = {"param": {"keyword": keyword,
+                          "start_date": start_date,
+                          "end_date": end_date,
+                          "app_name": app_name}
+                }
+        res = requests.post(url, json=data, headers=index_toutiao_headers)
+        relation_word_list = json.loads(res.text)['data']['relation_word_list']
+        df = pd.DataFrame(relation_word_list)
+        return df
+    except:
+        return None
 
 
 # def toutiao_sentiment(keyword="python", start_date="20201012", end_date="20201018"):
@@ -94,20 +99,22 @@ def toutiao_province(keyword="python", start_date="20201012", end_date="20201018
         name    省份
         value   渗透率
     """
-    url = "https://trendinsight.oceanengine.com/api/open/index/get_portrait"
-    data = {"param": {"keyword": keyword,
-                      "start_date": start_date,
-                      "end_date": end_date,
-                      "app_name": app_name}
-            }
-    res = requests.post(url, json=data, headers=index_toutiao_headers)
-    res_text = json.loads(res.text)['data']['data'][2]['label_list']
-    df = pd.DataFrame(res_text)
-    df['name'] = df['name_zh']
-    df = df.drop(['label_id', 'name_zh'], axis=1)
-    df = df.sort_values(by="value", ascending=False)
-    return df
-
+    try:
+        url = "https://trendinsight.oceanengine.com/api/open/index/get_portrait"
+        data = {"param": {"keyword": keyword,
+                          "start_date": start_date,
+                          "end_date": end_date,
+                          "app_name": app_name}
+                }
+        res = requests.post(url, json=data, headers=index_toutiao_headers)
+        res_text = json.loads(res.text)['data']['data'][2]['label_list']
+        df = pd.DataFrame(res_text)
+        df['name'] = df['name_zh']
+        df = df.drop(['label_id', 'name_zh'], axis=1)
+        df = df.sort_values(by="value", ascending=False)
+        return df
+    except:
+        return None
 
 def toutiao_city(keyword="python", start_date="20201012", end_date="20201018", app_name="toutiao"):
     """
@@ -119,19 +126,22 @@ def toutiao_city(keyword="python", start_date="20201012", end_date="20201018", a
         name    城市
         value   渗透率
     """
-    url = "https://trendinsight.oceanengine.com/api/open/index/get_portrait"
-    data = {"param": {"keyword": keyword,
-                      "start_date": start_date,
-                      "end_date": end_date,
-                      "app_name": app_name}
-            }
-    res = requests.post(url, json=data, headers=index_toutiao_headers)
-    res_text = json.loads(res.text)['data']['data'][3]['label_list']
-    df = pd.DataFrame(res_text)
-    df['name'] = df['name_zh']
-    df = df.drop(['label_id', 'name_zh'], axis=1)
-    df = df.sort_values(by="value", ascending=False)
-    return df
+    try:
+        url = "https://trendinsight.oceanengine.com/api/open/index/get_portrait"
+        data = {"param": {"keyword": keyword,
+                          "start_date": start_date,
+                          "end_date": end_date,
+                          "app_name": app_name}
+                }
+        res = requests.post(url, json=data, headers=index_toutiao_headers)
+        res_text = json.loads(res.text)['data']['data'][3]['label_list']
+        df = pd.DataFrame(res_text)
+        df['name'] = df['name_zh']
+        df = df.drop(['label_id', 'name_zh'], axis=1)
+        df = df.sort_values(by="value", ascending=False)
+        return df
+    except:
+        return None
 
 
 def toutiao_age(keyword="python", start_date="20201012", end_date="20201018", app_name="toutiao"):
@@ -144,18 +154,21 @@ def toutiao_age(keyword="python", start_date="20201012", end_date="20201018", ap
         name    年龄区间
         value   渗透率
     """
-    url = "https://trendinsight.oceanengine.com/api/open/index/get_portrait"
-    data = {"param": {"keyword": keyword,
-                     "start_date": start_date,
-                     "end_date": end_date,
-                     "app_name": app_name}
-            }
-    res = requests.post(url, json=data, headers=index_toutiao_headers)
-    res_text = json.loads(res.text)['data']['data'][0]['label_list']
-    df = pd.DataFrame(res_text)
-    df['name'] = df['name_zh']
-    df = df.drop(['label_id', 'name_zh'], axis=1)
-    return df
+    try:
+        url = "https://trendinsight.oceanengine.com/api/open/index/get_portrait"
+        data = {"param": {"keyword": keyword,
+                         "start_date": start_date,
+                         "end_date": end_date,
+                         "app_name": app_name}
+                }
+        res = requests.post(url, json=data, headers=index_toutiao_headers)
+        res_text = json.loads(res.text)['data']['data'][0]['label_list']
+        df = pd.DataFrame(res_text)
+        df['name'] = df['name_zh']
+        df = df.drop(['label_id', 'name_zh'], axis=1)
+        return df
+    except:
+        return None
 
 
 def toutiao_gender(keyword="python", start_date="20201012", end_date="20201018", app_name="toutiao"):
@@ -168,19 +181,22 @@ def toutiao_gender(keyword="python", start_date="20201012", end_date="20201018",
         name    性别
         value   渗透率
     """
-    url = "https://trendinsight.oceanengine.com/api/open/index/get_portrait"
-    data = {"param": {"keyword": keyword,
-                      "start_date": start_date,
-                      "end_date": end_date,
-                      "app_name": app_name}
-            }
-    res = requests.post(url, json=data, headers=index_toutiao_headers)
-    res_text = json.loads(res.text)['data']['data'][1]['label_list']
-    df = pd.DataFrame(res_text)
-    df['name'] = df['name_zh']
-    df = df.drop(['label_id', 'name_zh'], axis=1)
-    df = df.sort_values(by="value", ascending=False)
-    return df
+    try:
+        url = "https://trendinsight.oceanengine.com/api/open/index/get_portrait"
+        data = {"param": {"keyword": keyword,
+                          "start_date": start_date,
+                          "end_date": end_date,
+                          "app_name": app_name}
+                }
+        res = requests.post(url, json=data, headers=index_toutiao_headers)
+        res_text = json.loads(res.text)['data']['data'][1]['label_list']
+        df = pd.DataFrame(res_text)
+        df['name'] = df['name_zh']
+        df = df.drop(['label_id', 'name_zh'], axis=1)
+        df = df.sort_values(by="value", ascending=False)
+        return df
+    except:
+        return None
 
 
 def toutiao_interest_category(keyword="python", start_date="20201012", end_date="20201018", app_name="toutiao"):
@@ -193,19 +209,22 @@ def toutiao_interest_category(keyword="python", start_date="20201012", end_date=
         name    分类
         value   渗透率
     """
-    url = "https://trendinsight.oceanengine.com/api/open/index/get_portrait"
-    data = {"param": {"keyword": keyword,
-                      "start_date": start_date,
-                      "end_date": end_date,
-                      "app_name": app_name}
-            }
-    res = requests.post(url, json=data, headers=index_toutiao_headers)
-    res_text = json.loads(res.text)['data']['data'][4]['label_list']
-    df = pd.DataFrame(res_text)
-    df['name'] = df['name_zh']
-    df = df.drop(['label_id', 'name_zh'], axis=1)
-    df = df.sort_values(by="value", ascending=False)
-    return df
+    try:
+        url = "https://trendinsight.oceanengine.com/api/open/index/get_portrait"
+        data = {"param": {"keyword": keyword,
+                          "start_date": start_date,
+                          "end_date": end_date,
+                          "app_name": app_name}
+                }
+        res = requests.post(url, json=data, headers=index_toutiao_headers)
+        res_text = json.loads(res.text)['data']['data'][4]['label_list']
+        df = pd.DataFrame(res_text)
+        df['name'] = df['name_zh']
+        df = df.drop(['label_id', 'name_zh'], axis=1)
+        df = df.sort_values(by="value", ascending=False)
+        return df
+    except:
+        return None
 
 
 if __name__ == "__main__":
