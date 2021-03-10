@@ -10,7 +10,7 @@ import os
 
 URL = 'https://github.com/justinzm/gopup'
 NAME = 'gopup'
-VERSION = '0.3.4'
+VERSION = '0.3.5'
 DESCRIPTION = 'GoPUP database'
 if os.path.exists('README.md'):
     with open('README.md', encoding='utf-8') as f:

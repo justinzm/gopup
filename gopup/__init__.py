@@ -168,6 +168,15 @@ from gopup.life.university import (
 )
 
 """
+火车数据
+"""
+from gopup.life.train import (
+    station_name,
+    train_time_table
+)
+
+
+"""
 微博运营数据
 """
 from gopup.mcn.weibo import (
