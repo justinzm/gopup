@@ -33,7 +33,8 @@ REQUIRES = [
     'matplotlib',
     'xlrd',
     'pyexecjs',
-    'pyquery'
+    'pyquery',
+    'tqdm'
 ]
 # CONSOLE_SCRIPT = 'my-cmd=my_pkg.my_cmd:main'
 # # 如果想在 pip install 之后自动生成一个可执行命令，就靠它了:
