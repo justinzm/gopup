@@ -55,3 +55,8 @@ class DataApi:
 
     def __getattr__(self, name):
         return partial(self.query, name)
+
+
+if __name__ == "__main__":
+    tmp = DataApi(token="64f1fad23b7533faea99afa317f53752").query(api_name="laohuangli")
+    print(tmp)
