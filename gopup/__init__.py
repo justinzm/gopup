@@ -184,6 +184,14 @@ from gopup.mcn.weibo import (
     weibo_list
 )
 
+"""
+中国电竞价值排行榜
+"""
+from gopup.life.game import (
+    player_rank,
+    club_rank
+)
+
 
 """
 专业版接口

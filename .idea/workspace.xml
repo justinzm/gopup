@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93b7bb07-655b-4d5a-8244-85210ae64a22" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="$PROJECT_DIR$/.idea/gopup.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gopup.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gopup/pro/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/gopup/pro/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopup/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/gopup/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +35,7 @@
     <SUITE FILE_PATH="coverage/gopup$covid.coverage" NAME="covid Coverage Results" MODIFIED="1608699253927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gopup/event" />
     <SUITE FILE_PATH="coverage/gopup$index_weibo.coverage" NAME="index_weibo Coverage Results" MODIFIED="1584754022578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gopup/index" />
     <SUITE FILE_PATH="coverage/gopup$marco_cn.coverage" NAME="marco_cn Coverage Results" MODIFIED="1611999679924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gopup/economic" />
-    <SUITE FILE_PATH="coverage/gopup$insert_symbols.coverage" NAME="insert_symbols Coverage Results" MODIFIED="1585030978117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../视频课程/199_Python3量化/03_配套源码/第03课代码" />
+    <SUITE FILE_PATH="coverage/gopup$insert_symbols.coverage" NAME="insert_symbols Coverage Results" MODIFIED="1585030978117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/视频课程/199_Python3量化/03_配套源码/第03课代码" />
     <SUITE FILE_PATH="coverage/gopup$my_fun.coverage" NAME="my_fun Coverage Results" MODIFIED="1605926238761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gopup" />
     <SUITE FILE_PATH="coverage/gopup$charity.coverage" NAME="charity Coverage Results" MODIFIED="1607594078551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gopup/life" />
     <SUITE FILE_PATH="coverage/gopup$index_baidu.coverage" NAME="index_baidu Coverage Results" MODIFIED="1608872708755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gopup/index" />
@@ -48,129 +51,12 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>decrypt</find>
-      <find>adult</find>
-      <find>FeedSearchApi</find>
-      <find>_get_js_path</find>
-      <find>global_df</find>
-      <find>spot_report</find>
-      <find>migration_area_baidu</find>
-      <find>toutiao_index</find>
-      <find>index_toutiao_headers</find>
-      <find>marco_cmlrd</find>
-      <find>covid_163</find>
-      <find>eastmoney.com</find>
-      <find>exchange_rate</find>
-      <find>微博</find>
-      <find>utils</find>
-      <find>weibo_user</find>
-      <find>get_weibo_user_info</find>
-      <find>migration_scale_baidu</find>
-      <find>cctv_news</find>
-      <find>车次</find>
-      <find>listTable</find>
-      <find>pq</find>
-      <find>pyquery</find>
-    </findStrings>
-    <dirStrings>
-      <dir>D:\pythonFile\gopup\gopup</dir>
-      <dir>D:\pythonFile\gopup</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/gopup/life/history_daily.py" />
-        <option value="$PROJECT_DIR$/gopup/life/hot_list.py" />
-        <option value="$PROJECT_DIR$/gopup/index/index_baidu.py" />
-        <option value="$PROJECT_DIR$/gopup/index/index_google.py" />
-        <option value="$PROJECT_DIR$/gopup/index/index_sogou.py" />
-        <option value="$PROJECT_DIR$/gopup/index/index_toutiao.py" />
-        <option value="$PROJECT_DIR$/gopup/index/index_weibo.py" />
-        <option value="$PROJECT_DIR$/gopup/fortune/itjuzi.py" />
-        <option value="$PROJECT_DIR$/gopup/fortune/franchise.py" />
-        <option value="$PROJECT_DIR$/gopup/life/oil.py" />
-        <option value="$PROJECT_DIR$/gopup/movie/movie.py" />
-        <option value="$PROJECT_DIR$/gopup/stock/classifying.py" />
-        <option value="$PROJECT_DIR$/gopup/event/history_daily.py" />
-        <option value="$PROJECT_DIR$/gopup/event/area_baidu.py" />
-        <option value="$PROJECT_DIR$/gopup/event/hot_list.py" />
-        <option value="$PROJECT_DIR$/gopup/toutiao/demo.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/gopup/__init__.py" />
-        <option value="$PROJECT_DIR$/setup.py" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/gopup/life/train.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1448" />
-    <option name="y" value="-140" />
-    <option name="width" value="1456" />
-    <option name="height" value="886" />
   </component>
   <component name="ProjectId" id="1ZjvmDpwCizkOvGTZahLQ20DQnu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="gopup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gopup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gopup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gopup" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gopup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gopup" type="462c0819:PsiDirectoryNode" />
-              <item name="gopup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gopup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gopup" type="462c0819:PsiDirectoryNode" />
-              <item name="gopup" type="462c0819:PsiDirectoryNode" />
-              <item name="economic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gopup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gopup" type="462c0819:PsiDirectoryNode" />
-              <item name="gopup" type="462c0819:PsiDirectoryNode" />
-              <item name="event" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gopup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gopup" type="462c0819:PsiDirectoryNode" />
-              <item name="gopup" type="462c0819:PsiDirectoryNode" />
-              <item name="life" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gopup" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gopup" type="462c0819:PsiDirectoryNode" />
-              <item name="gopup" type="462c0819:PsiDirectoryNode" />
-              <item name="stock" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -200,7 +86,7 @@
       <recent name="D:\pythonFile\gopup\gopup\life" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.client">
+  <component name="RunManager" selected="Python.game">
     <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gopup" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -244,6 +130,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="game" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gopup" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gopup/life" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gopup/life/game.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="movie" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gopup" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -257,28 +164,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gopup/movie/movie.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="oil" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="gopup" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gopup/life" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gopup/life/oil.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -311,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.game" />
         <item itemvalue="Python.client" />
         <item itemvalue="Python.movie" />
         <item itemvalue="Python.demo" />
         <item itemvalue="Python.train" />
-        <item itemvalue="Python.oil" />
       </list>
     </recent_temporary>
   </component>
@@ -404,35 +289,54 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-1448" y="-140" width="1456" height="886" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21633238" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27741936" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.44032258" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2712766" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.32978722" />
-      <window_info anchor="right" id="Database" order="4" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1659" height="332" key="GridCell.Tab.0.bottom" timestamp="1621077643192">
+      <screen x="0" y="25" width="1680" height="945" />
+    </state>
+    <state width="1659" height="332" key="GridCell.Tab.0.bottom/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621077643192" />
+    <state width="1659" height="332" key="GridCell.Tab.0.center" timestamp="1621077643192">
+      <screen x="0" y="25" width="1680" height="945" />
+    </state>
+    <state width="1659" height="332" key="GridCell.Tab.0.center/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621077643192" />
+    <state width="1659" height="332" key="GridCell.Tab.0.left" timestamp="1621077643192">
+      <screen x="0" y="25" width="1680" height="945" />
+    </state>
+    <state width="1659" height="332" key="GridCell.Tab.0.left/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621077643192" />
+    <state width="1659" height="332" key="GridCell.Tab.0.right" timestamp="1621077643192">
+      <screen x="0" y="25" width="1680" height="945" />
+    </state>
+    <state width="1659" height="332" key="GridCell.Tab.0.right/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621077643192" />
+    <state width="1659" height="332" key="GridCell.Tab.1.bottom" timestamp="1621077643193">
+      <screen x="0" y="25" width="1680" height="945" />
+    </state>
+    <state width="1659" height="332" key="GridCell.Tab.1.bottom/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621077643193" />
+    <state width="1659" height="332" key="GridCell.Tab.1.center" timestamp="1621077643192">
+      <screen x="0" y="25" width="1680" height="945" />
+    </state>
+    <state width="1659" height="332" key="GridCell.Tab.1.center/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621077643192" />
+    <state width="1659" height="332" key="GridCell.Tab.1.left" timestamp="1621077643192">
+      <screen x="0" y="25" width="1680" height="945" />
+    </state>
+    <state width="1659" height="332" key="GridCell.Tab.1.left/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621077643192" />
+    <state width="1659" height="332" key="GridCell.Tab.1.right" timestamp="1621077643192">
+      <screen x="0" y="25" width="1680" height="945" />
+    </state>
+    <state width="1659" height="332" key="GridCell.Tab.1.right/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621077643192" />
+    <state x="349" y="133" key="SettingsEditor" timestamp="1621072114679">
+      <screen x="0" y="25" width="1680" height="945" />
+    </state>
+    <state x="349" y="133" key="SettingsEditor/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621072114679" />
+    <state width="840" height="480" key="XDebugger.FullValuePopup" timestamp="1621072942962">
+      <screen x="0" y="25" width="1680" height="945" />
+    </state>
+    <state width="840" height="480" key="XDebugger.FullValuePopup/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621072942962" />
+    <state x="541" y="252" width="597" height="490" key="find.popup" timestamp="1621076073565">
+      <screen x="0" y="25" width="1680" height="945" />
+    </state>
+    <state x="541" y="252" width="597" height="490" key="find.popup/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621076073565" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -454,12 +358,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/stock/classifying.py</url>
-          <line>48</line>
+          <line>53</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/stock/classifying.py</url>
-          <line>32</line>
+          <line>35</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -564,17 +468,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/index/index_toutiao.py</url>
-          <line>62</line>
+          <line>67</line>
           <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/index/index_toutiao.py</url>
-          <line>114</line>
+          <line>121</line>
           <option name="timeStamp" value="88" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/index/index_google.py</url>
-          <line>56</line>
+          <line>59</line>
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -589,7 +493,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/index/index_baidu.py</url>
-          <line>345</line>
+          <line>355</line>
           <option name="timeStamp" value="106" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -659,7 +563,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/index/index_toutiao.py</url>
-          <line>63</line>
+          <line>68</line>
           <option name="timeStamp" value="166" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -684,32 +588,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/index/index_baidu.py</url>
-          <line>261</line>
+          <line>262</line>
           <option name="timeStamp" value="172" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/index/index_baidu.py</url>
-          <line>263</line>
+          <line>264</line>
           <option name="timeStamp" value="173" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/index/index_baidu.py</url>
-          <line>264</line>
+          <line>265</line>
           <option name="timeStamp" value="174" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/index/index_baidu.py</url>
-          <line>265</line>
+          <line>266</line>
           <option name="timeStamp" value="175" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/index/index_baidu.py</url>
-          <line>266</line>
+          <line>267</line>
           <option name="timeStamp" value="176" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/index/index_baidu.py</url>
-          <line>267</line>
+          <line>268</line>
           <option name="timeStamp" value="177" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -744,32 +648,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/event/area_baidu.py</url>
-          <line>102</line>
+          <line>91</line>
           <option name="timeStamp" value="199" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/event/area_baidu.py</url>
-          <line>105</line>
+          <line>111</line>
           <option name="timeStamp" value="200" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/event/area_baidu.py</url>
-          <line>104</line>
+          <line>110</line>
           <option name="timeStamp" value="201" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/event/area_baidu.py</url>
-          <line>103</line>
+          <line>109</line>
           <option name="timeStamp" value="202" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/event/area_baidu.py</url>
-          <line>101</line>
+          <line>90</line>
           <option name="timeStamp" value="203" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/life/train.py</url>
-          <line>50</line>
+          <line>75</line>
           <option name="timeStamp" value="209" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -803,28 +707,18 @@
           <option name="timeStamp" value="224" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gopup/life/train.py</url>
-          <line>85</line>
-          <option name="timeStamp" value="231" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gopup/life/train.py</url>
-          <line>84</line>
-          <option name="timeStamp" value="232" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/movie/movie.py</url>
           <line>38</line>
           <option name="timeStamp" value="233" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/movie/movie.py</url>
-          <line>310</line>
+          <line>301</line>
           <option name="timeStamp" value="234" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/movie/movie.py</url>
-          <line>316</line>
+          <line>307</line>
           <option name="timeStamp" value="235" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -867,6 +761,21 @@
           <line>51</line>
           <option name="timeStamp" value="243" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gopup/life/game.py</url>
+          <line>80</line>
+          <option name="timeStamp" value="244" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gopup/life/game.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="245" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gopup/life/game.py</url>
+          <line>78</line>
+          <option name="timeStamp" value="246" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -876,235 +785,5 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gopup/event/cons.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/index/index_google.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1008">
-          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/index/index_sogou.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/index/index_toutiao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="211" column="8" selection-start-line="211" selection-start-column="8" selection-end-line="211" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/index/index_weibo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="79" column="4" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/index/google_request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2835" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/fortune/itjuzi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="79" column="45" lean-forward="true" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/fortune/franchise.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/life/university.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/mcn/weibo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8757" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/stock/fund.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1160" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/mcn/star.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-567" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/stock/classifying.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="52" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/event/history_daily.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-          <folding>
-            <element signature="e#162#173#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/event/covid.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/event/area_baidu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
-          <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/event/hot_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="250" column="19" selection-start-line="250" selection-start-column="19" selection-end-line="250" selection-end-column="19" />
-          <folding>
-            <element signature="e#155#166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/economic/shibor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2709" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/economic/cons.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/economic/marco_cn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3528" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/life/charity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-549">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="e#155#174#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/lib/gopup/life/charity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-172">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/index/index_baidu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459">
-          <caret line="320" column="8" selection-start-line="320" selection-start-column="8" selection-end-line="329" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/life/oil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-446">
-          <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/toutiao/jm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23660">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#style#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/toutiao/demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
-          <folding>
-            <element signature="e#25#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/toutiao/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/movie/movie.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="296" column="14" selection-start-line="296" selection-start-column="14" selection-end-line="296" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-462">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207">
-          <caret line="170" column="4" selection-start-line="170" selection-start-column="4" selection-end-line="170" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="128">
-            <caret line="137" column="4" selection-start-line="137" selection-start-column="4" selection-end-line="137" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gopup/life/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="91" column="27" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="45" />
-          <folding>
-            <element signature="e#159#178#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
