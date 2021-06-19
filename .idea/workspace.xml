@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93b7bb07-655b-4d5a-8244-85210ae64a22" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="$PROJECT_DIR$/.idea/gopup.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gopup.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gopup/index/index_baidu.py" beforeDir="false" afterPath="$PROJECT_DIR$/gopup/index/index_baidu.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +68,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -81,7 +84,7 @@
       <recent name="D:\pythonFile\gopup\gopup\life" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.game">
+  <component name="RunManager" selected="Python.index_toutiao">
     <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gopup" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -95,28 +98,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gopup/pro/client.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="gopup" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gopup/toutiao" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gopup/toutiao/demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,6 +127,48 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="index_baidu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gopup" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gopup/index" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gopup/index/index_baidu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="index_toutiao" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gopup" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gopup/index" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gopup/index/index_toutiao.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="movie" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gopup" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -167,35 +190,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="gopup" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gopup/life" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gopup/life/train.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.index_toutiao" />
+        <item itemvalue="Python.index_baidu" />
         <item itemvalue="Python.game" />
         <item itemvalue="Python.client" />
         <item itemvalue="Python.movie" />
-        <item itemvalue="Python.demo" />
-        <item itemvalue="Python.train" />
       </list>
     </recent_temporary>
   </component>
@@ -286,52 +287,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1659" height="386" key="GridCell.Tab.0.bottom" timestamp="1621085770720">
-      <screen x="0" y="25" width="1680" height="945" />
-    </state>
-    <state width="1659" height="386" key="GridCell.Tab.0.bottom/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621085770720" />
-    <state width="1659" height="386" key="GridCell.Tab.0.center" timestamp="1621085770719">
-      <screen x="0" y="25" width="1680" height="945" />
-    </state>
-    <state width="1659" height="386" key="GridCell.Tab.0.center/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621085770719" />
-    <state width="1659" height="386" key="GridCell.Tab.0.left" timestamp="1621085770719">
-      <screen x="0" y="25" width="1680" height="945" />
-    </state>
-    <state width="1659" height="386" key="GridCell.Tab.0.left/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621085770719" />
-    <state width="1659" height="386" key="GridCell.Tab.0.right" timestamp="1621085770720">
-      <screen x="0" y="25" width="1680" height="945" />
-    </state>
-    <state width="1659" height="386" key="GridCell.Tab.0.right/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621085770720" />
-    <state width="1659" height="332" key="GridCell.Tab.1.bottom" timestamp="1621077643193">
-      <screen x="0" y="25" width="1680" height="945" />
-    </state>
-    <state width="1659" height="332" key="GridCell.Tab.1.bottom/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621077643193" />
-    <state width="1659" height="332" key="GridCell.Tab.1.center" timestamp="1621077643192">
-      <screen x="0" y="25" width="1680" height="945" />
-    </state>
-    <state width="1659" height="332" key="GridCell.Tab.1.center/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621077643192" />
-    <state width="1659" height="332" key="GridCell.Tab.1.left" timestamp="1621077643192">
-      <screen x="0" y="25" width="1680" height="945" />
-    </state>
-    <state width="1659" height="332" key="GridCell.Tab.1.left/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621077643192" />
-    <state width="1659" height="332" key="GridCell.Tab.1.right" timestamp="1621077643192">
-      <screen x="0" y="25" width="1680" height="945" />
-    </state>
-    <state width="1659" height="332" key="GridCell.Tab.1.right/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621077643192" />
-    <state x="349" y="133" key="SettingsEditor" timestamp="1621072114679">
-      <screen x="0" y="25" width="1680" height="945" />
-    </state>
-    <state x="349" y="133" key="SettingsEditor/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621072114679" />
-    <state width="840" height="480" key="XDebugger.FullValuePopup" timestamp="1621072942962">
-      <screen x="0" y="25" width="1680" height="945" />
-    </state>
-    <state width="840" height="480" key="XDebugger.FullValuePopup/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621072942962" />
-    <state x="541" y="252" width="597" height="490" key="find.popup" timestamp="1621076073565">
-      <screen x="0" y="25" width="1680" height="945" />
-    </state>
-    <state x="541" y="252" width="597" height="490" key="find.popup/-1920.25.1920.1055/0.25.1680.945@0.25.1680.945" timestamp="1621076073565" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -645,21 +600,6 @@
           <url>file://$PROJECT_DIR$/gopup/event/area_baidu.py</url>
           <line>91</line>
           <option name="timeStamp" value="199" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gopup/event/area_baidu.py</url>
-          <line>111</line>
-          <option name="timeStamp" value="200" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gopup/event/area_baidu.py</url>
-          <line>110</line>
-          <option name="timeStamp" value="201" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gopup/event/area_baidu.py</url>
-          <line>109</line>
-          <option name="timeStamp" value="202" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/gopup/event/area_baidu.py</url>
