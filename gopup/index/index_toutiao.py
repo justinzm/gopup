@@ -228,7 +228,7 @@ def toutiao_interest_category(keyword="python", start_date="20201012", end_date=
 
 
 if __name__ == "__main__":
-    index_df = toutiao_index(keyword="口罩", start_date='20201214', end_date='20201220', app_name="aweme")
+    index_df = toutiao_index(keyword="口罩", start_date='20210804', end_date='20210820', app_name="aweme")
     print(index_df)
  
 
