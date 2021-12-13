@@ -8,7 +8,7 @@ demjson==2.2.4
 idna==2.10
 jsonpath==0.82
 kiwisolver==1.3.1
-lxml==4.6.3
+lxml==4.6.5
 matplotlib==3.4.1
 numpy==1.20.2
 pandas==1.2.4
