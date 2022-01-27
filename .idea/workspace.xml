@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="93b7bb07-655b-4d5a-8244-85210ae64a22" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gopup/index/index_baidu.py" beforeDir="false" afterPath="$PROJECT_DIR$/gopup/index/index_baidu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gopup/index/index_toutiao.py" beforeDir="false" afterPath="$PROJECT_DIR$/gopup/index/index_toutiao.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +82,7 @@
       <recent name="D:\pythonFile\gopup\gopup\life" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.index_google">
+  <component name="RunManager" selected="Python.index_toutiao">
     <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gopup" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -191,8 +190,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.index_google" />
         <item itemvalue="Python.index_toutiao" />
+        <item itemvalue="Python.index_google" />
         <item itemvalue="Python.index_baidu" />
         <item itemvalue="Python.game" />
         <item itemvalue="Python.client" />
@@ -709,6 +708,11 @@
           <url>file://$PROJECT_DIR$/gopup/life/game.py</url>
           <line>78</line>
           <option name="timeStamp" value="246" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/gopup/index/index_toutiao.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="247" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
