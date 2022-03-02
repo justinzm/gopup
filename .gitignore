@@ -22,3 +22,4 @@ venv/*
 *.pyc
 .idea/gopup.iml
 .idea/workspace.xml
+.DS_Store
