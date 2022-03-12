@@ -12,7 +12,7 @@ lxml==4.6.3
 matplotlib==3.4.1
 numpy==1.20.2
 pandas==1.2.4
-Pillow==8.2.0
+Pillow==9.0.1
 PyExecJS==1.5.1
 pyparsing==2.4.7
 pyquery==1.4.3
