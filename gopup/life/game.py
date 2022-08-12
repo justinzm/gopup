@@ -51,7 +51,7 @@ def club_rank(type):
             "Accept-Encoding": "gzip, deflate",
             "Connection": "keep-alive"
         }
-        r = requests.get(url=url, headers=herder)
+        r = (url=url, headers=herder)
         doc = pq(r.text)
         trs = doc(".ec_table table tbody tr")
         res_list= []
