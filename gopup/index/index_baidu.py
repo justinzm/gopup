@@ -69,7 +69,7 @@ def baidu_interest_index(word, cookie):
             "Cache-Control": "no-cache",
             "Cookie": cookie,
             "DNT": "1",
-            "Host": "zhishu.baidu.com",
+            "Host": "index.baidu.com",
             "Pragma": "no-cache",
             "Proxy-Connection": "keep-alive",
             "Referer": "zhishu.baidu.com",
@@ -117,7 +117,7 @@ def baidu_gender_index(word, cookie):
             "Cache-Control": "no-cache",
             "Cookie": cookie,
             "DNT": "1",
-            "Host": "zhishu.baidu.com",
+            "Host": "index.baidu.com",
             "Pragma": "no-cache",
             "Proxy-Connection": "keep-alive",
             "Referer": "zhishu.baidu.com",
@@ -165,7 +165,7 @@ def baidu_age_index(word, cookie):
             "Cache-Control": "no-cache",
             "Cookie": cookie,
             "DNT": "1",
-            "Host": "zhishu.baidu.com",
+            "Host": "index.baidu.com",
             "Pragma": "no-cache",
             "Proxy-Connection": "keep-alive",
             "Referer": "zhishu.baidu.com",
@@ -214,7 +214,7 @@ def baidu_atlas_index(word, cookie, date=None):
             "Cache-Control": "no-cache",
             "Cookie": cookie,
             "DNT": "1",
-            "Host": "zhishu.baidu.com",
+            "Host": "index.baidu.com",
             "Pragma": "no-cache",
             "Proxy-Connection": "keep-alive",
             "Referer": "zhishu.baidu.com",
@@ -352,8 +352,8 @@ def baidu_media_index(word, start_date, end_date, cookie):
 
 
 if __name__ == "__main__":
-    cookie = 'BIDUPSID=E1A537EAA2C6BD7ED2DB54F038F4DFCB; PSTM=1618824620; BAIDUID=E1A537EAA2C6BD7E488510D272CD5B4D:FG=1; __yjs_duid=1_278b6449a92f33fe7a2d2e2a4701b6f41618824854334; H_WISE_SIDS=107320_110085_127969_128699_131423_132549_154212_165135_166147_170142_170816_170873_171235_171509_172867_172923_173017_173125_174040_174444_174446_174613_174638_174662_174666_174670_174695_174771_174855_175030_175215_175275_175283_175365_175448_175612_175654_175667_175820_175907_175974_176018_176157_176196_176335; BDUSS=9TRn5pWXVJcEFrM1ptRjV5fk9mdm83ckdrc3lDeVExRW9QUWF1cVMyem5lRDFoRVFBQUFBJCQAAAAAAAAAAAEAAABU8PMTst24-dauw~cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOfrFWHn6xVhd0; BDUSS_BFESS=9TRn5pWXVJcEFrM1ptRjV5fk9mdm83ckdrc3lDeVExRW9QUWF1cVMyem5lRDFoRVFBQUFBJCQAAAAAAAAAAAEAAABU8PMTst24-dauw~cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOfrFWHn6xVhd0; BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; MCITY=-218%3A; H_PS_PSSID=34144_31253_34004_34524_34585_34092_34107_26350_34471; BDSFRCVID=KTIOJeC62CSE4kcH8KUtT4ebZgyRhvbTH6f3_lHcctoHe_oIHeUjEG0PMM8g0Ku-hnxxogKKLgOTHULF_2uxOjjg8UtVJeC6EG0Ptf8g0f5; H_BDCLCKID_SF=tRKOoILKfIt3fP36qRQj-ICShUFs2q_OB2Q-XPoO3KJZMlrCy-7ZKUD7jMoaXtbiWKkfBfbgy4opOJPm2jorbTKOh4RpKhvpQgTxoUJ2fnbvVhQM-xOzX4AebPRiWPb9QgbP2pQ7tt5W8ncFbT7l5hKpbt-q0x-jLTnhVn0MBCK0hDI9D5D-e5OM-l-X5to05TIX3b7EfMDKKq7_bJ7KhUbQWHjw-fkOW5QN-IbHKfcJOpvTjP6xQhFXQtnfXpOe-n7rKhc1QJ3iSxbHQT3m55kOyn3lQPjRWmoQWb3cWhRJ8UbS3fvPBTD02-nBat-OQ6npaJ5nJq5nhMJmb67JDMr0eGtJq6k8tnIs0TreK4bHJJ5Rq4bohjPU3-r9BtQmJJrmbhK22bO1bhva5h8MbtDlbprNan5aQg-q0DO7apnjHPbvy-orhUFnbJoB0x-jLgjuVn0MW-KVjbr92-nJyUPTbPnnBpQr3H8HL4nv2JcJbM5m3x6qLTKkQN3T-PKO5bRh_CcJ-J8XMDLmj6jP; BDSFRCVID_BFESS=KTIOJeC62CSE4kcH8KUtT4ebZgyRhvbTH6f3_lHcctoHe_oIHeUjEG0PMM8g0Ku-hnxxogKKLgOTHULF_2uxOjjg8UtVJeC6EG0Ptf8g0f5; H_BDCLCKID_SF_BFESS=tRKOoILKfIt3fP36qRQj-ICShUFs2q_OB2Q-XPoO3KJZMlrCy-7ZKUD7jMoaXtbiWKkfBfbgy4opOJPm2jorbTKOh4RpKhvpQgTxoUJ2fnbvVhQM-xOzX4AebPRiWPb9QgbP2pQ7tt5W8ncFbT7l5hKpbt-q0x-jLTnhVn0MBCK0hDI9D5D-e5OM-l-X5to05TIX3b7EfMDKKq7_bJ7KhUbQWHjw-fkOW5QN-IbHKfcJOpvTjP6xQhFXQtnfXpOe-n7rKhc1QJ3iSxbHQT3m55kOyn3lQPjRWmoQWb3cWhRJ8UbS3fvPBTD02-nBat-OQ6npaJ5nJq5nhMJmb67JDMr0eGtJq6k8tnIs0TreK4bHJJ5Rq4bohjPU3-r9BtQmJJrmbhK22bO1bhva5h8MbtDlbprNan5aQg-q0DO7apnjHPbvy-orhUFnbJoB0x-jLgjuVn0MW-KVjbr92-nJyUPTbPnnBpQr3H8HL4nv2JcJbM5m3x6qLTKkQN3T-PKO5bRh_CcJ-J8XMDLmj6jP; BA_HECTOR=852hala4a10k248h071gk0bpn0q; delPer=0; PSINO=6; Hm_lvt_d101ea4d2a5c67dab98251f0b5de24dc=1631599173; bdindexid=vpc2iok91oiomgupps6l336c35; Hm_lpvt_d101ea4d2a5c67dab98251f0b5de24dc=1631599186; RT="z=1&dm=baidu.com&si=66ftp5ix7is&ss=ktjo0rid&sl=3&tt=3ac&bcn=https%3A%2F%2Ffclog.baidu.com%2Flog%2Fweirwood%3Ftype%3Dperf"'
-    data = baidu_search_index(word="极限挑战", start_date='2021-04-01', end_date='2021-06-19', cookie=cookie)
+    cookie = '''BIDUPSID=512FE19892358D21D38C8FC50F5F37F7; PSTM=1660901365; BAIDUID=53AD0CE37FCDB36D9D1B39A93FE374F4:SL=0:NR=10:FG=1; Hm_up_d101ea4d2a5c67dab98251f0b5de24dc=%7B%22uid_%22%3A%7B%22value%22%3A%22334753876%22%2C%22scope%22%3A1%7D%7D; BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; MCITY=-218%3A; BA_HECTOR=aga0a42lalak218laha5hmc01hi0at619; BAIDUID_BFESS=53AD0CE37FCDB36D9D1B39A93FE374F4:SL=0:NR=10:FG=1; ZFY=aW7:BiB7855FQiPLSOkRbec2PdNcv3rbOnPH5AYTKCqc:C; BDUSS=ZvNlM1RndBRDQ3bko0S0tEOWktVE02Tnd4b0R0dVZ1fmIwLWpPdjNDOWZ4a2RqSVFBQUFBJCQAAAAAAAAAAAEAAABU8PMTst24-dauw~cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF85IGNfOSBjfk; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%224028045868%22%2C%22first_id%22%3A%2218335e0347710fc-0e1fee1e643a0f-26021c51-1395396-18335e034789b9%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%7D%2C%22%24device_id%22%3A%2218335e0347710fc-0e1fee1e643a0f-26021c51-1395396-18335e034789b9%22%7D; delPer=0; H_PS_PSSID=37155_36552_36459_37115_37355_37299_36885_36786_37243_37260_26350_22157; PSINO=7; Hm_lvt_d101ea4d2a5c67dab98251f0b5de24dc=1661486036,1661564440,1661647128,1663127080; bdindexid=8nktvuic1kuo5dot5pkgo2q9e0; SIGNIN_UC=70a2711cf1d3d9b1a82d2f87d633bd8a04131395300fN1KlH2fo%2FP67W6DdexHNNUP3l99gFTlVBT31fwY0AeZ7JgLby0XOquez%2FgS66QIrBdlgN6%2FfxFJhYMdjaOTybrrHdz8W2BqOgOp0hXRAccayXkHgZIlByUaoaQHDKjhnDBipw083eS8hKObXIQXit1ZiFtP6XNWsK5VMlr5qHkt54hAfKRLAlmF9X7hUKZVmrSxcvI%2F2GrPWfIM9YgEajJYRsNeYN7kZiTscF99vZwMkqUipDarRfkpu0eoNbMD0dTj72fsdkmkmj8Ui6eKu8fPOpc5MwWMIPnmJxuqQJ9AHU%2BtsifCssB2AYpE2Ir4gFAg8rWsqmwl9lTmOCWZrw%3D%3D65473314357981690382511504956550; __cas__rn__=413139530; __cas__st__212=fcd26bfe42726771ecac112f095fc17d1f1584e59a13e60a039fc22b264d79132ee080e381ae1c33427295a9; __cas__id__212=42043514; CPID_212=42043514; CPTK_212=684298546; Hm_lpvt_d101ea4d2a5c67dab98251f0b5de24dc=1663127094; RT="z=1&dm=baidu.com&si=3efb8415-45d4-44df-ba4c-6af9f09d175e&ss=l812x7mj&sl=2&tt=1fw&bcn=https%3A%2F%2Ffclog.baidu.com%2Flog%2Fweirwood%3Ftype%3Dperf"; ab_sr=1.0.1_N2RhZWI0OGUyOWQ1MmUwNzExMTUzYmRiMzllN2UxMDFiZGJlNzExZmVlY2IwNjI0YzllZWQwN2I3Mzc5ZDQ2ODlmOGUzNThiMWFlNzcxMzhlZjc5ODUxNjk3YWI3MDJiN2IzNGI1ZjY2NmQzYTg0MmQyMWYxNWMxMzJhZThjZjdiNDFjYjk2MTIzNTg3YTgxYjg4ZTM3YjY3ZmEyZDE3ZQ==; BDUSS_BFESS=ZvNlM1RndBRDQ3bko0S0tEOWktVE02Tnd4b0R0dVZ1fmIwLWpPdjNDOWZ4a2RqSVFBQUFBJCQAAAAAAAAAAAEAAABU8PMTst24-dauw~cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF85IGNfOSBjfk'''
+    data = baidu_search_index(word="极限挑战", start_date='2022-04-01', end_date='2022-06-19', cookie=cookie)
     print(data)
 
 
