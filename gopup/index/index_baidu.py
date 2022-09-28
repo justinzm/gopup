@@ -5,10 +5,12 @@
 # @File    : index_baidu.py
 # @Desc    : 获取百度指数
 
-import json
-import urllib.parse
+from gopup.index.baidu_decrypt import decrypt_func, get_encrypt_json, format_data, get_key, format_data_feed, format_data_new
 import pandas as pd
 import requests
+import datetime
+import json
+import math
 
 
 def decrypt(t: str, e: str) -> str:
@@ -233,8 +235,8 @@ def baidu_atlas_index(word, cookie, date=None):
                 "word": word['word'],
                 "pv": word['pv'],
                 "ratio": word['ratio'],
-                "period": data['period']
-                # "sim": word['sim']
+                "period": data['period'],
+                "sim": word['sim']
             }
             res_list.append(tmp)
         df = pd.DataFrame(res_list)
@@ -246,35 +248,32 @@ def baidu_atlas_index(word, cookie, date=None):
 def baidu_search_index(word, start_date, end_date, cookie, type="all"):
     # 百度搜索数据
     try:
-        headers = {
-            "Accept": "application/json, text/plain, */*",
-            "Accept-Encoding": "gzip, deflate",
-            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-            "Connection": "keep-alive",
-            "Cookie": cookie,
-            "Host": "index.baidu.com",
-            "Referer": "http://index.baidu.com/v2/main/index.html",
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36"
-        }
-        w = '{"name":"%s","wordType":1}' % word
+        keywords_list = [[word]]
+        encrypt_json = get_encrypt_json(
+            start_date=start_date,
+            end_date=end_date,
+            keywords=keywords_list,
+            type='search',
+            area=0,
+            cookies=cookie
+        )
 
-        url = 'http://index.baidu.com/api/SearchApi/index?area=0&word=[[%s]]&startDate=%s&endDate=%s' % (w, start_date, end_date)
+        encrypt_datas = encrypt_json['data']['userIndexes']
+        uniqid = encrypt_json['data']['uniqid']
 
-        r = requests.get(url=url, headers=headers)
-        data = r.json()["data"]
+        result = []
+        key = get_key(uniqid, cookie)
+        for encrypt_data in encrypt_datas:
+            encrypt_data[type]['data'] = decrypt_func(key, encrypt_data[type]['data'])
 
-        all_data = data["userIndexes"][0][type]["data"]
-        uniqid = data["uniqid"]
-        ptbk = get_ptbk(uniqid, cookie)
-        result = decrypt(ptbk, all_data).split(",")
-        result = [int(item) if item != "" else 0 for item in result]
-        temp_df_7 = pd.DataFrame(
-                [pd.date_range(start=start_date, end=end_date), result],
-                index=["date", word],
-            ).T
-        temp_df_7.index = pd.to_datetime(temp_df_7["date"])
-        del temp_df_7["date"]
-        return temp_df_7
+            for formated_data in format_data(encrypt_data, kind=type):
+                result.append(formated_data)
+                # yield formated_data
+
+        data_df = pd.DataFrame(result)
+        data_df.index = pd.to_datetime(data_df["date"])
+        del data_df["date"]
+        return data_df
     except Exception as e:
         return None
 
@@ -282,78 +281,73 @@ def baidu_search_index(word, start_date, end_date, cookie, type="all"):
 def baidu_info_index(word, start_date, end_date, cookie):
     # 百度资讯指数
     try:
-        headers = {
-            "Accept": "application/json, text/plain, */*",
-            "Accept-Encoding": "gzip, deflate",
-            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-            "Connection": "keep-alive",
-            "Cookie": cookie,
-            "Host": "index.baidu.com",
-            "Referer": "http://index.baidu.com/v2/main/index.html",
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.90 Safari/537.36"
-        }
-        w = '{"name":"%s","wordType":1}' % word
+        keywords_list = [[word]]
+        encrypt_json = get_encrypt_json(
+            start_date=start_date,
+            end_date=end_date,
+            keywords=keywords_list,
+            type='feed',
+            area=0,
+            cookies=cookie
+        )
 
-        url = 'http://index.baidu.com/api/FeedSearchApi/getFeedIndex?area=0&word=[[%s]]&startDate=%s&endDate=%s' % (
-        w, start_date, end_date)
+        encrypt_datas = encrypt_json['data']['index']
+        uniqid = encrypt_json['data']['uniqid']
 
-        r = requests.get(url=url, headers=headers)
-        data = r.json()["data"]
-        all_data = data["index"][0]["data"]
-        uniqid = data["uniqid"]
-        ptbk = get_ptbk(uniqid, cookie)
-        result = decrypt(ptbk, all_data).split(",")
-        result = [int(item) if item != "" else 0 for item in result]
-        temp_df_7 = pd.DataFrame(
-            [pd.date_range(start=start_date, end=end_date), result],
-            index=["date", word],
-        ).T
-        temp_df_7.index = pd.to_datetime(temp_df_7["date"])
-        del temp_df_7["date"]
-        return temp_df_7
-    except:
+        result = []
+        key = get_key(uniqid, cookie)
+        for encrypt_data in encrypt_datas:
+            encrypt_data['data'] = decrypt_func(key, encrypt_data['data'])
+
+            for formated_data in format_data_feed(encrypt_data):
+                result.append(formated_data)
+                # yield formated_data
+
+        data_df = pd.DataFrame(result)
+        data_df.index = pd.to_datetime(data_df["date"])
+        del data_df["date"]
+        return data_df
+    except Exception as e:
         return None
 
 
 def baidu_media_index(word, start_date, end_date, cookie):
     # 百度媒体指数
     try:
-        headers = {
-            "Accept": "application/json, text/plain, */*",
-            "Accept-Encoding": "gzip, deflate",
-            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-            "Connection": "keep-alive",
-            "Cookie": cookie,
-            "Host": "index.baidu.com",
-            "Referer": "http://index.baidu.com/v2/main/index.html",
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.90 Safari/537.36"
-        }
-        w = '{"name":"%s","wordType":1}' % word
+        keywords_list = [[word]]
+        encrypt_json = get_encrypt_json(
+            start_date=start_date,
+            end_date=end_date,
+            keywords=keywords_list,
+            type='news',
+            area=0,
+            cookies=cookie
+        )
 
-        url = 'http://index.baidu.com/api/NewsApi/getNewsIndex?area=0&word=[[%s]]&startDate=%s&endDate=%s' % (w, start_date, end_date)
+        encrypt_datas = encrypt_json['data']['index']
+        uniqid = encrypt_json['data']['uniqid']
 
-        r = requests.get(url=url, headers=headers)
+        result = []
+        key = get_key(uniqid, cookie)
+        for encrypt_data in encrypt_datas:
+            encrypt_data['data'] = decrypt_func(key, encrypt_data['data'])
 
-        data = r.json()["data"]
-        all_data = data["index"][0]["data"]
-        uniqid = data["uniqid"]
-        ptbk = get_ptbk(uniqid, cookie)
-        result = decrypt(ptbk, all_data).split(",")
-        result = [int(item) if item != "" else 0 for item in result]
-        temp_df_7 = pd.DataFrame(
-            [pd.date_range(start=start_date, end=end_date), result],
-            index=["date", word],
-        ).T
-        temp_df_7.index = pd.to_datetime(temp_df_7["date"])
-        del temp_df_7["date"]
-        return temp_df_7
-    except:
+            for formated_data in format_data_new(encrypt_data):
+                result.append(formated_data)
+                # yield formated_data
+
+        data_df = pd.DataFrame(result)
+        data_df.index = pd.to_datetime(data_df["date"])
+        del data_df["date"]
+        return data_df
+    except Exception as e:
         return None
 
 
 if __name__ == "__main__":
-    cookie = '''BIDUPSID=512FE19892358D21D38C8FC50F5F37F7; PSTM=1660901365; BAIDUID=53AD0CE37FCDB36D9D1B39A93FE374F4:SL=0:NR=10:FG=1; Hm_up_d101ea4d2a5c67dab98251f0b5de24dc=%7B%22uid_%22%3A%7B%22value%22%3A%22334753876%22%2C%22scope%22%3A1%7D%7D; BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; MCITY=-218%3A; BA_HECTOR=aga0a42lalak218laha5hmc01hi0at619; BAIDUID_BFESS=53AD0CE37FCDB36D9D1B39A93FE374F4:SL=0:NR=10:FG=1; ZFY=aW7:BiB7855FQiPLSOkRbec2PdNcv3rbOnPH5AYTKCqc:C; BDUSS=ZvNlM1RndBRDQ3bko0S0tEOWktVE02Tnd4b0R0dVZ1fmIwLWpPdjNDOWZ4a2RqSVFBQUFBJCQAAAAAAAAAAAEAAABU8PMTst24-dauw~cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF85IGNfOSBjfk; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%224028045868%22%2C%22first_id%22%3A%2218335e0347710fc-0e1fee1e643a0f-26021c51-1395396-18335e034789b9%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%7D%2C%22%24device_id%22%3A%2218335e0347710fc-0e1fee1e643a0f-26021c51-1395396-18335e034789b9%22%7D; delPer=0; H_PS_PSSID=37155_36552_36459_37115_37355_37299_36885_36786_37243_37260_26350_22157; PSINO=7; Hm_lvt_d101ea4d2a5c67dab98251f0b5de24dc=1661486036,1661564440,1661647128,1663127080; bdindexid=8nktvuic1kuo5dot5pkgo2q9e0; SIGNIN_UC=70a2711cf1d3d9b1a82d2f87d633bd8a04131395300fN1KlH2fo%2FP67W6DdexHNNUP3l99gFTlVBT31fwY0AeZ7JgLby0XOquez%2FgS66QIrBdlgN6%2FfxFJhYMdjaOTybrrHdz8W2BqOgOp0hXRAccayXkHgZIlByUaoaQHDKjhnDBipw083eS8hKObXIQXit1ZiFtP6XNWsK5VMlr5qHkt54hAfKRLAlmF9X7hUKZVmrSxcvI%2F2GrPWfIM9YgEajJYRsNeYN7kZiTscF99vZwMkqUipDarRfkpu0eoNbMD0dTj72fsdkmkmj8Ui6eKu8fPOpc5MwWMIPnmJxuqQJ9AHU%2BtsifCssB2AYpE2Ir4gFAg8rWsqmwl9lTmOCWZrw%3D%3D65473314357981690382511504956550; __cas__rn__=413139530; __cas__st__212=fcd26bfe42726771ecac112f095fc17d1f1584e59a13e60a039fc22b264d79132ee080e381ae1c33427295a9; __cas__id__212=42043514; CPID_212=42043514; CPTK_212=684298546; Hm_lpvt_d101ea4d2a5c67dab98251f0b5de24dc=1663127094; RT="z=1&dm=baidu.com&si=3efb8415-45d4-44df-ba4c-6af9f09d175e&ss=l812x7mj&sl=2&tt=1fw&bcn=https%3A%2F%2Ffclog.baidu.com%2Flog%2Fweirwood%3Ftype%3Dperf"; ab_sr=1.0.1_N2RhZWI0OGUyOWQ1MmUwNzExMTUzYmRiMzllN2UxMDFiZGJlNzExZmVlY2IwNjI0YzllZWQwN2I3Mzc5ZDQ2ODlmOGUzNThiMWFlNzcxMzhlZjc5ODUxNjk3YWI3MDJiN2IzNGI1ZjY2NmQzYTg0MmQyMWYxNWMxMzJhZThjZjdiNDFjYjk2MTIzNTg3YTgxYjg4ZTM3YjY3ZmEyZDE3ZQ==; BDUSS_BFESS=ZvNlM1RndBRDQ3bko0S0tEOWktVE02Tnd4b0R0dVZ1fmIwLWpPdjNDOWZ4a2RqSVFBQUFBJCQAAAAAAAAAAAEAAABU8PMTst24-dauw~cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF85IGNfOSBjfk'''
-    data = baidu_search_index(word="极限挑战", start_date='2022-04-01', end_date='2022-06-19', cookie=cookie)
+    cookie = '''BIDUPSID=512FE19892358D21D38C8FC50F5F37F7; PSTM=1660901365; BAIDUID=53AD0CE37FCDB36D9D1B39A93FE374F4:SL=0:NR=10:FG=1; Hm_up_d101ea4d2a5c67dab98251f0b5de24dc=%7B%22uid_%22%3A%7B%22value%22%3A%22334753876%22%2C%22scope%22%3A1%7D%7D; BDUSS=ZvNlM1RndBRDQ3bko0S0tEOWktVE02Tnd4b0R0dVZ1fmIwLWpPdjNDOWZ4a2RqSVFBQUFBJCQAAAAAAAAAAAEAAABU8PMTst24-dauw~cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF85IGNfOSBjfk; MCITY=-%3A; BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; BDSFRCVID_BFESS=G_4OJexroG06EXRj-uKarZxkLdsdTYQTDYLEOwXPsp3LGJLVgmxZEG0PtEw4Pz0bwaLOogKKLgOTHULF_2uxOjjg8UtVJeC6EG0Ptf8g0M5; H_BDCLCKID_SF_BFESS=tb4J_KKytC-3H48k-4QEbbQH-UnLqMbdJgOZ04n-ah02Ml5y04CV5fP_KR6OaM7b-Knnhxjm3UTdsq76Wh35K5tTQP6rLtbLMNQ4KKJxbp5bMMJuD-5b-fAghUJiBM7MBan7-lRIXKohJh7FM4tW3J0ZyxomtfQxtNRJ0DnjtpChbRO4-TFKej3yjM5; BA_HECTOR=81a0ak852k2104a40k04aafq1hj5n2m18; ZFY=utya:BRNupJGq9supvasQbProo6s1q6EhqW:BvXv2orTE:C; BAIDUID_BFESS=53AD0CE37FCDB36D9D1B39A93FE374F4:SL=0:NR=10:FG=1; bdindexid=sftj5d8kfth69n1mqobrdpjmb6; Hm_lvt_d101ea4d2a5c67dab98251f0b5de24dc=1663127080,1664326055,1664326075; SIGNIN_UC=70a2711cf1d3d9b1a82d2f87d633bd8a04143385244YiyThQ5ysTqMgVj%2Fn6xC2SYZF0VE07SocZWWdU6ZnBkjQZwGAwJERGknT7CvfJjH9eFfgmYY53HOhSpOWKvK53E55xQOv5kXD1bACugrYHz26O8qmDIhSU7Tx2yGlQejq95SvYoXlAIBBDD0W0D1x4Bg4KlteVdTV7ShFG4iemhL3681G%2FEmDO8yTdxSgo7BEQKCTCoE9rr8HMGgon8hx8nJb3d4h%2FV1KYbRpLZ7J8nSjcEdPAXTt5R9QjpnNyWo89ncXTlKDH452%2BAAjYjf8DBbhTymoZo5%2FiwHxEdy8jkGAZC%2FYhHSHQureM%2B1FQwIKBaJtigI9ufAXWXqzaOWew%3D%3D22115626617237125877026469513709; __cas__rn__=414338524; __cas__st__212=12ef083e20021e38c1842b8cda8fca11a37493f871085428583d68fe518bc4dd44337f5cd54479ecf78c4360; __cas__id__212=42043514; CPID_212=42043514; CPTK_212=1578600173; RT="z=1&dm=baidu.com&si=136a97b7-5316-4e2d-87b0-ed0c2e7d1165&ss=l8kwre9b&sl=m&tt=tr2&bcn=https%3A%2F%2Ffclog.baidu.com%2Flog%2Fweirwood%3Ftype%3Dperf"; Hm_lpvt_d101ea4d2a5c67dab98251f0b5de24dc=1664326877; ab_sr=1.0.1_ZGE0OTEyZDJjODRhOTUwMWJkMjgyZWExMTY1ODJiNjlmODg5OTQ5MWMzYzcyODhhZDYyZTE5N2ZkYWMyYjIzNjcyZjMyYjMxNTZiMTkwMDk5YjE3OTZmMDg2NDkxNTgxMDNiYjI0YzY5YjM4OTlmYjU5OWUzNDgyZTAzNTc0MzFlZDRhYjY2ZjAyNzhjYjg3ZTg4Nzc3YzdmYTY2NDYyNw==; BDUSS_BFESS=ZvNlM1RndBRDQ3bko0S0tEOWktVE02Tnd4b0R0dVZ1fmIwLWpPdjNDOWZ4a2RqSVFBQUFBJCQAAAAAAAAAAAEAAABU8PMTst24-dauw~cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF85IGNfOSBjfk'''
+    data = baidu_media_index(word="极限挑战", start_date='2022-09-01', end_date='2022-09-19', cookie=cookie)
+    # data = baidu_atlas_index(word="极限挑战", cookie=cookie)
     print(data)
 
 
