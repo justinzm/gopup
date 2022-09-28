@@ -5,10 +5,9 @@
 # @File : baidu_decrypt.py
 # @desc : 百度解密
 
-from errors import ErrorCode, GopupError
 from typing import List, Dict, Tuple
 from urllib.parse import urlencode, quote
-from errors import ErrorCode, GopupError
+from gopup.index.errors import ErrorCode, GopupError
 from Crypto.Cipher import AES
 from base64 import b64encode
 import datetime
