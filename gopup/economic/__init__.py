@@ -4,5 +4,6 @@
 # @Author  : justin.郑 3907721@qq.com
 # @File    : __init__.py.py
 # @Desc    : 宏观经济
- 
 
+import pandas as pd
+pd.set_option("display.unicode.east_asian_width", True)
