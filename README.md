@@ -2,6 +2,12 @@
 
 #### 建议安装方法
     pip install gopup
+##### 开发模式
+```bash
+    git clone https://github.com/justinzm/gopup.git
+    cd gopup
+    pip install -e .
+```
 
 #### 升级方法
     pip install gopup --upgrade
