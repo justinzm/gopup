@@ -41,7 +41,7 @@ def get_gdp_quarter():
     --------
     DataFrame
         month :统计月份
-        cpi : "季度", "国内生产总值 绝对值(亿元)", "国内生产总值 同比增长", "第一产业 绝对值(亿元)", "第一产业 同比增长", "第二产业 绝对值(亿元)", "第二产业 同比增长", "第三产业 绝对值(亿元)", "第三产业 同比增长"
+        cpi : "季度", "国内生产总值(亿元)", "同比增长", "第一产业(亿元)", "同比增长", "第二产业(亿元)", "同比增长", "第三产业(亿元)", "同比增长"
     """
     url = "http://datainterface.eastmoney.com/EM_DataCenter/JS.aspx"
     params = {
@@ -58,7 +58,7 @@ def get_gdp_quarter():
     res_list = []
     for li in tmp_list:
         res_list.append(li.split(','))
-    columns = ["季度", "国内生产总值 绝对值(亿元)", "国内生产总值 同比增长", "第一产业 绝对值(亿元)", "第一产业 同比增长", "第二产业 绝对值(亿元)", "第二产业 同比增长", "第三产业 绝对值(亿元)", "第三产业 同比增长"]
+    columns = ["季度", "国内生产总值(亿元)", "同比增长", "第一产业(亿元)", "同比增长", "第二产业(亿元)", "同比增长", "第三产业(亿元)", "同比增长"]
     data_df = pd.DataFrame(res_list, columns=columns)
     return data_df
 
@@ -123,7 +123,7 @@ def get_pmi():
         获取采购经理人指数(PMI)
     --------
     DataFrame
-        "月份", "制造业指数", "制造业同比增长", "非制造业指数", "非制造业同比增长"
+        "月份", "制造业指数", "同比增长", "非制造业指数", "同比增长"
     """
     url = "http://datainterface.eastmoney.com/EM_DataCenter/JS.aspx"
     params = {
@@ -140,7 +140,7 @@ def get_pmi():
     res_list = []
     for li in tmp_list:
         res_list.append(li.split(','))
-    columns = ["月份", "制造业指数", "制造业同比增长", "非制造业指数", "非制造业同比增长"]
+    columns = ["月份", "制造业指数", "同比增长", "非制造业指数", "同比增长"]
     data_df = pd.DataFrame(res_list, columns=columns)
     return data_df
 
@@ -177,7 +177,7 @@ def get_money_supply():
         获取货币供应量数据
     --------
     DataFrame
-        "月份", "货币和准货币(M2) 数量(亿元)", "货币和准货币(M2) 同比增长", "货币和准货币(M2) 环比增长", "货币(M1) 数量(亿元)", "货币(M1) 同比增长	", "货币(M1) 环比增长", "流通中的现金(M0) 数量(亿元)", "流通中的现金(M0) 同比增长", "流通中的现金(M0) 环比增长"
+        "月份", "货币M2(亿元)", "同比增长", "环比增长", "货币M1 数量(亿元)", "同比增长	", "环比增长", "流通中的现金(M0) 数量(亿元)", "同比增长", "环比增长"
     """
     url = "http://datainterface.eastmoney.com/EM_DataCenter/JS.aspx"
     params = {
@@ -205,7 +205,7 @@ def get_gold_and_foreign_reserves():
     Returns
     -------
     DataFrame
-        "月份", "国家外汇储备(亿美元) 数值", "国家外汇储备(亿美元) 同比", "国家外汇储备(亿美元) 环比", "黄金储备(万盎司) 数值", "黄金储备(万盎司) 同比", "黄金储备(万盎司) 环比"
+        "月份", "国家外汇储备(亿美元) 数值", "同比", "环比", "黄金储备(万盎司) 数值", "同比", "环比"
     """
     url = "http://datainterface.eastmoney.com/EM_DataCenter/JS.aspx"
     params = {
