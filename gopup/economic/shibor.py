@@ -42,6 +42,7 @@ def shibor_data(year=None):
                                                cons.PAGES['dw'], 'Shibor',
                                                year, lab,
                                                year)
+        # url = "https://www.shibor.org/dqs/rest/cm-u-bk-shibor/ShiborHisExcel?lang=cn"
         herder = {
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
             "Accept-Language": "zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3",
@@ -89,11 +90,13 @@ def shibor_quote_data(year=None):
     """
     year = du.get_year() if year is None else year
     lab = cons.SHIBOR_TYPE['Quote']
+
     try:
         url = cons.SHIBOR_DATA_URL % (cons.P_TYPE['http'], cons.DOMAINS['shibor'],
                                       cons.PAGES['dw'], 'Quote',
                                       year, lab,
                                       year)
+
         herder = {
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
             "Accept-Language": "zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3",
@@ -185,7 +188,7 @@ def lpr_data(startDate, endDate):
 
 
 if __name__ == "__main__":
-    tmp = shibor_data(2019)
+    tmp = shibor_data(2021)
     print(tmp)
  
 
