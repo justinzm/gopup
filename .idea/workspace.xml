@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="93b7bb07-655b-4d5a-8244-85210ae64a22" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gopup/economic/shibor.py" beforeDir="false" afterPath="$PROJECT_DIR$/gopup/economic/shibor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/dev/pythonFile/spider-BaiduIndex-master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/dev/pythonFile/qymeta&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -292,6 +291,13 @@
       <workItem from="1664684430386" duration="365000" />
       <workItem from="1664699883487" duration="15000" />
       <workItem from="1665028006313" duration="118000" />
+      <workItem from="1666859811892" duration="1171000" />
+      <workItem from="1666861000286" duration="2992000" />
+      <workItem from="1666874706576" duration="51000" />
+      <workItem from="1666874804050" duration="49000" />
+      <workItem from="1666875230311" duration="612000" />
+      <workItem from="1666941959281" duration="2660000" />
+      <workItem from="1666963485719" duration="596000" />
     </task>
     <servers />
   </component>
