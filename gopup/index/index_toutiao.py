@@ -171,7 +171,7 @@ def toutiao_age(keyword="python", start_date="20201012", end_date="20201018", ap
         return None
 
 
-def toutiao_gender(keyword="python", start_date="20201012", end_date="20201018", app_name="toutiao"):
+def toutiao_gender(keyword="python", start_date="202308001", end_date="202308017", app_name="toutiao"):
     """
     头条性别分析
     :param keyword:     关键词
@@ -228,7 +228,7 @@ def toutiao_interest_category(keyword="python", start_date="20201012", end_date=
 
 
 if __name__ == "__main__":
-    index_df = toutiao_index(keyword="茅台", start_date='20211231', end_date='20211231', app_name="toutiao")
+    index_df = toutiao_gender()
     print(index_df)
  
 
