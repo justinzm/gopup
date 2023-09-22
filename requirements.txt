@@ -1,6 +1,6 @@
 beautifulsoup4==4.9.3
 bs4==0.0.1
-certifi==2020.12.5
+certifi==2023.5.7
 chardet==4.0.0
 cssselect==1.1.0
 cycler==0.10.0
